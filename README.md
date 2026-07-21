@@ -7,8 +7,6 @@ The method does not learn the finite-volume time integrator. A Godunov/HLLC back
 ## Authors
 
 - Jiakang Cao — first author and repository owner
-- Ze Tao — second author
-- Fujun Liu — corresponding author
 
 School of Physics, Changchun University of Science and Technology, Changchun, Jilin, China  
 Correspondence: [waasledainbu776@gmail.com](mailto:waasledainbu776@gmail.com)
