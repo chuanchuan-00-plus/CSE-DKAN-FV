@@ -11,7 +11,7 @@ The method does not learn the finite-volume time integrator. A Godunov/HLLC back
 School of Physics, Changchun University of Science and Technology, Changchun, Jilin, China  
 Correspondence: [waasledainbu776@gmail.com](mailto:waasledainbu776@gmail.com)
 
-The GitHub repository is owned solely by **Jiakang Cao** (`chuanchuan-00-plus`). The manuscript authorship above is separate from repository ownership.
+The GitHub repository is owned solely by **Jiakang Cao** (`chuanchuan-00-plus`). 
 
 ## Repository layout
 
