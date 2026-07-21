@@ -1,0 +1,14 @@
+{
+  "variant": "cse_dkan",
+  "seed": 0,
+  "steps": 20,
+  "batch_interior": 128,
+  "batch_boundary": 32,
+  "batch_control_volumes": 16,
+  "batch_rh": 16,
+  "reference_cells": 512,
+  "evaluation_points": 256,
+  "log_every": 10,
+  "dtype": "float32",
+  "device": "cuda"
+}

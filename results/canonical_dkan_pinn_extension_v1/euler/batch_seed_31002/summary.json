@@ -1,0 +1,25 @@
+[
+  {
+    "variant": "dkan_pinn",
+    "seed": 31002,
+    "density_l1": 0.03573156006650845,
+    "density_l2": 0.047010024854796516,
+    "velocity_l2": 0.14283111144767888,
+    "pressure_l2": 0.04167911526542603,
+    "shock_location_error": 0.023868646406035587,
+    "contact_location_error": 0.06419697599021013,
+    "shock_width_10_90": 0.06704290656463041,
+    "contact_width_10_90": 1.0,
+    "max_mass_balance_error": 0.00179604616695761,
+    "max_momentum_balance_error": 0.0047618570362268076,
+    "max_energy_balance_error": 0.009256651497375978,
+    "shock_entropy_violation": 0.009372488653757394,
+    "minimum_density": 0.11841694943741983,
+    "minimum_pressure": 0.10327639089564952,
+    "inference_seconds": 0.0021182000637054443,
+    "training_seconds": 81.61978959990665,
+    "peak_memory_bytes": 129115136.0,
+    "trainable_parameters": 8475.0,
+    "optimized_parameters": 8475.0
+  }
+]

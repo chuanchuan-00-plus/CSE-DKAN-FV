@@ -1,0 +1,168 @@
+{
+  "config": {
+    "variant": "av_pinn",
+    "seed": 31002,
+    "steps": 1000,
+    "batch_interior": 512,
+    "batch_boundary": 128,
+    "batch_control_volumes": 64,
+    "batch_rh": 64,
+    "learning_rate": 0.001,
+    "min_learning_rate": 5e-05,
+    "weight_pde": 1.0,
+    "weight_boundary": 10.0,
+    "weight_cv": 100.0,
+    "weight_entropy": 50.0,
+    "weight_global": 200.0,
+    "weight_interface_cv": 0.0,
+    "weight_interface_entropy": 0.0,
+    "weight_rh": 5.0,
+    "weight_shock_entropy": 1.0,
+    "weight_characteristic_position": 100.0,
+    "weight_characteristic_trace": 30.0,
+    "weight_maximum_principle": 1000.0,
+    "quadrature_order": 4,
+    "dtype": "float64",
+    "device": "cuda",
+    "log_every": 100,
+    "reference_cells": 4096,
+    "evaluation_points": 1024,
+    "gate_width_start": 0.06,
+    "gate_width_end": 0.003,
+    "shock_exclusion_factor": 3.0,
+    "conservative_stride": 2,
+    "interface_pretrain_steps": 500,
+    "interface_pretrain_learning_rate": 0.005,
+    "viscosity": 0.0,
+    "amplitude": 1.0,
+    "mean": 0.2,
+    "final_time": 0.6,
+    "artificial_viscosity": 0.01,
+    "gradient_weight_momentum": 0.9,
+    "gradient_weight_minimum": 0.1,
+    "gradient_weight_maximum": 10.0
+  },
+  "problem": {
+    "x_left": -1.0,
+    "x_right": 1.0,
+    "final_time": 0.6,
+    "mean": 0.2,
+    "amplitude": 1.0,
+    "origin": 0.0,
+    "viscosity": 0.0
+  },
+  "environment": {
+    "torch": "2.11.0+cu128",
+    "device": "cuda",
+    "device_name": "NVIDIA GeForce RTX 5070 Laptop GPU"
+  },
+  "architecture_id": "BurgersInitialConditionAnsatz",
+  "history": [
+    {
+      "step": 1.0,
+      "total": 1.3486557899928586,
+      "pde": 1.3486557899928586,
+      "boundary": 5.129594036253878e-32,
+      "learning_rate": 0.001
+    },
+    {
+      "step": 100.0,
+      "total": 0.3878826684539397,
+      "pde": 0.3878826684539397,
+      "boundary": 3.959832336281681e-32,
+      "learning_rate": 0.000977165470126335
+    },
+    {
+      "step": 200.0,
+      "total": 0.27035881375271853,
+      "pde": 0.27035881375271853,
+      "boundary": 4.3630137330769966e-32,
+      "learning_rate": 0.0009099842589848886
+    },
+    {
+      "step": 300.0,
+      "total": 0.18597365069424138,
+      "pde": 0.18597365069424138,
+      "boundary": 6.166917959894072e-32,
+      "learning_rate": 0.0008050432462305587
+    },
+    {
+      "step": 400.0,
+      "total": 0.11048060028174528,
+      "pde": 0.11048060028174528,
+      "boundary": 6.775301173732772e-32,
+      "learning_rate": 0.0006726351950872414
+    },
+    {
+      "step": 500.0,
+      "total": 0.06891776043405845,
+      "pde": 0.06891776043405845,
+      "boundary": 7.664539140242816e-32,
+      "learning_rate": 0.0005257468748226026
+    },
+    {
+      "step": 600.0,
+      "total": 0.048717273722790215,
+      "pde": 0.048717273722790215,
+      "boundary": 9.945953622646403e-32,
+      "learning_rate": 0.00037878530001710185
+    },
+    {
+      "step": 700.0,
+      "total": 0.042384417297647595,
+      "pde": 0.042384417297647595,
+      "boundary": 8.379360076164291e-32,
+      "learning_rate": 0.0002461646701603612
+    },
+    {
+      "step": 800.0,
+      "total": 0.0313542336348554,
+      "pde": 0.0313542336348554,
+      "boundary": 9.202845590666739e-32,
+      "learning_rate": 0.00014089260454146647
+    },
+    {
+      "step": 900.0,
+      "total": 0.03336740710347309,
+      "pde": 0.03336740710347309,
+      "boundary": 8.544628939517021e-32,
+      "learning_rate": 7.329433651834548e-05
+    },
+    {
+      "step": 1000.0,
+      "total": 0.03303396339804593,
+      "pde": 0.03303396339804593,
+      "boundary": 8.917958422174334e-32,
+      "learning_rate": 5e-05
+    }
+  ],
+  "metrics": {
+    "normalized_l1": 0.04879901347568409,
+    "normalized_l2": 0.1636997937656271,
+    "normalized_linf": 0.9208039971909188,
+    "mass_error": 0.003375394262026432,
+    "tv_excess": 0.0,
+    "overshoot_undershoot": 0.0,
+    "shock_location_error": 0.00390625,
+    "shock_width_10_90": 0.06228306012553099,
+    "shock_width_failure": 0.0,
+    "reference_shock_width_10_90": 0.0015520507704243625,
+    "shock_width_absolute_error": 0.06073100935510663,
+    "gradient_equivalent_width": 0.05306071819898293,
+    "reference_gradient_equivalent_width": 0.003861501680551326,
+    "cv_balance_rmse": 0.7581659039512368,
+    "shock_cv_balance_rmse": 0.16402978314903155,
+    "entropy_violation_mean": 0.015405974533551891,
+    "entropy_violation_max": 0.23635173646043875,
+    "entropy_violation_fraction": 0.34375,
+    "shock_entropy_violation_mean": 0.0,
+    "max_mass_drift": 0.0026674769912216068,
+    "inference_seconds": 0.0005202996544539928,
+    "prediction_min": -0.6820323392671959,
+    "prediction_max": 1.0916412124833244,
+    "training_seconds": 17.107603600248694,
+    "peak_memory_bytes": 27007488.0,
+    "optimized_parameters": 8641.0,
+    "trainable_parameters_after_geometry_freeze": 8641.0
+  }
+}

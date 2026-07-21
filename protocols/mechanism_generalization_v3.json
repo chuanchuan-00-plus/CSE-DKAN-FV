@@ -1,0 +1,12 @@
+{
+  "protocol": "mechanism_generalization_v3",
+  "extends": "mechanism_generalization_v2.json",
+  "status": "final_reference_amendment_frozen_before_v3_evaluation",
+  "frozen_at": "2026-07-21T00:02:00+08:00",
+  "reference_amendment": "The independent v2 convergence audit found a 0.36% primitive RMS disagreement for Shu--Osher and 2.42% for Woodward--Colella between 2048 and 4096 cells. The final Woodward--Colella reference was therefore raised to 4096 cells. The model, cases, metrics, comparator grids, sensor, and checkpoints were unchanged.",
+  "case_overrides": {
+    "woodward_colella": {
+      "reference_cells": 4096
+    }
+  }
+}

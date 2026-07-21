@@ -1,0 +1,348 @@
+{
+  "protocol": "engineering_riemann_operator_v1",
+  "protocol_status": "frozen_before_formal_training_and_evaluation",
+  "row_count": 360,
+  "methods": [
+    "fno_operator",
+    "hllc_fixed_mc_subcell",
+    "hllc_muscl_fine",
+    "hllc_piecewise_constant",
+    "physics_gated_dkan_fv_engineering",
+    "physics_gated_dkan_fv_sod_neighbourhood"
+  ],
+  "aggregates": [
+    {
+      "method": "fno_operator",
+      "group": "in_distribution",
+      "rows": 60,
+      "cases": 20,
+      "primary_error_median": 0.12119986589103575,
+      "primary_error_geometric_mean": 0.12124650383793233,
+      "density_tv_excess_median": 1.0677223709597845,
+      "domain_integral_error_median": 0.06766648804276547,
+      "online_seconds_median": 0.0014332500286400318,
+      "shock_width_median": 0.06649167021612451,
+      "minimum_density": 0.05171223357319832,
+      "minimum_pressure": 0.02129173092544079,
+      "maximum_entropy_violation": 0.2573033571243286,
+      "maximum_rh_residual": 0.8665581183374341
+    },
+    {
+      "method": "hllc_fixed_mc_subcell",
+      "group": "in_distribution",
+      "rows": 20,
+      "cases": 20,
+      "primary_error_median": 0.033807852723272816,
+      "primary_error_geometric_mean": 0.03431181798120692,
+      "density_tv_excess_median": 0.010820984300274596,
+      "domain_integral_error_median": 0.0013624984940600823,
+      "online_seconds_median": 0.2917678998783231,
+      "shock_width_median": 0.014763013917644952,
+      "minimum_density": 0.05758799999999999,
+      "minimum_pressure": 0.028323000000000004,
+      "maximum_entropy_violation": 0.0,
+      "maximum_rh_residual": 0.022874592137246467
+    },
+    {
+      "method": "hllc_muscl_fine",
+      "group": "in_distribution",
+      "rows": 20,
+      "cases": 20,
+      "primary_error_median": 0.01632307435035725,
+      "primary_error_geometric_mean": 0.0171272692227999,
+      "density_tv_excess_median": 0.008837469150057863,
+      "domain_integral_error_median": 0.001362498494048828,
+      "online_seconds_median": 1.3620033499319106,
+      "shock_width_median": 0.004345771447989644,
+      "minimum_density": 0.05758799999999999,
+      "minimum_pressure": 0.028323000000000004,
+      "maximum_entropy_violation": 0.0,
+      "maximum_rh_residual": 0.0021612403132068806
+    },
+    {
+      "method": "hllc_piecewise_constant",
+      "group": "in_distribution",
+      "rows": 20,
+      "cases": 20,
+      "primary_error_median": 0.036194158884908983,
+      "primary_error_geometric_mean": 0.037236056514369675,
+      "density_tv_excess_median": 0.010600387241919886,
+      "domain_integral_error_median": 0.0013624984940597232,
+      "online_seconds_median": 0.2917678998783231,
+      "shock_width_median": 0.016173728781818386,
+      "minimum_density": 0.05758799999999999,
+      "minimum_pressure": 0.028323000000000004,
+      "maximum_entropy_violation": 0.001090918766642024,
+      "maximum_rh_residual": 0.019610353778406493
+    },
+    {
+      "method": "physics_gated_dkan_fv_engineering",
+      "group": "in_distribution",
+      "rows": 60,
+      "cases": 20,
+      "primary_error_median": 0.03165528185502487,
+      "primary_error_geometric_mean": 0.03217189069139816,
+      "density_tv_excess_median": 0.15413821821293905,
+      "domain_integral_error_median": 0.0013624984940605205,
+      "online_seconds_median": 0.3056740998290479,
+      "shock_width_median": 0.013994009317107148,
+      "minimum_density": 0.05758799999999999,
+      "minimum_pressure": 0.028323000000000004,
+      "maximum_entropy_violation": 0.0,
+      "maximum_rh_residual": 0.022842203686461907
+    },
+    {
+      "method": "physics_gated_dkan_fv_sod_neighbourhood",
+      "group": "in_distribution",
+      "rows": 60,
+      "cases": 20,
+      "primary_error_median": 0.03382151277666864,
+      "primary_error_geometric_mean": 0.03285529155783048,
+      "density_tv_excess_median": 0.03779044307117212,
+      "domain_integral_error_median": 0.0013624984940606424,
+      "online_seconds_median": 0.30516049987636507,
+      "shock_width_median": 0.014391474845425745,
+      "minimum_density": 0.05758799999999999,
+      "minimum_pressure": 0.028323000000000004,
+      "maximum_entropy_violation": 0.0,
+      "maximum_rh_residual": 0.02287098566967272
+    },
+    {
+      "method": "fno_operator",
+      "group": "stress",
+      "rows": 30,
+      "cases": 10,
+      "primary_error_median": 0.18553947308000135,
+      "primary_error_geometric_mean": 0.7733910253034384,
+      "density_tv_excess_median": 1.85161124013456,
+      "domain_integral_error_median": 0.2503959764456361,
+      "online_seconds_median": 0.0014915000647306442,
+      "shock_width_median": 0.14009463089238938,
+      "minimum_density": 0.021508069708943367,
+      "minimum_pressure": 0.007759823463857174,
+      "maximum_entropy_violation": 0.4347233772277832,
+      "maximum_rh_residual": 0.9990671083473281
+    },
+    {
+      "method": "hllc_fixed_mc_subcell",
+      "group": "stress",
+      "rows": 10,
+      "cases": 10,
+      "primary_error_median": 0.02511871390654031,
+      "primary_error_geometric_mean": 0.001270273245560185,
+      "density_tv_excess_median": 0.022522321490066638,
+      "domain_integral_error_median": 0.0006318130446661249,
+      "online_seconds_median": 0.2828038998413831,
+      "shock_width_median": 0.01449276522390619,
+      "minimum_density": 0.029999999999999995,
+      "minimum_pressure": 0.008,
+      "maximum_entropy_violation": 0.0,
+      "maximum_rh_residual": 0.021610345281196125
+    },
+    {
+      "method": "hllc_muscl_fine",
+      "group": "stress",
+      "rows": 10,
+      "cases": 10,
+      "primary_error_median": 0.013888114394173836,
+      "primary_error_geometric_mean": 0.0006691756236670353,
+      "density_tv_excess_median": 0.015015798503137497,
+      "domain_integral_error_median": 0.0006318130446827825,
+      "online_seconds_median": 1.2979950499720871,
+      "shock_width_median": 0.004328990856400816,
+      "minimum_density": 0.029999999999999995,
+      "minimum_pressure": 0.008,
+      "maximum_entropy_violation": 0.0,
+      "maximum_rh_residual": 0.006188134536426155
+    },
+    {
+      "method": "hllc_piecewise_constant",
+      "group": "stress",
+      "rows": 10,
+      "cases": 10,
+      "primary_error_median": 0.028934859116979787,
+      "primary_error_geometric_mean": 0.0013819457951698185,
+      "density_tv_excess_median": 0.022522321490066638,
+      "domain_integral_error_median": 0.0006318130446659467,
+      "online_seconds_median": 0.2828038998413831,
+      "shock_width_median": 0.016140906905938113,
+      "minimum_density": 0.029999999999999995,
+      "minimum_pressure": 0.008,
+      "maximum_entropy_violation": 2.6824153161186803e-07,
+      "maximum_rh_residual": 0.02607621244831526
+    },
+    {
+      "method": "physics_gated_dkan_fv_engineering",
+      "group": "stress",
+      "rows": 30,
+      "cases": 10,
+      "primary_error_median": 0.026031305437626877,
+      "primary_error_geometric_mean": 0.0012045661876010087,
+      "density_tv_excess_median": 0.1537517234115086,
+      "domain_integral_error_median": 0.0006318130446663975,
+      "online_seconds_median": 0.29636664991267025,
+      "shock_width_median": 0.013795850450445152,
+      "minimum_density": 0.029999999999999995,
+      "minimum_pressure": 0.008,
+      "maximum_entropy_violation": 0.0,
+      "maximum_rh_residual": 0.021707742514290296
+    },
+    {
+      "method": "physics_gated_dkan_fv_sod_neighbourhood",
+      "group": "stress",
+      "rows": 30,
+      "cases": 10,
+      "primary_error_median": 0.024441008215835017,
+      "primary_error_geometric_mean": 0.0012177134347172176,
+      "density_tv_excess_median": 0.03258743954208467,
+      "domain_integral_error_median": 0.000631813044666677,
+      "online_seconds_median": 0.2967298496514559,
+      "shock_width_median": 0.013879861491659984,
+      "minimum_density": 0.029999999999999995,
+      "minimum_pressure": 0.008,
+      "maximum_entropy_violation": 0.0,
+      "maximum_rh_residual": 0.021613031565601053
+    }
+  ],
+  "seed_level_geometric_mean_errors": {
+    "fno_in_distribution": {
+      "71001": 0.11966582766871922,
+      "71002": 0.12312098753976976,
+      "71003": 0.12137473207280206
+    },
+    "engineering_dkan_fv_in_distribution": {
+      "72001": 0.032050626121647455,
+      "72002": 0.032315373652873,
+      "72003": 0.03220599400191801
+    }
+  },
+  "comparisons": {
+    "primary_fno_over_engineering_dkan_fv": 3.768700076935171,
+    "case_bootstrap_fno_over_engineering_dkan_fv": {
+      "value": 3.7687093059268078,
+      "ci95": [
+        3.4053513438896905,
+        4.127199454417306
+      ]
+    },
+    "fixed_mc_over_engineering_dkan_fv_in_distribution": {
+      "paired_median": 1.0335866427152083,
+      "ci95": [
+        1.0102154280848925,
+        1.0747063308992821
+      ],
+      "win_rate": 0.65
+    },
+    "fixed_mc_over_engineering_dkan_fv_stress": {
+      "paired_median": 1.0522913312850255,
+      "ci95": [
+        1.00677953403571,
+        1.09834314784754
+      ],
+      "win_rate": 0.6666666666666666
+    }
+  },
+  "gates": [
+    {
+      "gate": "primary_20_percent",
+      "value": 3.768700076935171,
+      "threshold": 1.2,
+      "passed": true,
+      "detail": "ratio of median seed-level geometric-mean errors, FNO / engineering DKAN-FV"
+    },
+    {
+      "gate": "same_backbone_increment_gain",
+      "value": 1.0335866427152083,
+      "threshold": 1.05,
+      "passed": false,
+      "ci95_low": 1.0102154280848925,
+      "ci95_high": 1.0747063308992821
+    },
+    {
+      "gate": "same_backbone_increment_win_rate",
+      "value": 0.65,
+      "threshold": 0.6,
+      "passed": true
+    },
+    {
+      "gate": "stress_robustness_gain",
+      "value": 1.0522913312850255,
+      "threshold": 1.0,
+      "passed": true,
+      "ci95_low": 1.00677953403571,
+      "ci95_high": 1.09834314784754
+    },
+    {
+      "gate": "stress_robustness_win_rate",
+      "value": 0.6666666666666666,
+      "threshold": 0.5,
+      "passed": true
+    },
+    {
+      "gate": "hard_conservation",
+      "value": 1.7763568394002505e-15,
+      "threshold": 1e-12,
+      "passed": true
+    },
+    {
+      "gate": "positivity",
+      "value": 1,
+      "threshold": 1,
+      "passed": true
+    }
+  ],
+  "all_predeclared_gates_passed": false,
+  "interpretation_guardrails": [
+    "Domain-integral error against the exact solution is not the same as hard reconstruction conservation.",
+    "The pure-contact stress case has near-machine-zero finite-volume error and can destabilize geometric means; stress gates use paired medians.",
+    "Fine-grid HLLC is an accuracy-cost reference and is not a superiority target."
+  ],
+  "offline_seconds": {
+    "fno": [
+      {
+        "seed": 71001,
+        "seconds": 32.11632559960708
+      },
+      {
+        "seed": 71002,
+        "seconds": 31.58069600025192
+      },
+      {
+        "seed": 71003,
+        "seconds": 31.138956000562757
+      }
+    ],
+    "hybrid": [
+      {
+        "seed": 72001,
+        "case_family": "engineering",
+        "seconds": 168.1554970005527
+      },
+      {
+        "seed": 72002,
+        "case_family": "engineering",
+        "seconds": 76.51348900003359
+      },
+      {
+        "seed": 72003,
+        "case_family": "engineering",
+        "seconds": 78.55556440073997
+      },
+      {
+        "seed": 26001,
+        "case_family": "sod_neighbourhood",
+        "seconds": 173.52317599998787
+      },
+      {
+        "seed": 26002,
+        "case_family": "sod_neighbourhood",
+        "seconds": 221.95973080024123
+      },
+      {
+        "seed": 26003,
+        "case_family": "sod_neighbourhood",
+        "seconds": 177.03090480016544
+      }
+    ]
+  }
+}

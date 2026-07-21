@@ -1,0 +1,118 @@
+{
+  "protocol": "final_1d_float64_v1",
+  "frozen_before_execution": "2026-07-16",
+  "status": "executed_failed",
+  "purpose": "Independent ten-seed full-float64 confirmation of the frozen wave-gated hard-conservative DKAN finite-volume hybrid.",
+  "numeric_requirements": {
+    "training_dtype": "torch.float64",
+    "finite_volume_dtype": "torch.float64",
+    "model_parameter_dtype": "torch.float64",
+    "benchmark_dtype": "torch.float64",
+    "dtype_audit": "all checkpoints and benchmark payloads must report float64"
+  },
+  "burgers": {
+    "training_seeds": [45001, 45002, 45003, 45004, 45005, 45006, 45007, 45008, 45009, 45010],
+    "training": {
+      "iterations": 1500,
+      "coarse_cells": 64,
+      "refinement": 8,
+      "cases_per_viscosity": 4,
+      "tv_weight": 0.5
+    },
+    "frozen_model": {
+      "relative_jump_threshold": 0.3,
+      "minimum_absolute_jump": 1.1,
+      "sensor_dilation_cells": 1,
+      "cell_tv_relative_budget": 0.05
+    },
+    "blind_benchmark": {
+      "amplitudes": [0.18, 0.38, 0.58, 0.74, 0.89, 1.08, 1.42, 1.72, 2.15, 2.65],
+      "viscosities": [0.0, 0.0001, 0.0003, 0.001, 0.003, 0.01],
+      "cells": 128,
+      "subcells": 8,
+      "reference": "adaptive WENO: 4096 cells for nu <= 0.001, 2048 for nu = 0.003, and 1024 for nu = 0.01",
+      "reference_convergence_audit": "Before blind model evaluation, compare each reduced high-viscosity reference with doubled resolution and require normalized L2 disagreement <= 5e-4.",
+      "note": "No listed amplitude was used in prior development, v1-v4 validation, or float64 smoke testing. WENO reference caching is seed-independent and lossless."
+    },
+    "primary": "geometric mean of fixed-MC normalized-L2 / gated-DKAN normalized-L2 over 60 pairs per seed",
+    "gates": {
+      "median_gain": ">= 1.20",
+      "bootstrap_95ci_lower": "> 1.00",
+      "every_pair_gain": ">= 1/1.05",
+      "maximum_cell_average_change": "<= 1e-12",
+      "overshoot_undershoot": "<= 1e-10",
+      "reference_relative_tv_excess": "<= 0.05"
+    }
+  },
+  "euler": {
+    "training_seeds": [26001, 26002, 26003, 26004, 26005, 26006, 26007, 26008, 26009, 26010],
+    "training": {
+      "iterations": 2500,
+      "coarse_cells": [100, 200, 400],
+      "refinement": 8,
+      "cases": 20,
+      "batch_size": 1024,
+      "case_family": "sod_neighbourhood",
+      "basis_type": "shock",
+      "times": [0.2]
+    },
+    "frozen_model": {
+      "learned_max_cells": 200,
+      "fallback_above_max_cells": "fixed conservative MC"
+    },
+    "blind_benchmark": {
+      "cases": [
+        {"id": "f01", "left": [0.86, 0.03, 1.08], "right": [0.105, -0.02, 0.095]},
+        {"id": "f02", "left": [1.14, -0.05, 0.88], "right": [0.175, 0.04, 0.135]},
+        {"id": "f03", "left": [0.96, 0.06, 1.18], "right": [0.115, -0.06, 0.145]},
+        {"id": "f04", "left": [1.17, 0.01, 1.05], "right": [0.195, 0.07, 0.082]},
+        {"id": "f05", "left": [0.79, -0.07, 0.92], "right": [0.13, 0.02, 0.155]},
+        {"id": "f06", "left": [1.21, 0.075, 0.81], "right": [0.097, -0.04, 0.072]},
+        {"id": "f07", "left": [0.88, -0.015, 0.79], "right": [0.185, 0.055, 0.11]},
+        {"id": "f08", "left": [1.06, 0.045, 1.19], "right": [0.15, -0.075, 0.068]},
+        {"id": "f09", "left": [0.81, 0.065, 1.01], "right": [0.102, 0.01, 0.138]},
+        {"id": "f10", "left": [1.19, -0.025, 0.97], "right": [0.165, -0.055, 0.09]}
+      ],
+      "resolutions": [100, 200, 400],
+      "subcells": 8,
+      "reference": "exact ideal-gas Riemann solution",
+      "note": "The exact state tuples are new and were frozen before any final-seed training or benchmark execution. HLLC state caching is seed-independent and lossless."
+    },
+    "primary": "geometric mean of fixed conservative-MC primitive-composite-L2 / gated-DKAN value over 30 pairs per seed",
+    "gates": {
+      "median_gain": ">= 1.00",
+      "bootstrap_95ci_lower": ">= 0.95",
+      "every_pair_gain": ">= 1/1.05",
+      "maximum_cell_average_change": "<= 1e-12",
+      "minimum_density_and_pressure": "> 0",
+      "shock_entropy_violation": "<= 1e-10",
+      "RH_residual_ratio": "<= 1.20"
+    }
+  },
+  "cross_equation_gate": {
+    "per_seed_gain": "sqrt(Burgers seed gain * Euler seed gain) by seed index",
+    "aggregate": "median of ten per-seed gains",
+    "engineering_success": "median >= 1.20 and bootstrap 95% lower > 1.00",
+    "strong_20_percent_success": "bootstrap 95% lower >= 1.20"
+  },
+  "claim_boundary": "Passing applies to the supervised finite-volume hybrid. It does not convert the failed direct CSE-DKAN-PINN branch into a successful data-free PINN result, and it does not cover 2D problems.",
+  "execution_outcome": {
+    "summary": "results/final_float64_v1/gate_summary.json",
+    "reference_convergence_pairs": 20,
+    "reference_convergence_pass": true,
+    "burgers_median_gain": 1.5137252753474373,
+    "burgers_bootstrap_95ci": [1.3093953365786914, 1.6667916900542874],
+    "burgers_worst_pair_gain": 0.6906493120421918,
+    "euler_median_gain": 1.0950701864934758,
+    "euler_bootstrap_95ci": [1.0912669372638182, 1.0964432008650276],
+    "euler_worst_pair_gain": 0.9463140615463717,
+    "cross_equation_median_gain": 1.2876160635202256,
+    "cross_equation_bootstrap_95ci": [1.1973240789210984, 1.3486714435555924],
+    "failed_gates": [
+      "burgers.every_pair_gain",
+      "euler.every_pair_gain",
+      "cross_equation.strong_20_percent_success"
+    ],
+    "strong_20_percent_claim_allowed": false
+  }
+}

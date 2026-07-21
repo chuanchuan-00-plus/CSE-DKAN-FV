@@ -1,0 +1,183 @@
+{
+  "status": "development_only_exact_sod_geometry_prior",
+  "baseline_definition": "per-seed per-metric oracle envelope of DKAN-PINN and CW-DKAN",
+  "seed_count": 5,
+  "paired": [
+    {
+      "seed": 0,
+      "baseline_envelope": {
+        "state": 0.11515166415629371,
+        "resolution": 0.06698064780661311,
+        "conservation": 0.00532509804484205,
+        "entropy": 0.00438325269317627,
+        "robustness": 1.0,
+        "training": 21.832860300153495,
+        "inference": 0.0021121997775733472
+      },
+      "cse": {
+        "state": 0.042593918883745,
+        "resolution": 0.00519864030904191,
+        "conservation": 0.004028699611939132,
+        "entropy": 1e-06,
+        "robustness": 1.0,
+        "training": 41.84668279981613,
+        "inference": 0.003303400000393391
+      },
+      "gain_by_group": {
+        "state": 2.703476627041207,
+        "resolution": 12.884262773501518,
+        "conservation": 1.321790790522335,
+        "entropy": 4383.2526931762695,
+        "robustness": 1.0,
+        "training": 0.5217345519260472,
+        "inference": 0.6394017610104172
+      },
+      "composite_gain": 4.965653492758013,
+      "max_state_or_conservation_degradation": -0.24345062231457382
+    },
+    {
+      "seed": 1,
+      "baseline_envelope": {
+        "state": 0.13679917728540986,
+        "resolution": 0.10565147196840258,
+        "conservation": 0.0062321818553311035,
+        "entropy": 0.10600374801254273,
+        "robustness": 1.0,
+        "training": 20.986374200157822,
+        "inference": 0.0020569001713991166
+      },
+      "cse": {
+        "state": 0.12612472602265803,
+        "resolution": 0.00432093021396909,
+        "conservation": 0.005717033988423573,
+        "entropy": 1e-06,
+        "robustness": 1.0,
+        "training": 37.53985590005666,
+        "inference": 0.0024950003640949727
+      },
+      "gain_by_group": {
+        "state": 1.084634088805348,
+        "resolution": 24.451094263647917,
+        "conservation": 1.09010753967016,
+        "entropy": 106003.74801254272,
+        "robustness": 1.0,
+        "training": 0.5590424815702648,
+        "inference": 0.8244087660264647
+      },
+      "composite_gain": 5.847211051032185,
+      "max_state_or_conservation_degradation": -0.07803008376637577
+    },
+    {
+      "seed": 2,
+      "baseline_envelope": {
+        "state": 0.11488899969625348,
+        "resolution": 0.14480525381573012,
+        "conservation": 0.004152240090862049,
+        "entropy": 0.05140261514282227,
+        "robustness": 1.0,
+        "training": 21.1314903998971,
+        "inference": 0.00198849965056777
+      },
+      "cse": {
+        "state": 0.043911524141040055,
+        "resolution": 0.003814810385902763,
+        "conservation": 0.0056443999777613715,
+        "entropy": 0.014868126941680907,
+        "robustness": 1.0,
+        "training": 36.88153790014237,
+        "inference": 0.0024313002282977106
+      },
+      "gain_by_group": {
+        "state": 2.6163746748402503,
+        "resolution": 37.9587028364091,
+        "conservation": 0.7356388822942472,
+        "entropy": 3.4572354234292657,
+        "robustness": 1.0,
+        "training": 0.572955782297124,
+        "inference": 0.8178749902721928
+      },
+      "composite_gain": 2.7957047701732205,
+      "max_state_or_conservation_degradation": 0.3593626221622299
+    },
+    {
+      "seed": 3,
+      "baseline_envelope": {
+        "state": 0.10444234107487119,
+        "resolution": 0.12657091890949196,
+        "conservation": 0.006050886929680712,
+        "entropy": 0.03764842612838745,
+        "robustness": 1.0,
+        "training": 22.011769300162793,
+        "inference": 0.0022349001297950746
+      },
+      "cse": {
+        "state": 0.04356430755426205,
+        "resolution": 0.0036691353424151444,
+        "conservation": 0.0050290557889705245,
+        "entropy": 1e-06,
+        "robustness": 1.0,
+        "training": 37.294391000013796,
+        "inference": 0.003611000014305115
+      },
+      "gain_by_group": {
+        "state": 2.3974291556174,
+        "resolution": 34.49611614113391,
+        "conservation": 1.2031854852259178,
+        "entropy": 37648.42612838745,
+        "robustness": 1.0,
+        "training": 0.5902166172965434,
+        "inference": 0.6189144616287544
+      },
+      "composite_gain": 7.207506122975776,
+      "max_state_or_conservation_degradation": -0.16887295244237965
+    },
+    {
+      "seed": 4,
+      "baseline_envelope": {
+        "state": 0.16182824298676485,
+        "resolution": 0.10717495165416122,
+        "conservation": 0.005191250061379408,
+        "entropy": 0.00943933589553833,
+        "robustness": 1.0,
+        "training": 27.350660699721427,
+        "inference": 0.0021182002889215948
+      },
+      "cse": {
+        "state": 0.1271445690219889,
+        "resolution": 0.004158205270554923,
+        "conservation": 0.00765189677838711,
+        "entropy": 0.015242265296936034,
+        "robustness": 1.0,
+        "training": 36.831935600213704,
+        "inference": 0.006966300068259239
+      },
+      "gain_by_group": {
+        "state": 1.2727892684018427,
+        "resolution": 25.774329231192198,
+        "conservation": 0.6784265668666842,
+        "entropy": 0.6192869440105995,
+        "robustness": 1.0,
+        "training": 0.7425800532612447,
+        "inference": 0.304063888745306
+      },
+      "composite_gain": 1.6935640079833754,
+      "max_state_or_conservation_degradation": 0.4739988804072104
+    }
+  ],
+  "median_composite_gain": 4.965653492758013,
+  "bootstrap_median_95ci": [
+    1.6935640079833754,
+    7.207506122975776
+  ],
+  "state_improvement_success_fraction": 1.0,
+  "no_primary_degradation_success_fraction": 0.6,
+  "engineering_gate_euler_only": false,
+  "strong_20_percent_gate_euler_only": false,
+  "claim_allowed": false,
+  "claim_blockers": [
+    "two of five CSE seeds show high state error",
+    "exact Sod shock/contact geometry and star-state traces are frozen priors",
+    "all required 1D tasks and ten final seeds are not complete",
+    "float64 final-budget comparison is not complete"
+  ]
+}

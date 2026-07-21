@@ -1,0 +1,113 @@
+{
+  "status": "development_only",
+  "baseline_definition": "per-seed per-metric oracle envelope of DKAN-PINN and CW-DKAN",
+  "seed_count": 5,
+  "paired": [
+    {
+      "seed": 0,
+      "gain": {
+        "state_l2": 2.6102541937269375,
+        "gradient_width": 8.166829561606843,
+        "local_cv": 0.6670068347643009,
+        "shock_cv": 0.14855935936689396,
+        "entropy": 0.47482580825067655,
+        "mass_drift": 34513.25,
+        "training_cost": 0.33105449265919756
+      },
+      "cse_tv_excess": 0.07908838201816408,
+      "cse_overshoot_undershoot": 0.06274057511750364,
+      "cse_width_10_90": 0.011064061877249648,
+      "profile_gate": false,
+      "local_conservation_gate": false
+    },
+    {
+      "seed": 1,
+      "gain": {
+        "state_l2": 2.251383740368794,
+        "gradient_width": 7.482481137682313,
+        "local_cv": 0.6067736754668206,
+        "shock_cv": 0.12885666455146616,
+        "entropy": 0.45952198591297305,
+        "mass_drift": 37181.5,
+        "training_cost": 0.36011993924050173
+      },
+      "cse_tv_excess": 0.10111680621246091,
+      "cse_overshoot_undershoot": 0.06970800046387815,
+      "cse_width_10_90": 0.01072160546363067,
+      "profile_gate": false,
+      "local_conservation_gate": false
+    },
+    {
+      "seed": 2,
+      "gain": {
+        "state_l2": 2.6310194444664288,
+        "gradient_width": 7.258156010238351,
+        "local_cv": 0.660808310782063,
+        "shock_cv": 0.14888443302985288,
+        "entropy": 0.5435049333155463,
+        "mass_drift": 17104.2,
+        "training_cost": 0.3483346510472566
+      },
+      "cse_tv_excess": 0.049536414374550884,
+      "cse_overshoot_undershoot": 0.039772521299754615,
+      "cse_width_10_90": 0.011246753557186184,
+      "profile_gate": false,
+      "local_conservation_gate": false
+    },
+    {
+      "seed": 3,
+      "gain": {
+        "state_l2": 2.0743539719359134,
+        "gradient_width": 8.446679543251372,
+        "local_cv": 0.6845920248351304,
+        "shock_cv": 0.2000715340834531,
+        "entropy": 0.5768914081344646,
+        "mass_drift": 37992.75,
+        "training_cost": 0.3004771402500531
+      },
+      "cse_tv_excess": 0.11346254108589261,
+      "cse_overshoot_undershoot": 0.05924237851563596,
+      "cse_width_10_90": 0.0742319456059699,
+      "profile_gate": false,
+      "local_conservation_gate": false
+    },
+    {
+      "seed": 4,
+      "gain": {
+        "state_l2": 2.5677963114720512,
+        "gradient_width": 8.47262063770133,
+        "local_cv": 0.7084664219707351,
+        "shock_cv": 0.23569784481467393,
+        "entropy": 0.45554581741346706,
+        "mass_drift": 22887.6,
+        "training_cost": 0.30352259999420583
+      },
+      "cse_tv_excess": 0.0811359728129171,
+      "cse_overshoot_undershoot": 0.04451097135010862,
+      "cse_width_10_90": 0.14688965288577308,
+      "profile_gate": false,
+      "local_conservation_gate": false
+    }
+  ],
+  "median_state_l2_gain": 2.5677963114720512,
+  "state_l2_gain_bootstrap_median_95ci": [
+    2.0743539719359134,
+    2.6310194444664288
+  ],
+  "median_local_cv_gain": 0.6670068347643009,
+  "local_cv_gain_bootstrap_median_95ci": [
+    0.6067736754668206,
+    0.7084664219707351
+  ],
+  "profile_gate_success_fraction": 0.0,
+  "local_conservation_gate_success_fraction": 0.0,
+  "engineering_gate": false,
+  "strong_20_percent_gate": false,
+  "claim_allowed": false,
+  "claim_blockers": [
+    "independent local CV and shock-CV errors are worse than the neural envelope in every seed",
+    "TV/overshoot profile gate fails in every CSE seed",
+    "training cost is roughly three times the strongest neural baseline",
+    "float64 ten-seed final protocol is incomplete"
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "status": "development_multiseed_held_out_target",
+  "method": "TVD finite-volume cell averages plus zero-mean bounded DKAN subcells",
+  "paired": [
+    {
+      "seed": 31415,
+      "viscosity": 0.0,
+      "l2_gain_over_fixed_mc": 2.702182928633468,
+      "l1_gain_over_fixed_mc": 2.7170077154150407,
+      "width_error_gain_over_fixed_mc": 2.181973660139133,
+      "learned_l2": 0.032423633390972956,
+      "learned_tv_excess": 0.0021448579078489835,
+      "learned_overshoot_undershoot": 0.0,
+      "maximum_cell_average_change": 1.1920928955078125e-07,
+      "profile_gate": true,
+      "hard_cell_conservation_gate": true,
+      "pretraining_seconds": 18.15644339984283,
+      "fv_plus_reconstruction_seconds": 0.3227439997717738
+    },
+    {
+      "seed": 31415,
+      "viscosity": 0.001,
+      "l2_gain_over_fixed_mc": 2.7872834522418692,
+      "l1_gain_over_fixed_mc": 2.240830481163644,
+      "width_error_gain_over_fixed_mc": 2.035816483810815,
+      "learned_l2": 0.026675975285265205,
+      "learned_tv_excess": 0.013835483586368198,
+      "learned_overshoot_undershoot": 0.0,
+      "maximum_cell_average_change": 1.1920928955078125e-07,
+      "profile_gate": true,
+      "hard_cell_conservation_gate": true,
+      "pretraining_seconds": 18.15644339984283,
+      "fv_plus_reconstruction_seconds": 0.8129267999902368
+    },
+    {
+      "seed": 31416,
+      "viscosity": 0.0,
+      "l2_gain_over_fixed_mc": 3.809216023140713,
+      "l1_gain_over_fixed_mc": 2.2372886045721594,
+      "width_error_gain_over_fixed_mc": 3.0583787280677295,
+      "learned_l2": 0.023000687832116867,
+      "learned_tv_excess": 0.03108231511131334,
+      "learned_overshoot_undershoot": 0.0,
+      "maximum_cell_average_change": 5.960464477539063e-08,
+      "profile_gate": false,
+      "hard_cell_conservation_gate": true,
+      "pretraining_seconds": 18.344543899875134,
+      "fv_plus_reconstruction_seconds": 0.2712220000103116
+    },
+    {
+      "seed": 31416,
+      "viscosity": 0.001,
+      "l2_gain_over_fixed_mc": 2.9473206536448218,
+      "l1_gain_over_fixed_mc": 1.8234806728930744,
+      "width_error_gain_over_fixed_mc": 2.0735515329864977,
+      "learned_l2": 0.02522749073572401,
+      "learned_tv_excess": 0.005830787289731821,
+      "learned_overshoot_undershoot": 0.0,
+      "maximum_cell_average_change": 5.960464477539063e-08,
+      "profile_gate": true,
+      "hard_cell_conservation_gate": true,
+      "pretraining_seconds": 18.344543899875134,
+      "fv_plus_reconstruction_seconds": 0.24666830012574792
+    },
+    {
+      "seed": 31417,
+      "viscosity": 0.0,
+      "l2_gain_over_fixed_mc": 2.6558067286482347,
+      "l1_gain_over_fixed_mc": 2.3181232785684553,
+      "width_error_gain_over_fixed_mc": 2.356103160232285,
+      "learned_l2": 0.032989821016814615,
+      "learned_tv_excess": 0.03047936235701063,
+      "learned_overshoot_undershoot": 0.0,
+      "maximum_cell_average_change": 1.1920928955078125e-07,
+      "profile_gate": false,
+      "hard_cell_conservation_gate": true,
+      "pretraining_seconds": 18.09059750009328,
+      "fv_plus_reconstruction_seconds": 0.6510718003846705
+    },
+    {
+      "seed": 31417,
+      "viscosity": 0.001,
+      "l2_gain_over_fixed_mc": 3.613385327481423,
+      "l1_gain_over_fixed_mc": 2.349106426960905,
+      "width_error_gain_over_fixed_mc": 2.8557220993212136,
+      "learned_l2": 0.02057724204488818,
+      "learned_tv_excess": 0.03235541451577255,
+      "learned_overshoot_undershoot": 0.0,
+      "maximum_cell_average_change": 1.1920928955078125e-07,
+      "profile_gate": false,
+      "hard_cell_conservation_gate": true,
+      "pretraining_seconds": 18.09059750009328,
+      "fv_plus_reconstruction_seconds": 0.24424940021708608
+    },
+    {
+      "seed": 31418,
+      "viscosity": 0.0,
+      "l2_gain_over_fixed_mc": 3.0467813099553904,
+      "l1_gain_over_fixed_mc": 2.1260038448688485,
+      "width_error_gain_over_fixed_mc": 3.192362668438888,
+      "learned_l2": 0.028756441542776835,
+      "learned_tv_excess": 0.01763954676966676,
+      "learned_overshoot_undershoot": 0.0,
+      "maximum_cell_average_change": 1.1920928955078125e-07,
+      "profile_gate": true,
+      "hard_cell_conservation_gate": true,
+      "pretraining_seconds": 17.83143569994718,
+      "fv_plus_reconstruction_seconds": 0.2695041000843048
+    },
+    {
+      "seed": 31418,
+      "viscosity": 0.001,
+      "l2_gain_over_fixed_mc": 3.974933831132307,
+      "l1_gain_over_fixed_mc": 2.3348570764562777,
+      "width_error_gain_over_fixed_mc": 4.162938719658861,
+      "learned_l2": 0.01870559552531024,
+      "learned_tv_excess": 0.004657563710676742,
+      "learned_overshoot_undershoot": 0.0,
+      "maximum_cell_average_change": 1.1920928955078125e-07,
+      "profile_gate": true,
+      "hard_cell_conservation_gate": true,
+      "pretraining_seconds": 17.83143569994718,
+      "fv_plus_reconstruction_seconds": 0.24760130001232028
+    },
+    {
+      "seed": 31419,
+      "viscosity": 0.0,
+      "l2_gain_over_fixed_mc": 2.7738355315305947,
+      "l1_gain_over_fixed_mc": 2.8429209740311565,
+      "width_error_gain_over_fixed_mc": 2.4125193332791164,
+      "learned_l2": 0.03158607914471833,
+      "learned_tv_excess": 9.653779603068436e-05,
+      "learned_overshoot_undershoot": 0.0,
+      "maximum_cell_average_change": 5.960464477539063e-08,
+      "profile_gate": true,
+      "hard_cell_conservation_gate": true,
+      "pretraining_seconds": 16.652738799806684,
+      "fv_plus_reconstruction_seconds": 0.26631469978019595
+    },
+    {
+      "seed": 31419,
+      "viscosity": 0.001,
+      "l2_gain_over_fixed_mc": 2.7824022451712356,
+      "l1_gain_over_fixed_mc": 2.2321039296819745,
+      "width_error_gain_over_fixed_mc": 2.0667514854106206,
+      "learned_l2": 0.02672277332081325,
+      "learned_tv_excess": 0.0,
+      "learned_overshoot_undershoot": 0.0,
+      "maximum_cell_average_change": 5.960464477539063e-08,
+      "profile_gate": true,
+      "hard_cell_conservation_gate": true,
+      "pretraining_seconds": 16.652738799806684,
+      "fv_plus_reconstruction_seconds": 0.32614570017904043
+    }
+  ],
+  "summary": {
+    "0.0": {
+      "seed_count": 5,
+      "median_l2_gain_over_fixed_mc": 2.7738355315305947,
+      "l2_gain_bootstrap_median_95ci": [
+        2.6558067286482347,
+        3.809216023140713
+      ],
+      "median_learned_l2": 0.03158607914471833,
+      "profile_gate_success_fraction": 0.6,
+      "hard_cell_conservation_success_fraction": 1.0
+    },
+    "0.001": {
+      "seed_count": 5,
+      "median_l2_gain_over_fixed_mc": 2.9473206536448218,
+      "l2_gain_bootstrap_median_95ci": [
+        2.7824022451712356,
+        3.974933831132307
+      ],
+      "median_learned_l2": 0.02522749073572401,
+      "profile_gate_success_fraction": 0.8,
+      "hard_cell_conservation_success_fraction": 1.0
+    }
+  },
+  "claim_allowed": false,
+  "claim_blockers": [
+    "Euler conservative DKAN subcell reconstruction is not implemented",
+    "ten-seed float64 final protocol is incomplete",
+    "the subcell DKAN is WENO-supervised and is a hybrid conservative model, not a data-free PINN",
+    "amortized pretraining cost and unseen parameter families require broader validation"
+  ]
+}

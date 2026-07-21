@@ -1,0 +1,21 @@
+{
+  "status": "five_seed_float32_hybrid_validation",
+  "model_name": "wave-gated hard-conservative DKAN finite-volume hybrid",
+  "burgers_branch_gain": 1.9339360134074535,
+  "euler_branch_gain": 1.0833723227513234,
+  "equal_equation_geometric_mean_gain": 1.4474711571902452,
+  "equivalent_aggregate_error_reduction_fraction": 0.309139947257293,
+  "engineering_20_percent_gate_pass": true,
+  "strong_final_claim_allowed": false,
+  "claim_blockers": [
+    "the final ten-seed float64 confirmation has not been run",
+    "the successful architecture is supervised by WENO/exact Riemann data and coupled to finite volume",
+    "direct CSE-DKAN-PINN did not pass its local conservation/entropy gates",
+    "the equal-equation aggregate does not mean Euler alone improves by 20%",
+    "2D benchmarks have not been implemented"
+  ],
+  "source_summaries": {
+    "burgers": "D:\\Codex\\dkan_pinn_research\\results\\subcell_sensor_validation_v4\\gate_summary.json",
+    "euler": "D:\\Codex\\dkan_pinn_research\\results\\euler_resolution_gated_validation_v1\\gate_summary.json"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "architecture": {
+    "hidden_width": 16,
+    "correction_scale": 0.5,
+    "gamma": 1.4,
+    "positivity_floor": 1e-08
+  },
+  "training": {
+    "output": "results/_smoke_euler_subcell/model.pt",
+    "iterations": 10,
+    "coarse_cells": 40,
+    "refinement": 4,
+    "cases": 4,
+    "seed": 27182
+  },
+  "cases": [
+    {
+      "left_density": 1.2643177949181488,
+      "left_velocity": 0.03230823756254214,
+      "left_pressure": 1.3363066706700235,
+      "right_density": 0.2589118588107861,
+      "right_velocity": 0.03159369938089862,
+      "right_pressure": 0.1586242374288872,
+      "validation": false
+    },
+    {
+      "left_density": 1.001272357086835,
+      "left_velocity": 0.03922675089713712,
+      "left_pressure": 0.954466237355409,
+      "right_density": 0.41742294510530065,
+      "right_velocity": -0.052994767235674534,
+      "right_pressure": 0.2244884899564829,
+      "validation": false
+    },
+    {
+      "left_density": 1.1218649039607829,
+      "left_velocity": 0.11452031373058569,
+      "left_pressure": 1.3536521111287572,
+      "right_density": 0.15062913087332241,
+      "right_velocity": -0.06498161661738124,
+      "right_pressure": 0.2931676440285772,
+      "validation": true
+    },
+    {
+      "left_density": 0.6722441735611325,
+      "left_velocity": 0.08034446779990367,
+      "left_pressure": 1.228807131343117,
+      "right_density": 0.28643609323916075,
+      "right_velocity": -0.11607324807323322,
+      "right_pressure": 0.12523662669664287,
+      "validation": true
+    }
+  ],
+  "history": [
+    {
+      "iteration": 1,
+      "training_weighted_mse": 0.09139654785394669,
+      "validation_mse": 0.0098508819937706
+    },
+    {
+      "iteration": 10,
+      "training_weighted_mse": 0.1261305809020996,
+      "validation_mse": 0.009714318439364433
+    }
+  ],
+  "fixed_validation_mse": 0.009599319659173489,
+  "final_validation_mse": 0.009714318439364433,
+  "generation_seconds": 3.918782999739051,
+  "training_seconds": 0.4315543002448976,
+  "device": "cuda"
+}

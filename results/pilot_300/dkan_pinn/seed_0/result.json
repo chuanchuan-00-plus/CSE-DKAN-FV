@@ -1,0 +1,147 @@
+{
+  "config": {
+    "variant": "dkan_pinn",
+    "seed": 0,
+    "steps": 300,
+    "batch_interior": 256,
+    "batch_boundary": 128,
+    "batch_control_volumes": 24,
+    "batch_rh": 32,
+    "learning_rate": 0.001,
+    "min_learning_rate": 5e-05,
+    "weight_pde": 1.0,
+    "weight_boundary": 10.0,
+    "weight_cv": 1.0,
+    "weight_entropy": 0.1,
+    "weight_global": 10.0,
+    "weight_rh": 5.0,
+    "weight_shock_entropy": 1.0,
+    "quadrature_order": 4,
+    "dtype": "float32",
+    "device": "cuda",
+    "log_every": 30,
+    "reference_cells": 2048,
+    "evaluation_points": 1024,
+    "gate_width_start": 0.06,
+    "gate_width_end": 0.008,
+    "shock_exclusion_factor": 3.0
+  },
+  "problem": {
+    "x_left": -1.0,
+    "x_right": 1.0,
+    "final_time": 0.6,
+    "mean": 0.2,
+    "amplitude": 1.0,
+    "origin": 0.0,
+    "viscosity": 0.0
+  },
+  "environment": {
+    "torch": "2.11.0+cu128",
+    "device": "cuda",
+    "device_name": "NVIDIA GeForce RTX 5070 Laptop GPU"
+  },
+  "history": [
+    {
+      "step": 1.0,
+      "total": 1.2653107643127441,
+      "pde": 1.2653107643127441,
+      "boundary": 3.111920443554794e-14,
+      "learning_rate": 0.0009999739554486181
+    },
+    {
+      "step": 30.0,
+      "total": 0.7582951188087463,
+      "pde": 0.7582951188087463,
+      "boundary": 3.003647610039066e-14,
+      "learning_rate": 0.0009767518452401959
+    },
+    {
+      "step": 60.0,
+      "total": 0.45879870653152466,
+      "pde": 0.45879870653152466,
+      "boundary": 2.6417931020929555e-14,
+      "learning_rate": 0.0009092830723280979
+    },
+    {
+      "step": 90.0,
+      "total": 0.4100881516933441,
+      "pde": 0.4100881516933441,
+      "boundary": 2.4542694943398627e-14,
+      "learning_rate": 0.0008041979948389229
+    },
+    {
+      "step": 120.0,
+      "total": 0.3375905752182007,
+      "pde": 0.3375905752182007,
+      "boundary": 2.2765643536981628e-14,
+      "learning_rate": 0.0006717830723280984
+    },
+    {
+      "step": 150.0,
+      "total": 0.26232463121414185,
+      "pde": 0.26232463121414185,
+      "boundary": 2.3439671698825132e-14,
+      "learning_rate": 0.0005249999999999986
+    },
+    {
+      "step": 180.0,
+      "total": 0.20925703644752502,
+      "pde": 0.20925703644752502,
+      "boundary": 1.9814358826115465e-14,
+      "learning_rate": 0.0003782169276718989
+    },
+    {
+      "step": 210.0,
+      "total": 0.26791900396347046,
+      "pde": 0.26791900396347046,
+      "boundary": 2.0378403147889787e-14,
+      "learning_rate": 0.0002458020051610748
+    },
+    {
+      "step": 240.0,
+      "total": 0.23590415716171265,
+      "pde": 0.23590415716171265,
+      "boundary": 2.0473379258199517e-14,
+      "learning_rate": 0.00014071692767189984
+    },
+    {
+      "step": 270.0,
+      "total": 0.27437031269073486,
+      "pde": 0.27437031269073486,
+      "boundary": 1.8204794632490848e-14,
+      "learning_rate": 7.324815475980206e-05
+    },
+    {
+      "step": 300.0,
+      "total": 0.26708489656448364,
+      "pde": 0.26708489656448364,
+      "boundary": 2.0840014081286752e-14,
+      "learning_rate": 5e-05
+    }
+  ],
+  "metrics": {
+    "normalized_l1": 0.10409204740104631,
+    "normalized_l2": 0.2650090135206106,
+    "normalized_linf": 1.0352446733376834,
+    "mass_error": 0.0317257005629894,
+    "tv_excess": 0.0,
+    "overshoot_undershoot": 0.0,
+    "shock_location_error": 0.017578125,
+    "shock_width_10_90": 0.1493261636598715,
+    "shock_width_failure": 0.0,
+    "reference_shock_width_10_90": 0.0020253666983331975,
+    "gradient_equivalent_width": 0.12905985997913352,
+    "reference_gradient_equivalent_width": 0.004086965734212879,
+    "cv_balance_rmse": 0.48058193922042847,
+    "entropy_violation_mean": 0.01748036965727806,
+    "entropy_violation_max": 0.1926000416278839,
+    "entropy_violation_fraction": 0.453125,
+    "max_mass_drift": 0.017200276255607605,
+    "inference_seconds": 0.002375599928200245,
+    "prediction_min": -0.7382156252861023,
+    "prediction_max": 1.0926015377044678,
+    "training_seconds": 11.20698030013591,
+    "peak_memory_bytes": 35125248.0,
+    "trainable_parameters": 8562.0
+  }
+}

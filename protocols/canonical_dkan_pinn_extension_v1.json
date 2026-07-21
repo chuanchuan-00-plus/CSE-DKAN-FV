@@ -1,0 +1,45 @@
+{
+  "protocol": "canonical_dkan_pinn_extension_v1",
+  "frozen_at": "2026-07-16T04:12:34+08:00",
+  "status": "executed_completed_descriptive",
+  "purpose": "Add the original strong-form DKAN-PINN to the matched canonical PINN table without altering the completed MLP/GW/AV/CI results.",
+  "seeds": [31001, 31002, 31003, 31004, 31005],
+  "dtype": "torch.float64",
+  "burgers": {
+    "variant": "dkan_pinn",
+    "problem": {"amplitude": 1.0, "mean": 0.2, "viscosity": 0.0, "final_time": 0.6},
+    "steps": 1000,
+    "batch_interior": 512,
+    "batch_boundary": 128,
+    "reference_cells": 4096,
+    "evaluation_points": 1024
+  },
+  "euler": {
+    "variant": "dkan_pinn",
+    "problem": "standard Sod at t=0.2",
+    "steps": 800,
+    "batch_interior": 256,
+    "batch_initial": 128,
+    "batch_boundary": 64,
+    "evaluation_points": 1600
+  },
+  "fairness": "DKAN architectures use the previously fixed near-matched parameter budgets; report the exact parameter difference relative to MLP.",
+  "claim_boundary": "Descriptive canonical comparison only; no winner gate and no effect on the v3 strong-20% confirmation.",
+  "execution_outcome": {
+    "summary": "results/canonical_dkan_pinn_extension_v1/summary.json",
+    "burgers": {
+      "optimized_parameters": 8562,
+      "parameter_difference_vs_mlp_percent": -0.91425,
+      "median_normalized_l2": 0.16020253520427413,
+      "median_shock_width": 0.0660492291542285,
+      "median_training_seconds": 40.12926259962842
+    },
+    "euler": {
+      "optimized_parameters": 8475,
+      "parameter_difference_vs_mlp_percent": -2.66452,
+      "median_primitive_geometric_l2": 0.08130608514423666,
+      "median_shock_width": 0.08509198117728889,
+      "median_training_seconds": 59.14908930007368
+    }
+  }
+}

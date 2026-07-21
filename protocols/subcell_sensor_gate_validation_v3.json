@@ -1,0 +1,49 @@
+{
+  "protocol": "subcell_sensor_gate_validation_v3",
+  "frozen_before_execution": "2026-07-15",
+  "status": "failed_marginal_tv_gate",
+  "reason_for_revision": "Entropy stability and conservation belong to the evolved finite-volume cell averages. A bounded subcell postprocessor must preserve every cell mean and introduce no extrema, but exact profile-level TVD is not imposed after v1/v2 showed it can dominate small weak-shock errors.",
+  "model": {
+    "name": "entropy-stable TVD-FV plus jump-gated conservative DKAN subcells",
+    "relative_jump_threshold": 0.3,
+    "minimum_absolute_jump": 1.1,
+    "sensor_dilation_cells": 1,
+    "profile_tv_projection": false,
+    "fallback": "exact fixed TVD-MC subcell reconstruction"
+  },
+  "frozen_models": [31415, 31416, 31417, 31418, 31419],
+  "benchmark": {
+    "equation": "periodic 1D Burgers",
+    "final_time": 0.6,
+    "amplitudes": [0.25, 0.48, 0.72, 0.95, 1.18, 1.48, 1.78, 2.25],
+    "viscosities": [0.0, 0.001],
+    "coarse_cells": 128,
+    "subcells_per_cell": 8,
+    "reference": "4096-cell WENO",
+    "note": "No listed amplitude was evaluated during v1, v2, or sensor development. The target sine family and viscosity 0.001 were absent from pretraining."
+  },
+  "primary_metric": {
+    "definition": "fixed-MC normalized L2 divided by gated-DKAN normalized L2",
+    "aggregate": "geometric mean over all 16 parameter cases per seed, followed by median over five seeds",
+    "success": "median aggregate gain >= 1.20 and bootstrap 95% lower confidence bound > 1.00"
+  },
+  "secondary_gates": {
+    "per_case_no_material_degradation": "gated L2 <= 1.05 * fixed-MC L2 for every seed-case pair",
+    "hard_cell_conservation": "maximum reconstructed cell-average change <= 2e-7",
+    "no_new_extrema": "overshoot_undershoot <= 1e-8",
+    "profile_tv_tolerance": "reference-relative TV excess <= 0.05"
+  },
+  "entropy_scope": "The Godunov finite-volume flux is entropy stable and determines time evolution. The subcell map is locally bounded and mean preserving and is not fed back into the solver.",
+  "claim_boundary": "Passing supports the Burgers hybrid branch only; Euler and a final ten-seed float64 protocol remain required for the overall 20% claim.",
+  "outcome": {
+    "primary_median_gain": 1.9881608780993087,
+    "primary_bootstrap_95ci": [1.859806339859713, 2.2055555863810543],
+    "passed_pairwise_no_degradation": true,
+    "passed_hard_cell_conservation": true,
+    "passed_no_new_extrema": true,
+    "failed_gate": "profile_tv_tolerance",
+    "maximum_reference_relative_tv_excess": 0.05000923047363167,
+    "failure_margin_above_threshold": 0.00000923047363167,
+    "failing_case": {"seed": 31417, "amplitude": 2.25, "viscosity": 0.0}
+  }
+}

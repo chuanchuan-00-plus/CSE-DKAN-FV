@@ -1,0 +1,33 @@
+[
+  {
+    "variant": "cw_dkan",
+    "seed": 0,
+    "normalized_l1": 0.18039624541521412,
+    "normalized_l2": 0.31799133802090346,
+    "normalized_linf": 0.9022340277679559,
+    "mass_error": 0.0027319743406646335,
+    "tv_excess": 0.0,
+    "overshoot_undershoot": 0.0,
+    "shock_location_error": 0.0078125,
+    "shock_width_10_90": 2.0,
+    "shock_width_failure": 1.0,
+    "reference_shock_width_10_90": 0.005112975643990783,
+    "shock_width_absolute_error": 1.9948870243560093,
+    "gradient_equivalent_width": 0.22026670648921665,
+    "reference_gradient_equivalent_width": 0.005794377124395039,
+    "cv_balance_rmse": 0.5646142959594727,
+    "shock_cv_balance_rmse": 0.15366585552692413,
+    "entropy_violation_mean": 0.02947603538632393,
+    "entropy_violation_max": 0.39454591274261475,
+    "entropy_violation_fraction": 0.359375,
+    "shock_entropy_violation_mean": 0.0,
+    "max_mass_drift": 0.002865508198738098,
+    "inference_seconds": 0.0023346999660134315,
+    "prediction_min": -0.6354838609695435,
+    "prediction_max": 0.9546932578086853,
+    "training_seconds": 30.959165199659765,
+    "peak_memory_bytes": 72138240.0,
+    "optimized_parameters": 8562.0,
+    "trainable_parameters_after_geometry_freeze": 8562.0
+  }
+]

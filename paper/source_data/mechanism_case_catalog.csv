@@ -1,0 +1,9 @@
+case_id,case_group,kind,boundary,final_time,mechanism,purpose,fixed_over_cse_gain,fno_over_cse_gain
+sod,state_generalization,riemann,outflow,0.2,rarefaction-contact-shock baseline,Anchors the diversified suite to the canonical three-wave Euler problem.,1.1201407596540274,3.6864522053675897
+lax,state_generalization,riemann,outflow,0.14,stronger three-wave Riemann pattern,Tests a different pressure and velocity regime without changing the equation.,1.1268026787031138,4.019429817380333
+moving_contact,wave_topology,riemann,outflow,0.3,isolated moving contact,Separates contact resolution from shock and rarefaction resolution.,1.0046103836415208,28.418443521169277
+double_rarefaction,admissibility_stress,riemann,outflow,0.15,two rarefactions with a low-density centre,Tests positivity and whether a shock-aware gate stays restrained in expansion.,0.998577514104125,63.978997378026406
+colliding_streams,interaction,riemann,outflow,0.15,symmetric compression and two-shock formation,Tests compression-dominated dynamics absent from the pressure-driven training archetype.,1.0989474265149053,10.861373562715892
+shu_osher,mechanism_generalization,shu_osher,outflow,0.18,shock-entropy-wave interaction,Tests whether the local DKAN basis resolves a shock without erasing unseen high-frequency smooth structure.,0.999555392037741,12.979182671875215
+woodward_colella,mechanism_generalization,woodward_colella,reflecting,0.038,interacting blast waves under reflecting walls,"Tests multiple discontinuities, wave collision, extreme pressure ratios, and wall boundaries.",1.0060071796862295,4.252182906368288
+smooth_entropy,specificity_control,smooth_entropy,periodic,0.25,smooth periodic entropy-wave advection,Negative control for false shock activation and unnecessary TV growth.,1.0,5220.216687244843

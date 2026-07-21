@@ -1,0 +1,82 @@
+{
+  "case_count": 8,
+  "same_backbone_geometric_mean_gain": 1.0428830223754724,
+  "same_backbone_median_gain": 1.0053087816638753,
+  "same_backbone_wins": 5,
+  "fno_geometric_mean_gain": 23.212954353233926,
+  "fno_minimum_case_gain": 3.6864522053675897,
+  "maximum_parent_mean_change": 2.2737367544323206e-13,
+  "minimum_density": 0.11520227213494512,
+  "minimum_pressure": 0.009999895107100878,
+  "maximum_density_tv_ratio_to_fixed_mc": 1.0205310755060701,
+  "activation": {
+    "sod": {
+      "mean_final_gate": 0.006416618802651775,
+      "fraction_final_gate_above_0.1": 0.015625,
+      "maximum_tv_ratio_to_fixed_mc": 1.020169955389473
+    },
+    "lax": {
+      "mean_final_gate": 0.006254311541495351,
+      "fraction_final_gate_above_0.1": 0.0234375,
+      "maximum_tv_ratio_to_fixed_mc": 1.0202413237044747
+    },
+    "moving_contact": {
+      "mean_final_gate": 0.00027275669756864524,
+      "fraction_final_gate_above_0.1": 0.0,
+      "maximum_tv_ratio_to_fixed_mc": 1.0000000000000002
+    },
+    "double_rarefaction": {
+      "mean_final_gate": 0.013752220229984558,
+      "fraction_final_gate_above_0.1": 0.015625,
+      "maximum_tv_ratio_to_fixed_mc": 1.0205310755060701
+    },
+    "colliding_streams": {
+      "mean_final_gate": 0.0068638262375031334,
+      "fraction_final_gate_above_0.1": 0.015625,
+      "maximum_tv_ratio_to_fixed_mc": 1.0001440193400357
+    },
+    "shu_osher": {
+      "mean_final_gate": 0.0012424236810263355,
+      "fraction_final_gate_above_0.1": 0.0,
+      "maximum_tv_ratio_to_fixed_mc": 1.0000704141567969
+    },
+    "woodward_colella": {
+      "mean_final_gate": 0.008874631882784857,
+      "fraction_final_gate_above_0.1": 0.0234375,
+      "maximum_tv_ratio_to_fixed_mc": 1.0199997891209713
+    },
+    "smooth_entropy": {
+      "mean_final_gate": 0.0,
+      "fraction_final_gate_above_0.1": 0.0,
+      "maximum_tv_ratio_to_fixed_mc": 1.0
+    }
+  },
+  "reference_convergence": [
+    {
+      "case_id": "shu_osher",
+      "reference_cells": 2048,
+      "check_cells": 4096,
+      "density_normalized_l2": 0.004533986037840609,
+      "velocity_normalized_l2": 0.002288953298020346,
+      "pressure_normalized_l2": 0.003732229996508243,
+      "primitive_rms_l2": 0.003638950276232957,
+      "maximum_normalized_pointwise_disagreement": 0.07432342017985516,
+      "maximum_range_normalized_linf_disagreement": 0.06410604230371854,
+      "reference_seconds": 56.621798699954525,
+      "check_seconds": 152.07615210005315
+    },
+    {
+      "case_id": "woodward_colella",
+      "reference_cells": 2048,
+      "check_cells": 4096,
+      "density_normalized_l2": 0.03453101480176912,
+      "velocity_normalized_l2": 0.021579334556903276,
+      "pressure_normalized_l2": 0.010253153799910293,
+      "primitive_rms_l2": 0.024243114665153713,
+      "maximum_normalized_pointwise_disagreement": 86.7044672869966,
+      "maximum_range_normalized_linf_disagreement": 0.20399494598808482,
+      "reference_seconds": 74.85692879999988,
+      "check_seconds": 235.1152524999925
+    }
+  ]
+}

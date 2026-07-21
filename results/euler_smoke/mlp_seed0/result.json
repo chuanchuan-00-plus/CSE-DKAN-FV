@@ -1,0 +1,75 @@
+{
+  "config": {
+    "variant": "mlp_pinn",
+    "seed": 0,
+    "steps": 10,
+    "batch_interior": 64,
+    "batch_initial": 32,
+    "batch_boundary": 16,
+    "batch_control_volumes": 8,
+    "quadrature_order": 4,
+    "learning_rate": 0.001,
+    "min_learning_rate": 5e-05,
+    "weight_pde": 1.0,
+    "weight_initial": 50.0,
+    "weight_boundary": 10.0,
+    "weight_cv": 50.0,
+    "weight_entropy": 10.0,
+    "weight_global": 200.0,
+    "dtype": "float32",
+    "device": "cuda",
+    "log_every": 5,
+    "evaluation_points": 400
+  },
+  "architecture_id": "PositivePrimitiveWrapper",
+  "history": [
+    {
+      "step": 1,
+      "total": 8.363921165466309,
+      "learning_rate": 0.001,
+      "pde": 0.40978026390075684,
+      "initial": 0.1234358698129654,
+      "boundary": 0.1782347559928894
+    },
+    {
+      "step": 5,
+      "total": 6.297779560089111,
+      "learning_rate": 0.000607482884391792,
+      "pde": 0.0635935589671135,
+      "initial": 0.10757565498352051,
+      "boundary": 0.08554032444953918
+    },
+    {
+      "step": 10,
+      "total": 6.045519828796387,
+      "learning_rate": 5e-05,
+      "pde": 0.05960413068532944,
+      "initial": 0.10748296976089478,
+      "boundary": 0.06117675453424454
+    }
+  ],
+  "metrics": {
+    "density_l1": 0.29556124018092084,
+    "density_l2": 0.2939217552576964,
+    "velocity_l2": 0.9364968915351484,
+    "pressure_l2": 0.4204986529945255,
+    "shock_location_error": 0.0991811464060357,
+    "contact_location_error": 0.08424052400978999,
+    "shock_width_10_90": 1.0,
+    "contact_width_10_90": 1.0,
+    "max_mass_balance_error": 0.12438398599624634,
+    "max_momentum_balance_error": 0.13778522610664368,
+    "max_energy_balance_error": 0.3631860017776489,
+    "shock_entropy_violation": 0.013431072235107422,
+    "minimum_density": 0.3922990560531616,
+    "minimum_pressure": 0.448306679725647,
+    "inference_seconds": 0.0006070998497307301,
+    "training_seconds": 0.612644299864769,
+    "peak_memory_bytes": 23120896.0,
+    "trainable_parameters": 8707.0
+  },
+  "environment": {
+    "torch": "2.11.0+cu128",
+    "device": "cuda"
+  }
+}

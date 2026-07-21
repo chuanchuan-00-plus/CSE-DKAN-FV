@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this research code, please cite the accompanying manuscript."
+title: "CSE-DKAN-FV: Conservative subcell reconstruction with a discontinuity-aware KAN"
+type: software
+authors:
+  - family-names: Cao
+    given-names: Jiakang
+  - family-names: Tao
+    given-names: Ze
+  - family-names: Liu
+    given-names: Fujun
+    email: waasledainbu776@gmail.com
+repository-code: "https://github.com/chuanchuan-00-plus/CSE-DKAN-FV"
+version: 0.1.0
+date-released: 2026-07-22
+preferred-citation:
+  type: article
+  title: "Discontinuity-Aware KANs for Conservative Subcell Reconstruction of One-Dimensional Shocks"
+  authors:
+    - family-names: Cao
+      given-names: Jiakang
+    - family-names: Tao
+      given-names: Ze
+    - family-names: Liu
+      given-names: Fujun
+  year: 2026

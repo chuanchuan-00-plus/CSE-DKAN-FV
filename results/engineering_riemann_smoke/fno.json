@@ -1,0 +1,72 @@
+{
+  "architecture": {
+    "in_channels": 5,
+    "out_channels": 3,
+    "width": 12,
+    "modes": 8,
+    "layers": 2
+  },
+  "training": {
+    "output": "results\\engineering_riemann_smoke\\fno.pt",
+    "seed": 991,
+    "dataset_seed": 20260716,
+    "train_cases": 32,
+    "validation_cases": 8,
+    "points": 64,
+    "iterations": 20,
+    "batch_size": 4,
+    "width": 12,
+    "modes": 8,
+    "layers": 2
+  },
+  "ranges": {
+    "left_density": [
+      0.5,
+      2.0
+    ],
+    "left_velocity": [
+      -0.35,
+      0.35
+    ],
+    "left_pressure": [
+      0.35,
+      2.0
+    ],
+    "right_density": [
+      0.05,
+      0.6
+    ],
+    "right_velocity": [
+      -0.35,
+      0.35
+    ],
+    "right_pressure": [
+      0.02,
+      0.32
+    ],
+    "time": [
+      0.04,
+      0.32
+    ]
+  },
+  "history": [
+    {
+      "iteration": 1,
+      "training_weighted_mse": 3.5017547607421875,
+      "validation_mse": 0.8261145353317261,
+      "learning_rate": 0.0019879961320802596
+    },
+    {
+      "iteration": 20,
+      "training_weighted_mse": 2.132362127304077,
+      "validation_mse": 0.8547244071960449,
+      "learning_rate": 5e-05
+    }
+  ],
+  "best_iteration": 1,
+  "best_validation_mse": 0.8261145353317261,
+  "generation_seconds": 0.009757199790328741,
+  "training_seconds": 1.592766699846834,
+  "device": "cuda",
+  "dtype": "float32"
+}

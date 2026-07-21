@@ -1,0 +1,107 @@
+{
+  "protocol": "final_1d_float64_v3",
+  "frozen_at": "2026-07-16T02:53:36+08:00",
+  "status": "executed_passed",
+  "purpose": "Confirm a physics-gated, hard-conservative DKAN subcell hybrid after v2 localized all Burgers failures to grid-resolved viscous transitions.",
+  "development_boundary": {
+    "v1_and_v2_results_may_inform_design": true,
+    "v1_and_v2_burgers_amplitudes_are_excluded": true,
+    "euler_f11_f20_remain_blind": "They were frozen in v2 but no f11-f20 solver or model output was executed or inspected before this freeze.",
+    "new_physics_gate": "Estimate the viscous Burgers 10-90% transition width as 8*atanh(0.8)*nu/Delta-u. Enable the discontinuous DKAN expert only when this width is at most 2 coarse cells; otherwise exactly recover fixed MC."
+  },
+  "numeric_requirements": {
+    "dtype": "torch.float64 throughout",
+    "checkpoint_audit": "all floating model-state tensors must be torch.float64"
+  },
+  "burgers": {
+    "training_seeds": [45001, 45002, 45003, 45004, 45005, 45006, 45007, 45008, 45009, 45010],
+    "checkpoints": "Reuse the v2 validation-selected checkpoints; none was trained or selected on the v3 amplitudes.",
+    "frozen_inference": {
+      "relative_jump_threshold": 0.3,
+      "minimum_absolute_jump": 1.1,
+      "sensor_dilation_cells": 1,
+      "cell_tv_relative_budget": 0.05,
+      "learned_correction_multiplier": 1.0,
+      "maximum_viscous_transition_cells": 2.0
+    },
+    "blind_benchmark": {
+      "amplitudes": [0.27, 0.49, 0.68, 0.86, 1.04, 1.28, 1.61, 2.04, 2.46, 2.94],
+      "viscosities": [0.0, 0.0001, 0.0003, 0.001, 0.003, 0.01],
+      "cells": 128,
+      "subcells": 8,
+      "reference": "adaptive WENO: 4096 cells for nu <= 0.001, 2048 for nu = 0.003, 1024 for nu = 0.01",
+      "reference_convergence_audit": "For every v3 amplitude at nu in {0.003, 0.01}, compare the production reference with doubled resolution and require normalized L2 disagreement <= 5e-4."
+    },
+    "primary": "per-seed geometric mean of fixed-MC normalized-L2 divided by physics-gated DKAN normalized-L2 over 60 pairs",
+    "gates": {
+      "median_gain": ">= 1.20",
+      "bootstrap_95ci_lower": "> 1.00",
+      "every_pair_gain": ">= 1/1.05",
+      "maximum_cell_average_change": "<= 1e-12",
+      "overshoot_undershoot": "<= 1e-10",
+      "reference_relative_tv_excess": "<= 0.05"
+    }
+  },
+  "euler": {
+    "training_seeds": [26001, 26002, 26003, 26004, 26005, 26006, 26007, 26008, 26009, 26010],
+    "checkpoints": "Reuse the ten v1 validation-selected float64 checkpoints.",
+    "frozen_inference": {
+      "learned_blend_multiplier": 0.75,
+      "learned_max_cells": 200,
+      "fallback_above_max_cells": "fixed conservative MC"
+    },
+    "blind_benchmark": {
+      "cases": [
+        {"id": "f11", "left": [0.811321, -0.008828, 1.120729], "right": [0.126914, 0.029277, 0.144113]},
+        {"id": "f12", "left": [0.990059, 0.071995, 0.933726], "right": [0.149175, 0.070707, 0.088846]},
+        {"id": "f13", "left": [0.856079, -0.040577, 0.848585], "right": [0.096668, 0.041857, 0.077808]},
+        {"id": "f14", "left": [1.138624, -0.073024, 1.024788], "right": [0.193129, -0.067023, 0.126193]},
+        {"id": "f15", "left": [1.015311, 0.023765, 1.164142], "right": [0.138814, -0.05953, 0.100004]},
+        {"id": "f16", "left": [1.197846, -0.027305, 1.078053], "right": [0.17268, 0.058344, 0.070945]},
+        {"id": "f17", "left": [1.073391, 0.044243, 0.96634], "right": [0.1644, -0.041157, 0.134359]},
+        {"id": "f18", "left": [0.8785, 0.054823, 1.211773], "right": [0.107203, -0.022252, 0.104793]},
+        {"id": "f19", "left": [1.120721, 0.011484, 0.811907], "right": [0.114982, 0.011066, 0.116804]},
+        {"id": "f20", "left": [0.930751, -0.060491, 0.899025], "right": [0.186707, -0.007462, 0.152816]}
+      ],
+      "resolutions": [100, 200, 400],
+      "subcells": 8,
+      "reference": "exact ideal-gas Riemann solution"
+    },
+    "primary": "per-seed geometric mean of fixed conservative-MC primitive-composite-L2 divided by trust-region DKAN value over 30 pairs",
+    "gates": {
+      "median_gain": ">= 1.00",
+      "bootstrap_95ci_lower": ">= 0.95",
+      "every_pair_gain": ">= 1/1.05",
+      "maximum_cell_average_change": "<= 1e-12",
+      "minimum_density_and_pressure": "> 0",
+      "shock_entropy_violation": "<= 1e-10",
+      "RH_residual_ratio": "<= 1.20",
+      "400_cell_fallback_gain": "exactly 1 within 1e-12"
+    }
+  },
+  "cross_equation_gate": {
+    "per_seed_gain": "sqrt(Burgers seed gain * Euler seed gain) by seed index",
+    "aggregate": "median of ten per-seed gains",
+    "engineering_success": "median >= 1.20 and bootstrap 95% lower > 1.00",
+    "strong_20_percent_success": "bootstrap 95% lower >= 1.20"
+  },
+  "claim_boundary": "Passing applies only to a supervised finite-volume/DKAN reconstruction hybrid on the frozen 1D scope; it is not a data-free PINN result and gives no 2D claim.",
+  "execution_outcome": {
+    "summary": "results/final_float64_v3/gate_summary.json",
+    "reference_convergence_pairs": 20,
+    "reference_convergence_max_normalized_l2": 0.00029188537144147006,
+    "burgers_pairs": 600,
+    "burgers_median_gain": 1.867196411096963,
+    "burgers_bootstrap_95ci": [1.7828141371294866, 1.9392246752696622],
+    "burgers_worst_pair_gain": 1.0,
+    "euler_pairs": 300,
+    "euler_median_gain": 1.0892601977717309,
+    "euler_bootstrap_95ci": [1.08643368804348, 1.091315126495458],
+    "euler_worst_pair_gain": 0.9647086628082856,
+    "cross_equation_median_gain": 1.4258666299772353,
+    "cross_equation_bootstrap_95ci": [1.3952458780921333, 1.4522988656805706],
+    "all_frozen_gates_pass": true,
+    "strong_20_percent_claim_allowed_within_claim_boundary": true,
+    "direct_cse_dkan_pinn_claim_allowed": false
+  }
+}

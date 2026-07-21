@@ -1,0 +1,153 @@
+{
+  "protocol": "engineering_riemann_smoke",
+  "configuration": {
+    "evaluation_points": 64,
+    "coarse_cells": 16,
+    "fine_hllc_cells": 64,
+    "hybrid_blend_multiplier": 0.75
+  },
+  "fno_pretraining": [
+    {
+      "seed": 991,
+      "seconds": 1.6025238996371627
+    }
+  ],
+  "hybrid_pretraining": [
+    {
+      "seed": 26001,
+      "seconds": 173.52317599998787
+    }
+  ],
+  "rows": [
+    {
+      "case_id": "smoke_sod",
+      "case_group": "smoke",
+      "time": 0.2,
+      "method": "hllc_piecewise_constant",
+      "model_seed": null,
+      "density_normalized_l2": 0.059535434271707675,
+      "velocity_normalized_l2": 0.21451466899352412,
+      "pressure_normalized_l2": 0.07163218195048339,
+      "primitive_geometric_mean_l2": 0.09707637869905619,
+      "maximum_relative_conservation_error": 0.007366358870986803,
+      "relative_conservation_errors": [
+        0.0011154229575553048,
+        0.007366358870986803,
+        0.002974081188963309
+      ],
+      "minimum_density": 0.125,
+      "minimum_pressure": 0.09999999999999998,
+      "density_tv_excess": 0.0,
+      "online_seconds": 0.08195489970967174,
+      "maximum_cell_average_change": null,
+      "mean_shock_width_10_90": 0.07590945863207677,
+      "maximum_shock_entropy_violation": 0.0,
+      "maximum_normalized_rh_residual": 0.002171721319704789,
+      "evaluated_shock_count": 1
+    },
+    {
+      "case_id": "smoke_sod",
+      "case_group": "smoke",
+      "time": 0.2,
+      "method": "hllc_fixed_mc_subcell",
+      "model_seed": null,
+      "density_normalized_l2": 0.04861762354270954,
+      "velocity_normalized_l2": 0.17362956770937726,
+      "pressure_normalized_l2": 0.0531990192734675,
+      "primitive_geometric_mean_l2": 0.07657852767330299,
+      "maximum_relative_conservation_error": 0.007366358870986647,
+      "relative_conservation_errors": [
+        0.0011154229575551073,
+        0.007366358870986647,
+        0.002974081188963633
+      ],
+      "minimum_density": 0.125,
+      "minimum_pressure": 0.09999999999999998,
+      "density_tv_excess": 0.0,
+      "online_seconds": 0.08195489970967174,
+      "maximum_cell_average_change": null,
+      "mean_shock_width_10_90": 0.10432954099779435,
+      "maximum_shock_entropy_violation": 0.0,
+      "maximum_normalized_rh_residual": 0.002128688528346298,
+      "evaluated_shock_count": 1
+    },
+    {
+      "case_id": "smoke_sod",
+      "case_group": "smoke",
+      "time": 0.2,
+      "method": "hllc_muscl_fine",
+      "model_seed": null,
+      "density_normalized_l2": 0.025564142159715246,
+      "velocity_normalized_l2": 0.1283357954237335,
+      "pressure_normalized_l2": 0.025583756915378845,
+      "primitive_geometric_mean_l2": 0.043783900703143114,
+      "maximum_relative_conservation_error": 0.007366358870984317,
+      "relative_conservation_errors": [
+        0.001115422957553329,
+        0.007366358870984317,
+        0.002974081188962823
+      ],
+      "minimum_density": 0.125,
+      "minimum_pressure": 0.09999999999999998,
+      "density_tv_excess": 0.029254293583968756,
+      "online_seconds": 0.19860750017687678,
+      "maximum_cell_average_change": null,
+      "mean_shock_width_10_90": 0.030857347215538455,
+      "maximum_shock_entropy_violation": 0.0,
+      "maximum_normalized_rh_residual": 0.0021063798653882864,
+      "evaluated_shock_count": 1
+    },
+    {
+      "case_id": "smoke_sod",
+      "case_group": "smoke",
+      "time": 0.2,
+      "method": "physics_gated_dkan_fv",
+      "model_seed": 26001,
+      "density_normalized_l2": 0.04734372051414548,
+      "velocity_normalized_l2": 0.14035015469472367,
+      "pressure_normalized_l2": 0.04954250831233381,
+      "primitive_geometric_mean_l2": 0.06904799786971104,
+      "maximum_relative_conservation_error": 0.007366358870986647,
+      "relative_conservation_errors": [
+        0.0011154229575549097,
+        0.007366358870986647,
+        0.002974081188963309
+      ],
+      "minimum_density": 0.125,
+      "minimum_pressure": 0.09999999999999998,
+      "density_tv_excess": 0.10552278745519438,
+      "online_seconds": 0.09249589964747429,
+      "maximum_cell_average_change": 4.440892098500626e-16,
+      "mean_shock_width_10_90": 0.10010506134826369,
+      "maximum_shock_entropy_violation": 0.0,
+      "maximum_normalized_rh_residual": 0.0006932981949371108,
+      "evaluated_shock_count": 1
+    },
+    {
+      "case_id": "smoke_sod",
+      "case_group": "smoke",
+      "time": 0.2,
+      "method": "fno_operator",
+      "model_seed": 991,
+      "density_normalized_l2": 0.5590214048769313,
+      "velocity_normalized_l2": 0.7079476880764586,
+      "pressure_normalized_l2": 0.550832524171175,
+      "primitive_geometric_mean_l2": 0.601842787364784,
+      "maximum_relative_conservation_error": 0.47263713758722065,
+      "relative_conservation_errors": [
+        0.2703925965670887,
+        0.47263713758722065,
+        0.029109267159970642
+      ],
+      "minimum_density": 0.7092331051826477,
+      "minimum_pressure": 0.5422465801239014,
+      "density_tv_excess": 0.0,
+      "online_seconds": 0.0005942997522652149,
+      "maximum_cell_average_change": null,
+      "mean_shock_width_10_90": 0.16,
+      "maximum_shock_entropy_violation": 0.002425462007522583,
+      "maximum_normalized_rh_residual": 0.36771405563217124,
+      "evaluated_shock_count": 1
+    }
+  ]
+}

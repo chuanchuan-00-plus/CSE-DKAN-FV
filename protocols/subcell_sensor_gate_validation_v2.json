@@ -1,0 +1,44 @@
+{
+  "protocol": "subcell_sensor_gate_validation_v2",
+  "frozen_before_execution": "2026-07-15",
+  "status": "failed_after_first_seed",
+  "reason_for_revision": "v1 showed that an exact profile-TV cap penalizes a bounded fixed-MC reconstruction for sub-percent TV differences. v2 restores the original 2% profile-TV tolerance while retaining exact cell conservation and local bounds.",
+  "model": {
+    "name": "TVD-FV plus jump-gated conservative DKAN subcells",
+    "relative_jump_threshold": 0.3,
+    "minimum_absolute_jump": 1.1,
+    "sensor_dilation_cells": 1,
+    "profile_tv_budget": "1.02 times periodic TV at t=0",
+    "fallback": "fixed TVD-MC subcell reconstruction"
+  },
+  "frozen_models": [31415, 31416, 31417, 31418, 31419],
+  "benchmark": {
+    "equation": "periodic 1D Burgers",
+    "final_time": 0.6,
+    "amplitudes": [0.3, 0.55, 0.85, 1.05, 1.32, 1.62, 2.05],
+    "viscosities": [0.0, 0.001],
+    "coarse_cells": 128,
+    "subcells_per_cell": 8,
+    "reference": "4096-cell WENO",
+    "note": "These amplitudes were not evaluated during v1 or sensor development. The target sine family and viscosity 0.001 were absent from pretraining."
+  },
+  "primary_metric": {
+    "definition": "fixed-MC normalized L2 divided by gated-DKAN normalized L2",
+    "aggregate": "geometric mean over all 14 parameter cases per seed, followed by median over five seeds",
+    "success": "median aggregate gain >= 1.20 and bootstrap 95% lower confidence bound > 1.00"
+  },
+  "secondary_gates": {
+    "per_case_no_material_degradation": "gated L2 <= 1.05 * fixed-MC L2 for every seed-case pair",
+    "hard_cell_conservation": "maximum reconstructed cell-average change <= 2e-7",
+    "profile_TV_tolerance": "relative violation of TV(profile) <= 1.02 TV(initial) <= 1e-6",
+    "no_new_extrema": "overshoot_undershoot <= 1e-8"
+  },
+  "claim_boundary": "Passing supports the Burgers subcell branch only; Euler and the final ten-seed float64 protocol remain required for the overall 20% claim.",
+  "outcome": {
+    "evaluated_seed": 31415,
+    "failed_gate": "per_case_no_material_degradation",
+    "evidence": "At amplitude 0.55 and viscosity 0.001, gated-DKAN L2 was 59.66% worse than fixed MC.",
+    "diagnosis": "The fixed reconstruction had 3.91% reference-relative TV excess and 3.33% initial-TV excess. The 2% cap projected the fallback profile and dominated its already small error.",
+    "remaining_seeds_executed": false
+  }
+}

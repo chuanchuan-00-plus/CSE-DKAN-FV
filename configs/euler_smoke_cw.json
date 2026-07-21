@@ -1,0 +1,13 @@
+{
+  "variant": "cw_dkan",
+  "seed": 0,
+  "steps": 10,
+  "batch_interior": 64,
+  "batch_initial": 32,
+  "batch_boundary": 16,
+  "batch_control_volumes": 8,
+  "evaluation_points": 400,
+  "log_every": 5,
+  "dtype": "float32",
+  "device": "cuda"
+}

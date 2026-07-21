@@ -1,0 +1,128 @@
+{
+  "protocol": "final_1d_float64_v2",
+  "frozen_at": "2026-07-16T02:34:48+08:00",
+  "status": "executed_failed_early",
+  "purpose": "Independent confirmation of validation-selected Burgers checkpoints and a conservative Euler trust-region blend after v1 failure analysis.",
+  "development_boundary": {
+    "v1_results_may_inform_v2_design": true,
+    "v1_cases_are_excluded_from_v2_confirmation": true,
+    "burgers_change": "Save the minimum internal-validation checkpoint, use two validation cases per viscosity, and cover the declared amplitude envelope during training.",
+    "euler_change": "Multiply the learned conservative jump blend by 0.75; this value was selected on the v1 development results and is therefore tested only on new f11-f20 cases.",
+    "unchanged_hard_constraints": [
+      "cell-average conservation",
+      "local component bounds",
+      "density and pressure positivity",
+      "Burgers TV projection",
+      "Euler 400-cell fixed-MC fallback"
+    ]
+  },
+  "numeric_requirements": {
+    "dtype": "torch.float64 throughout training, finite-volume solving, inference, and metrics",
+    "checkpoint_audit": "all floating model-state tensors must be torch.float64"
+  },
+  "burgers": {
+    "training_seeds": [45001, 45002, 45003, 45004, 45005, 45006, 45007, 45008, 45009, 45010],
+    "training": {
+      "iterations": 2000,
+      "coarse_cells": 64,
+      "refinement": 8,
+      "cases_per_viscosity": 8,
+      "validation_cases_per_viscosity": 2,
+      "amplitude_min": 0.35,
+      "amplitude_max": 3.0,
+      "tv_weight": 0.5,
+      "checkpoint_selection": "minimum aggregate validation MSE sampled every 100 iterations"
+    },
+    "frozen_inference": {
+      "relative_jump_threshold": 0.3,
+      "minimum_absolute_jump": 1.1,
+      "sensor_dilation_cells": 1,
+      "cell_tv_relative_budget": 0.05,
+      "learned_correction_multiplier": 1.0
+    },
+    "blind_benchmark": {
+      "amplitudes": [0.22, 0.44, 0.63, 0.81, 0.97, 1.19, 1.53, 1.91, 2.31, 2.83],
+      "viscosities": [0.0, 0.0001, 0.0003, 0.001, 0.003, 0.01],
+      "cells": 128,
+      "subcells": 8,
+      "reference": "the v1-audited adaptive WENO policy: 4096 cells for nu <= 0.001, 2048 for nu = 0.003, 1024 for nu = 0.01",
+      "novelty": "No listed amplitude appears in the v1 blind benchmark or model training cases."
+    },
+    "primary": "per-seed geometric mean of fixed-MC normalized-L2 divided by sensor-gated DKAN normalized-L2 over 60 pairs",
+    "gates": {
+      "median_gain": ">= 1.20",
+      "bootstrap_95ci_lower": "> 1.00",
+      "every_pair_gain": ">= 1/1.05",
+      "maximum_cell_average_change": "<= 1e-12",
+      "overshoot_undershoot": "<= 1e-10",
+      "reference_relative_tv_excess": "<= 0.05"
+    }
+  },
+  "euler": {
+    "checkpoints": "Reuse the ten v1 float64 checkpoints; f11-f20 were generated and frozen only after the v1 audit.",
+    "training_seeds": [26001, 26002, 26003, 26004, 26005, 26006, 26007, 26008, 26009, 26010],
+    "frozen_inference": {
+      "learned_blend_multiplier": 0.75,
+      "learned_max_cells": 200,
+      "fallback_above_max_cells": "fixed conservative MC"
+    },
+    "blind_case_generation": {
+      "method": "six-dimensional Latin hypercube with ten strata, independent permutations and uniform jitter in [0.15, 0.85] of each stratum",
+      "seed": 20260716,
+      "bounds": {
+        "left_density": [0.78, 1.22],
+        "left_velocity": [-0.08, 0.08],
+        "left_pressure": [0.78, 1.22],
+        "right_density": [0.09, 0.20],
+        "right_velocity": [-0.08, 0.08],
+        "right_pressure": [0.065, 0.16]
+      }
+    },
+    "blind_benchmark": {
+      "cases": [
+        {"id": "f11", "left": [0.811321, -0.008828, 1.120729], "right": [0.126914, 0.029277, 0.144113]},
+        {"id": "f12", "left": [0.990059, 0.071995, 0.933726], "right": [0.149175, 0.070707, 0.088846]},
+        {"id": "f13", "left": [0.856079, -0.040577, 0.848585], "right": [0.096668, 0.041857, 0.077808]},
+        {"id": "f14", "left": [1.138624, -0.073024, 1.024788], "right": [0.193129, -0.067023, 0.126193]},
+        {"id": "f15", "left": [1.015311, 0.023765, 1.164142], "right": [0.138814, -0.05953, 0.100004]},
+        {"id": "f16", "left": [1.197846, -0.027305, 1.078053], "right": [0.17268, 0.058344, 0.070945]},
+        {"id": "f17", "left": [1.073391, 0.044243, 0.96634], "right": [0.1644, -0.041157, 0.134359]},
+        {"id": "f18", "left": [0.8785, 0.054823, 1.211773], "right": [0.107203, -0.022252, 0.104793]},
+        {"id": "f19", "left": [1.120721, 0.011484, 0.811907], "right": [0.114982, 0.011066, 0.116804]},
+        {"id": "f20", "left": [0.930751, -0.060491, 0.899025], "right": [0.186707, -0.007462, 0.152816]}
+      ],
+      "resolutions": [100, 200, 400],
+      "subcells": 8,
+      "reference": "exact ideal-gas Riemann solution"
+    },
+    "primary": "per-seed geometric mean of fixed conservative-MC primitive-composite-L2 divided by trust-region DKAN value over 30 pairs",
+    "gates": {
+      "median_gain": ">= 1.00",
+      "bootstrap_95ci_lower": ">= 0.95",
+      "every_pair_gain": ">= 1/1.05",
+      "maximum_cell_average_change": "<= 1e-12",
+      "minimum_density_and_pressure": "> 0",
+      "shock_entropy_violation": "<= 1e-10",
+      "RH_residual_ratio": "<= 1.20",
+      "400_cell_fallback_gain": "exactly 1 within 1e-12"
+    }
+  },
+  "cross_equation_gate": {
+    "per_seed_gain": "sqrt(Burgers seed gain * Euler seed gain) by seed index",
+    "aggregate": "median of ten per-seed gains",
+    "engineering_success": "median >= 1.20 and bootstrap 95% lower > 1.00",
+    "strong_20_percent_success": "bootstrap 95% lower >= 1.20"
+  },
+  "claim_boundary": "Even if v2 passes, the result is a supervised finite-volume/DKAN reconstruction hybrid, not a successful data-free PINN, and it does not establish the 2D claim.",
+  "execution_outcome": {
+    "stopping_rule": "Stopped after the first Burgers seed because one failed pair is sufficient to falsify the frozen every-pair gate.",
+    "evaluated_burgers_seed": 45001,
+    "geometric_mean_gain": 1.7678628078447276,
+    "worst_pair_gain": 0.8982334703669588,
+    "worst_pair": {"amplitude": 2.31, "viscosity": 0.01, "cells": 128},
+    "second_failed_pair_gain": 0.9086647837161838,
+    "failed_gate": "burgers.every_pair_gain",
+    "euler_blind_outputs_inspected": false,
+    "strong_20_percent_claim_allowed": false
+  }
+}

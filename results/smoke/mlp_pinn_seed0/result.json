@@ -1,0 +1,79 @@
+{
+  "config": {
+    "variant": "mlp_pinn",
+    "seed": 0,
+    "steps": 20,
+    "batch_interior": 128,
+    "batch_boundary": 32,
+    "batch_control_volumes": 16,
+    "batch_rh": 16,
+    "learning_rate": 0.001,
+    "min_learning_rate": 5e-05,
+    "weight_pde": 1.0,
+    "weight_boundary": 10.0,
+    "weight_cv": 1.0,
+    "weight_entropy": 0.1,
+    "weight_global": 10.0,
+    "weight_rh": 5.0,
+    "weight_shock_entropy": 1.0,
+    "quadrature_order": 4,
+    "dtype": "float32",
+    "device": "cuda",
+    "log_every": 10,
+    "reference_cells": 512,
+    "evaluation_points": 256,
+    "gate_width_start": 0.06,
+    "gate_width_end": 0.008,
+    "shock_exclusion_factor": 3.0
+  },
+  "problem": {
+    "x_left": -1.0,
+    "x_right": 1.0,
+    "final_time": 0.6,
+    "mean": 0.2,
+    "amplitude": 1.0,
+    "origin": 0.0,
+    "viscosity": 0.0
+  },
+  "environment": {
+    "torch": "2.11.0+cu128",
+    "device": "cuda",
+    "device_name": "NVIDIA GeForce RTX 5070 Laptop GPU"
+  },
+  "history": [
+    {
+      "step": 1.0,
+      "total": 1.6185433864593506,
+      "pde": 1.6185433864593506,
+      "boundary": 3.1058489113888754e-14,
+      "learning_rate": 0.0009941519617826904
+    },
+    {
+      "step": 10.0,
+      "total": 0.9795259833335876,
+      "pde": 0.9795259833335876,
+      "boundary": 1.9589537647189334e-14,
+      "learning_rate": 0.000525
+    },
+    {
+      "step": 20.0,
+      "total": 0.770963191986084,
+      "pde": 0.770963191986084,
+      "boundary": 2.5492108762987555e-14,
+      "learning_rate": 5e-05
+    }
+  ],
+  "metrics": {
+    "normalized_l1": 0.4845758592304402,
+    "normalized_l2": 0.5732051812071484,
+    "normalized_linf": 0.8643138052897154,
+    "mass_error": 0.03303500926120845,
+    "tv_excess": 0.0,
+    "inference_seconds": 0.0016712001524865627,
+    "prediction_min": -0.46456417441368103,
+    "prediction_max": 0.8352263569831848,
+    "training_seconds": 0.6200834000483155,
+    "peak_memory_bytes": 18715136.0,
+    "trainable_parameters": 8641.0
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "case_selection": {
+    "id01": "Representative in-range pressure-driven tube with moderate density, velocity, and pressure contrasts.",
+    "id08": "High-left-pressure case with a weak density contrast; retained because fixed MC is slightly more accurate.",
+    "id11": "Long-time low-right-pressure case near the lower pressure edge of the training range.",
+    "id18": "Strong pressure jump with co-directed negative velocities; the largest same-grid gain among the selected in-range cases.",
+    "stress01": "Blast-like extrapolation with a 500:1 pressure ratio and a 10:1 density ratio.",
+    "stress04": "Symmetric colliding streams that generate a compression-dominated central interaction.",
+    "stress05": "Reversed density and pressure step; retained as an out-of-distribution same-grid failure case.",
+    "stress10": "Classical Sod shock tube evaluated later than the engineering training times; retained as a familiar failure control."
+  },
+  "selection_rule": "Four in-distribution and four stress cases selected before plotting to cover representative, edge, extrapolation, collision, reverse-step, and failure-control regimes; selection was not optimized for the proposed method's error.",
+  "six_models": [
+    "FNO",
+    "128-cell HLLC piecewise constant",
+    "128-cell HLLC fixed MC",
+    "narrow-distribution DKAN-FV",
+    "engineering-distribution CSE-DKAN-FV",
+    "512-cell HLLC"
+  ],
+  "profile_aggregation": "Pointwise median across three FNO seeds or three engineering DKAN-FV seeds; min-max seed envelope exported."
+}

@@ -1,0 +1,54 @@
+{
+  "training": {
+    "output": "results\\dkan_weno_smoke\\model.pt",
+    "iterations": 3,
+    "coarse_cells": 32,
+    "refinement": 4,
+    "cases_per_viscosity": 1,
+    "final_time": 0.05,
+    "seed": 17
+  },
+  "training_cases": [
+    {
+      "viscosity": 0.0,
+      "mean": 0.2570448756787409,
+      "amplitude_1": 0.6787784729352856,
+      "amplitude_2": 0.023097818946276855,
+      "phase_1": -0.1978800875035931,
+      "phase_2": -0.42758705465734737
+    },
+    {
+      "viscosity": 0.0003,
+      "mean": -0.01850557744648093,
+      "amplitude_1": 0.8925315992748868,
+      "amplitude_2": 0.044537243399592225,
+      "phase_1": 0.35457880576992973,
+      "phase_2": -0.7270655151049327
+    },
+    {
+      "viscosity": 0.003,
+      "mean": -0.09757545172441645,
+      "amplitude_1": 1.0333166836511443,
+      "amplitude_2": -0.16650532212514274,
+      "phase_1": 0.7466455213844647,
+      "phase_2": 0.4985191867510559
+    }
+  ],
+  "history": [
+    {
+      "iteration": 1.0,
+      "viscosity": 0.0,
+      "relative_mse": 4.131651110128587e-07,
+      "bound_penalty": 0.0
+    },
+    {
+      "iteration": 3.0,
+      "viscosity": 0.003,
+      "relative_mse": 5.157413056622318e-07,
+      "bound_penalty": 6.722533640868278e-10
+    }
+  ],
+  "generation_seconds": 0.012831899803131819,
+  "training_seconds": 1.3704659999348223,
+  "device": "cuda"
+}

@@ -1,0 +1,54 @@
+{
+  "protocol": "final_hybrid_ablations_v1",
+  "frozen_at": "2026-07-16T03:50:54+08:00",
+  "status": "executed_completed_descriptive",
+  "purpose": "Quantify the contribution of the safety and discontinuity components of the successful v3 hybrid on the already-frozen v3 evaluation set.",
+  "claim_boundary": "Post-confirmation descriptive ablation on the v3 cases; not an independent blind confirmation and not part of the strong-20% gate.",
+  "burgers": {
+    "seeds": [45001, 45002, 45003, 45004, 45005, 45006, 45007, 45008, 45009, 45010],
+    "cases": "Reuse all 60 v3 amplitude-viscosity pairs per seed.",
+    "variants": {
+      "full": "spatial jump sensor + viscous transition gate + 5% cell-TV projection",
+      "no_discontinuity_basis": "fixed MC reconstruction",
+      "no_spatial_jump_condition": "ungated DKAN reconstruction already present in the v3 benchmark payload",
+      "no_viscous_transition_gate": "retain spatial jump sensor and TV projection but remove the analytic viscous-width gate",
+      "no_tv_projection": "retain both sensors but remove the final TV projection"
+    },
+    "primary": "geometric mean normalized L2 and worst pair; also maximum TV excess, overshoot, and cell-average change"
+  },
+  "euler": {
+    "seeds": [26001, 26002, 26003, 26004, 26005, 26006, 26007, 26008, 26009, 26010],
+    "cases": "Reuse f11-f20 at 100, 200, and 400 cells.",
+    "variants": {
+      "full": "0.75 learned blend and fixed-MC fallback above 200 cells",
+      "no_discontinuity_basis": "fixed conservative MC",
+      "no_trust_region": "learned blend multiplier 1.0 with the same 200-cell resolution gate",
+      "no_resolution_fallback": "0.75 learned blend at 100, 200, and 400 cells"
+    },
+    "primary": "geometric mean primitive-composite L2 and worst pair; also RH ratio, positivity, entropy, and cell-average change"
+  },
+  "entropy_note": "The successful subcell networks were not trained with a separable entropy-loss coefficient. Entropy admissibility is supplied by the Godunov/HLLC backbone and checked after reconstruction. The earlier direct Euler CSE-PINN no-entropy run remains a one-seed development ablation and must be reported separately, not merged with this table.",
+  "execution_outcome": {
+    "summary": "results/final_hybrid_ablations_v1/summary.json",
+    "burgers": {
+      "full_median_gain": 1.867196411096963,
+      "no_basis_median_gain": 1.0,
+      "no_spatial_jump_condition_median_gain": 1.5301893520708163,
+      "no_spatial_jump_condition_worst_pair_gain": 0.03560026017549184,
+      "no_viscous_gate_median_gain": 1.8625092958547675,
+      "no_viscous_gate_worst_pair_gain": 0.6933756663213754,
+      "no_tv_projection_median_gain": 1.867196411096963,
+      "no_tv_projection_max_tv_excess": 0.042537672139015874
+    },
+    "euler": {
+      "full_median_gain": 1.0892601977717309,
+      "no_basis_median_gain": 1.0,
+      "no_trust_region_median_gain": 1.0929056522089864,
+      "no_trust_region_worst_pair_gain": 0.948215939318615,
+      "no_trust_region_max_rh_ratio": 1.209427002674511,
+      "no_resolution_fallback_median_gain": 1.1715612592040328,
+      "no_resolution_fallback_worst_pair_gain": 0.9636858996105405,
+      "no_resolution_fallback_max_rh_ratio": 1.6157960425342235
+    }
+  }
+}

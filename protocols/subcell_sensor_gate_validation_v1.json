@@ -1,0 +1,43 @@
+{
+  "protocol": "subcell_sensor_gate_validation_v1",
+  "frozen_before_execution": "2026-07-15",
+  "status": "failed_after_first_seed",
+  "model": {
+    "name": "TVD-FV plus jump-gated conservative DKAN subcells",
+    "relative_jump_threshold": 0.3,
+    "minimum_absolute_jump": 1.1,
+    "sensor_dilation_cells": 1,
+    "total_variation_budget": "periodic TV at t=0",
+    "fallback": "exact fixed TVD-MC subcell reconstruction"
+  },
+  "frozen_models": [31415, 31416, 31417, 31418, 31419],
+  "benchmark": {
+    "equation": "periodic 1D Burgers",
+    "final_time": 0.6,
+    "amplitudes": [0.35, 0.65, 0.9, 1.1, 1.4, 1.9],
+    "viscosities": [0.0, 0.001],
+    "coarse_cells": 128,
+    "subcells_per_cell": 8,
+    "reference": "4096-cell WENO",
+    "note": "None of these amplitudes was used in sensor design or earlier amplitude scans. The target sine family and viscosity 0.001 were absent from pretraining."
+  },
+  "primary_metric": {
+    "definition": "fixed-MC normalized L2 divided by gated-DKAN normalized L2",
+    "aggregate": "geometric mean over all 12 parameter cases per seed, followed by median over five seeds",
+    "success": "median aggregate gain >= 1.20 and bootstrap 95% lower confidence bound > 1.00"
+  },
+  "secondary_gates": {
+    "per_case_no_material_degradation": "gated L2 <= 1.05 * fixed-MC L2 for every seed-case pair",
+    "hard_cell_conservation": "maximum reconstructed cell-average change <= 2e-7",
+    "initial_TVD": "relative violation of TV(t) <= TV(0) <= 1e-6",
+    "no_new_extrema": "overshoot_undershoot <= 1e-8"
+  },
+  "claim_boundary": "Passing this protocol supports only the Burgers subcell branch. It does not establish the overall DKAN+PINN 20% claim without Euler and the final ten-seed float64 protocol.",
+  "outcome": {
+    "evaluated_seed": 31415,
+    "failed_gate": "per_case_no_material_degradation",
+    "evidence": "At amplitude 0.65, gated-DKAN L2 was 26.45% worse than fixed MC for nu=0 and 30.00% worse for nu=0.001.",
+    "diagnosis": "Fixed MC exceeded initial profile TV by 0.46% and 0.68%, respectively. Enforcing an exact initial-TV cap removed that excess but caused the accuracy loss.",
+    "remaining_seeds_executed": false
+  }
+}

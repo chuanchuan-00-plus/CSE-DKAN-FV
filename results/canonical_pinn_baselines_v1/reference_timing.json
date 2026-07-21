@@ -1,0 +1,13 @@
+{
+  "environment_note": "Same local environment; single measured calls after imports, not a multi-repeat latency benchmark.",
+  "burgers_weno_4096": {
+    "cells": 4096,
+    "final_time": 0.6,
+    "seconds": 3.6169141000136733
+  },
+  "euler_exact_riemann_sample": {
+    "points": 1600,
+    "final_time": 0.2,
+    "seconds": 0.001643600407987833
+  }
+}

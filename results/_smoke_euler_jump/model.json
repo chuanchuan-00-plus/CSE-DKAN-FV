@@ -1,0 +1,77 @@
+{
+  "model_class": "ConservativeEulerJumpBlendDKAN",
+  "architecture": {
+    "hidden_width": 16,
+    "gamma": 1.4,
+    "positivity_floor": 1e-08
+  },
+  "training": {
+    "output": "results/_smoke_euler_jump/model.pt",
+    "iterations": 10,
+    "coarse_cells": 40,
+    "refinement": 4,
+    "cases": 4,
+    "batch_size": 128,
+    "seed": 16180
+  },
+  "cases": [
+    {
+      "left_density": 0.7161776411171388,
+      "left_velocity": -0.0981427665842437,
+      "left_pressure": 1.1209102538052322,
+      "right_density": 0.3522730378122034,
+      "right_velocity": -0.13504984094797706,
+      "right_pressure": 0.481242364212854,
+      "validation": false
+    },
+    {
+      "left_density": 1.0071960044089407,
+      "left_velocity": 0.04448075446334632,
+      "left_pressure": 1.378315380480732,
+      "right_density": 0.15918680352438064,
+      "right_velocity": -0.13005466474296218,
+      "right_pressure": 0.21023952048766806,
+      "validation": false
+    },
+    {
+      "left_density": 1.2080289910434936,
+      "left_velocity": -0.07704368004695607,
+      "left_pressure": 1.0013280920373402,
+      "right_density": 0.1545780102551381,
+      "right_velocity": -0.12166194488765845,
+      "right_pressure": 0.5106383680349333,
+      "validation": true
+    },
+    {
+      "left_density": 1.2260206269624,
+      "left_velocity": -0.1274682543334181,
+      "left_pressure": 0.9743067688705078,
+      "right_density": 0.5683214312581784,
+      "right_velocity": -0.16445198886582818,
+      "right_pressure": 0.425612343077881,
+      "validation": true
+    }
+  ],
+  "history": [
+    {
+      "iteration": 1,
+      "training_oracle_mse": 0.12873771786689758,
+      "validation_oracle_mse": 0.04310668632388115,
+      "validation_profile_mse": 0.011975422501564026
+    },
+    {
+      "iteration": 10,
+      "training_oracle_mse": 0.13833624124526978,
+      "validation_oracle_mse": 0.0428604856133461,
+      "validation_profile_mse": 0.011955244466662407
+    }
+  ],
+  "fixed_profile_validation_mse": 0.011977270245552063,
+  "best_profile_validation_mse": 0.011955244466662407,
+  "best_iteration": 10,
+  "final_profile_validation_mse": 0.011955244466662407,
+  "generation_seconds": 3.7042243001051247,
+  "oracle_seconds": 0.27182389982044697,
+  "training_seconds": 0.42835910012945533,
+  "device": "cuda"
+}

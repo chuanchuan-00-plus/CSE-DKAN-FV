@@ -1,0 +1,66 @@
+{
+  "protocol": "euler_resolution_gated_validation_v1",
+  "frozen_before_execution": "2026-07-15",
+  "status": "passed",
+  "model": {
+    "name": "HLLC-MUSCL plus positivity-preserving shock-basis DKAN subcells",
+    "training_resolutions": [100, 200, 400],
+    "learned_activation": "enable at cells <= 200; exact fixed conservative MC fallback above 200 cells",
+    "hard_constraints": [
+      "zero change to every conservative cell mean",
+      "five-cell component bounds",
+      "positive density and pressure",
+      "convex MC/jump-basis blend"
+    ]
+  },
+  "frozen_training_seeds": [16184, 16185, 16186, 16187, 16188],
+  "validation_cases": [
+    {"id": "v1", "left": [0.82, 0.05, 1.16], "right": [0.11, -0.03, 0.085]},
+    {"id": "v2", "left": [1.18, -0.04, 0.84], "right": [0.18, 0.06, 0.145]},
+    {"id": "v3", "left": [0.92, 0.07, 0.96], "right": [0.095, -0.05, 0.12]},
+    {"id": "v4", "left": [1.08, -0.07, 1.12], "right": [0.19, 0.03, 0.075]},
+    {"id": "v5", "left": [0.80, -0.02, 0.80], "right": [0.14, 0.07, 0.13]},
+    {"id": "v6", "left": [1.20, 0.06, 1.20], "right": [0.10, -0.06, 0.07]}
+  ],
+  "benchmark": {
+    "final_time": 0.2,
+    "resolutions": [100, 200, 400],
+    "subcells_per_cell": 8,
+    "reference": "exact ideal-gas Riemann solution",
+    "note": "These exact state tuples were not used for training or model development."
+  },
+  "primary_metric": {
+    "definition": "fixed conservative-MC primitive geometric-mean L2 divided by resolution-gated DKAN value",
+    "aggregate": "geometric mean over 18 case-resolution pairs per seed, then median over five seeds",
+    "success": "median gain >= 1.00 and bootstrap 95% lower confidence bound >= 0.95"
+  },
+  "secondary_gates": {
+    "per_pair_no_material_degradation": "gain >= 1/1.05 for every seed-case-resolution pair",
+    "hard_cell_conservation": "maximum reconstructed conservative cell-average change <= 3e-7",
+    "positivity": "minimum density and pressure > 0",
+    "shock_entropy": "violation <= 1e-8",
+    "RH_no_material_degradation": "DKAN RH residual <= 1.20 times fixed-MC RH residual"
+  },
+  "unified_cross_equation_gate": {
+    "definition": "geometric mean of the frozen Burgers-v4 median gain and this Euler median gain",
+    "burgers_frozen_gain": 1.9339360134074535,
+    "success": "cross-equation gain >= 1.20",
+    "claim_boundary": "This is an equal-equation hybrid score, not evidence that each equation improves by 20%."
+  },
+  "overall_claim_boundary": "The method is WENO/exact-Riemann supervised and finite-volume coupled. It must not be described as a data-free PINN, and the final ten-seed float64 confirmation remains separate.",
+  "outcome": {
+    "seed_count": 5,
+    "paired_case_count": 90,
+    "median_seed_geometric_mean_gain": 1.0833723227513234,
+    "bootstrap_median_95ci": [1.0817490655884459, 1.0881029856197122],
+    "minimum_pair_gain": 0.953167680525683,
+    "maximum_rh_residual_ratio": 1.021819432725694,
+    "maximum_cell_average_change": 2.38418579101563e-7,
+    "minimum_density": 0.0949999988079071,
+    "minimum_pressure": 0.07000000774860382,
+    "maximum_shock_entropy_violation": 0.0,
+    "cross_equation_gain_with_burgers_v4": 1.4474711571902452,
+    "all_frozen_gates_passed": true,
+    "overall_claim_allowed": false
+  }
+}

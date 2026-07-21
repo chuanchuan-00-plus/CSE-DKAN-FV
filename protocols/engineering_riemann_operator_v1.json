@@ -1,0 +1,115 @@
+{
+  "protocol": "engineering_riemann_operator_v1",
+  "status": "frozen_before_formal_training_and_evaluation",
+  "frozen_at": "2026-07-16T16:20:00+08:00",
+  "pre_result_amendment": "Before any formal training, a wave-boundary audit shortened id04, id05, id15, and stress10 so nontrivial waves remain inside the domain. No case was changed after observing model results.",
+  "scientific_question": "Does a conservative finite-volume backbone with physics-gated DKAN subcell reconstruction improve shock-resolving accuracy and robustness over a fixed TVD reconstruction and a trained FNO operator while preserving cell averages and positivity?",
+  "claim_boundary": "Parameterized one-dimensional ideal-gas Euler Riemann problems only. Engineering application directions outside this equation are ranked as migration hypotheses, not validated claims.",
+  "training": {
+    "fno": {
+      "seeds": [71001, 71002, 71003],
+      "dataset_seed": 20260716,
+      "train_cases": 512,
+      "validation_cases": 128,
+      "points": 512,
+      "iterations": 2000,
+      "batch_size": 8,
+      "width": 32,
+      "modes": 24,
+      "layers": 4,
+      "dtype": "float32"
+    },
+    "engineering_dkan_fv": {
+      "seeds": [72001, 72002, 72003],
+      "dataset_seed": 20260716,
+      "cases": 64,
+      "coarse_cells": [64, 128],
+      "refinement": 4,
+      "times": [0.08, 0.16, 0.28],
+      "iterations": 2500,
+      "batch_size": 1024,
+      "case_family": "engineering",
+      "basis_type": "shock",
+      "dtype": "float64"
+    },
+    "legacy_sod_neighbourhood_dkan_fv": {
+      "checkpoint_seeds": [26001, 26002, 26003],
+      "role": "zero-shot distribution-shift comparator; checkpoints are unchanged from the frozen final_1d_float64_v3 study"
+    }
+  },
+  "parameter_range": {
+    "left_density": [0.50, 2.00],
+    "left_velocity": [-0.35, 0.35],
+    "left_pressure": [0.35, 2.00],
+    "right_density": [0.05, 0.60],
+    "right_velocity": [-0.35, 0.35],
+    "right_pressure": [0.02, 0.32],
+    "time": [0.04, 0.32]
+  },
+  "benchmark": {
+    "evaluation_points": 512,
+    "coarse_cells": 128,
+    "fine_hllc_cells": 512,
+    "hybrid_blend_multiplier": 0.75,
+    "exact_reference": "Exact ideal-gas Riemann solution sampled at cell centres",
+    "comparators": [
+      "128-cell HLLC-MUSCL with piecewise-constant output",
+      "128-cell HLLC-MUSCL with fixed conservative TVD-MC subcells",
+      "512-cell HLLC-MUSCL",
+      "PDEBench-style FNO trained on the declared range",
+      "legacy Sod-neighbourhood physics-gated DKAN-FV",
+      "engineering-range physics-gated DKAN-FV"
+    ]
+  },
+  "primary_metric": "Geometric mean of normalized L2 errors in density, velocity, and pressure",
+  "structural_metrics": [
+    "maximum subcell reconstruction change in a parent-cell conservative mean",
+    "minimum predicted density and pressure",
+    "relative domain-integral error against the exact solution",
+    "density total-variation excess",
+    "10-90 percent shock width",
+    "shock entropy violation",
+    "normalized Rankine-Hugoniot residual",
+    "online runtime and offline training time"
+  ],
+  "predeclared_gates": {
+    "primary_20_percent": "On in-distribution cases, the engineering DKAN-FV median seed-level primary-error gain over FNO must be at least 1.20.",
+    "same_backbone_increment": "On in-distribution cases, the engineering DKAN-FV paired median gain over fixed TVD-MC subcells must be at least 1.05 and at least 60 percent of seed-case pairs must improve.",
+    "stress_robustness": "On stress cases, engineering DKAN-FV paired median gain over fixed TVD-MC subcells must be at least 1.00 and at least 50 percent of seed-case pairs must improve.",
+    "hard_conservation": "Every DKAN-FV reconstruction must change each parent-cell conservative mean by no more than 1e-12 in float64.",
+    "positivity": "Every method output used in a superiority claim must have strictly positive density and pressure on every case.",
+    "fine_grid_role": "The 512-cell HLLC result is an accuracy-cost reference; DKAN-FV is not required to beat a four-times-finer conservative solve."
+  },
+  "cases": [
+    {"id": "id01", "group": "in_distribution", "left": [1.061685, -0.112639, 1.238300], "right": [0.583841, -0.196038, 0.309714], "time": 0.214160},
+    {"id": "id02", "group": "in_distribution", "left": [1.227574, -0.308202, 1.555754], "right": [0.275560, -0.155062, 0.127573], "time": 0.225037},
+    {"id": "id03", "group": "in_distribution", "left": [1.869221, 0.236420, 0.405185], "right": [0.181776, -0.301903, 0.212518], "time": 0.174629},
+    {"id": "id04", "group": "in_distribution", "left": [0.537531, -0.224857, 1.605060], "right": [0.093234, 0.229933, 0.068085], "time": 0.195000},
+    {"id": "id05", "group": "in_distribution", "left": [1.442878, 0.195611, 0.541869], "right": [0.057588, -0.225864, 0.238392], "time": 0.180000},
+    {"id": "id06", "group": "in_distribution", "left": [1.655818, -0.023906, 0.714392], "right": [0.221443, 0.112354, 0.084348], "time": 0.063873},
+    {"id": "id07", "group": "in_distribution", "left": [1.823325, 0.124601, 0.985356], "right": [0.357598, 0.287547, 0.250220], "time": 0.075712},
+    {"id": "id08", "group": "in_distribution", "left": [0.637761, 0.323802, 1.785825], "right": [0.506568, 0.189239, 0.302248], "time": 0.253677},
+    {"id": "id09", "group": "in_distribution", "left": [1.310121, 0.268569, 0.873789], "right": [0.439740, 0.152485, 0.218284], "time": 0.268704},
+    {"id": "id10", "group": "in_distribution", "left": [1.724254, 0.081402, 1.952324], "right": [0.303277, -0.125279, 0.158089], "time": 0.049883},
+    {"id": "id11", "group": "in_distribution", "left": [1.522792, -0.333936, 0.625103], "right": [0.556025, -0.028205, 0.028323], "time": 0.280590},
+    {"id": "id12", "group": "in_distribution", "left": [0.784933, 0.159646, 1.354703], "right": [0.523296, -0.064462, 0.177428], "time": 0.245251},
+    {"id": "id13", "group": "in_distribution", "left": [1.570728, 0.054495, 1.040787], "right": [0.198392, 0.327758, 0.263456], "time": 0.187633},
+    {"id": "id14", "group": "in_distribution", "left": [1.007405, -0.046362, 1.902753], "right": [0.146540, 0.269165, 0.098767], "time": 0.093058},
+    {"id": "id15", "group": "in_distribution", "left": [0.837878, -0.169128, 1.461677], "right": [0.468963, 0.061800, 0.115410], "time": 0.270000},
+    {"id": "id16", "group": "in_distribution", "left": [1.156019, -0.080256, 0.812335], "right": [0.265871, -0.338917, 0.194987], "time": 0.116610},
+    {"id": "id17", "group": "in_distribution", "left": [1.976683, 0.290792, 1.137378], "right": [0.425206, -0.091208, 0.149604], "time": 0.101422},
+    {"id": "id18", "group": "in_distribution", "left": [0.886704, -0.181424, 1.730230], "right": [0.392463, -0.251675, 0.283836], "time": 0.163704},
+    {"id": "id19", "group": "in_distribution", "left": [1.358305, -0.260523, 0.474138], "right": [0.125791, 0.013793, 0.052531], "time": 0.146310},
+    {"id": "id20", "group": "in_distribution", "left": [0.711600, 0.016521, 1.283085], "right": [0.333833, 0.080085, 0.047253], "time": 0.130016},
+    {"id": "stress01", "group": "stress", "left": [1.0, 0.0, 5.0], "right": [0.1, 0.0, 0.01], "time": 0.08},
+    {"id": "stress02", "group": "stress", "left": [0.8, 0.0, 1.0], "right": [0.03, 0.0, 0.008], "time": 0.10},
+    {"id": "stress03", "group": "stress", "left": [0.9, 0.5, 1.5], "right": [0.2, -0.3, 0.1], "time": 0.12},
+    {"id": "stress04", "group": "stress", "left": [1.0, 0.6, 1.0], "right": [1.0, -0.6, 1.0], "time": 0.15},
+    {"id": "stress05", "group": "stress", "left": [0.2, 0.0, 0.1], "right": [1.0, 0.0, 1.0], "time": 0.18},
+    {"id": "stress06", "group": "stress", "left": [1.0, 0.0, 1.0], "right": [0.95, 0.0, 0.9], "time": 0.25},
+    {"id": "stress07", "group": "stress", "left": [1.0, 0.0, 1.0], "right": [0.1, 0.0, 1.0], "time": 0.20},
+    {"id": "stress08", "group": "stress", "left": [1.0, 0.8, 1.0], "right": [0.2, -0.5, 0.1], "time": 0.10},
+    {"id": "stress09", "group": "stress", "left": [2.0, 0.0, 0.5], "right": [0.05, 0.0, 0.05], "time": 0.16},
+    {"id": "stress10", "group": "stress", "left": [1.0, 0.0, 1.0], "right": [0.125, 0.0, 0.1], "time": 0.25}
+  ]
+}

@@ -1,0 +1,625 @@
+case_id,time,time_fraction,method,method_label,primitive_rms_l2
+sod,0.0,0.0,fno_operator,FNO,3168009458878046.5
+sod,0.0,0.0,hllc_piecewise_constant,128-cell HLLC-PC,0.0
+sod,0.0,0.0,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.0
+sod,0.0,0.0,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.0
+sod,0.0,0.0,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.0
+sod,0.0,0.0,hllc_muscl_fine,512-cell HLLC,0.0
+sod,0.016666666666666666,0.08333333333333333,fno_operator,FNO,0.708294008136959
+sod,0.016666666666666666,0.08333333333333333,hllc_piecewise_constant,128-cell HLLC-PC,0.14138812262664263
+sod,0.016666666666666666,0.08333333333333333,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.11544881274067623
+sod,0.016666666666666666,0.08333333333333333,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.1149142787972316
+sod,0.016666666666666666,0.08333333333333333,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.11287622828604714
+sod,0.016666666666666666,0.08333333333333333,hllc_muscl_fine,512-cell HLLC,0.05465863951533825
+sod,0.03333333333333333,0.16666666666666666,fno_operator,FNO,0.4098698311625215
+sod,0.03333333333333333,0.16666666666666666,hllc_piecewise_constant,128-cell HLLC-PC,0.10395843705967586
+sod,0.03333333333333333,0.16666666666666666,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.08350947575115235
+sod,0.03333333333333333,0.16666666666666666,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.06638272471693772
+sod,0.03333333333333333,0.16666666666666666,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.06723135655558084
+sod,0.03333333333333333,0.16666666666666666,hllc_muscl_fine,512-cell HLLC,0.04010430745676647
+sod,0.05,0.25,fno_operator,FNO,0.23957459562411107
+sod,0.05,0.25,hllc_piecewise_constant,128-cell HLLC-PC,0.08104529049957167
+sod,0.05,0.25,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.0687479037384555
+sod,0.05,0.25,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.06174571338038874
+sod,0.05,0.25,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.051485208515153404
+sod,0.05,0.25,hllc_muscl_fine,512-cell HLLC,0.030636981732735172
+sod,0.06666666666666667,0.3333333333333333,fno_operator,FNO,0.153857093135179
+sod,0.06666666666666667,0.3333333333333333,hllc_piecewise_constant,128-cell HLLC-PC,0.0569892331209407
+sod,0.06666666666666667,0.3333333333333333,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.05808172274488434
+sod,0.06666666666666667,0.3333333333333333,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.06273506930441
+sod,0.06666666666666667,0.3333333333333333,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.06245079773142312
+sod,0.06666666666666667,0.3333333333333333,hllc_muscl_fine,512-cell HLLC,0.025856879494346213
+sod,0.08333333333333333,0.41666666666666663,fno_operator,FNO,0.1251882462198033
+sod,0.08333333333333333,0.41666666666666663,hllc_piecewise_constant,128-cell HLLC-PC,0.06303343563906844
+sod,0.08333333333333333,0.41666666666666663,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.05688689674463133
+sod,0.08333333333333333,0.41666666666666663,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.043116845307641705
+sod,0.08333333333333333,0.41666666666666663,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.046710384220111
+sod,0.08333333333333333,0.41666666666666663,hllc_muscl_fine,512-cell HLLC,0.022768518680922854
+sod,0.1,0.5,fno_operator,FNO,0.10860475676117794
+sod,0.1,0.5,hllc_piecewise_constant,128-cell HLLC-PC,0.06230169976827564
+sod,0.1,0.5,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.053462049716934724
+sod,0.1,0.5,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.0300679209423213
+sod,0.1,0.5,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.03210169725571812
+sod,0.1,0.5,hllc_muscl_fine,512-cell HLLC,0.020551881907785757
+sod,0.11666666666666667,0.5833333333333333,fno_operator,FNO,0.1043397807385596
+sod,0.11666666666666667,0.5833333333333333,hllc_piecewise_constant,128-cell HLLC-PC,0.055710190920309696
+sod,0.11666666666666667,0.5833333333333333,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.04877672090942439
+sod,0.11666666666666667,0.5833333333333333,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.03987260770330291
+sod,0.11666666666666667,0.5833333333333333,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.03997903571739348
+sod,0.11666666666666667,0.5833333333333333,hllc_muscl_fine,512-cell HLLC,0.01891846143438906
+sod,0.13333333333333333,0.6666666666666666,fno_operator,FNO,0.09848552871302005
+sod,0.13333333333333333,0.6666666666666666,hllc_piecewise_constant,128-cell HLLC-PC,0.042052306046008125
+sod,0.13333333333333333,0.6666666666666666,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.04291627734464562
+sod,0.13333333333333333,0.6666666666666666,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.04417853652167473
+sod,0.13333333333333333,0.6666666666666666,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.044726620833951965
+sod,0.13333333333333333,0.6666666666666666,hllc_muscl_fine,512-cell HLLC,0.01777567509329013
+sod,0.15,0.7499999999999999,fno_operator,FNO,0.12808716120871458
+sod,0.15,0.7499999999999999,hllc_piecewise_constant,128-cell HLLC-PC,0.04695920292464758
+sod,0.15,0.7499999999999999,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.04236925090986621
+sod,0.15,0.7499999999999999,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.03245085376093176
+sod,0.15,0.7499999999999999,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.03526986023015403
+sod,0.15,0.7499999999999999,hllc_muscl_fine,512-cell HLLC,0.017032309820956344
+sod,0.16666666666666666,0.8333333333333333,fno_operator,FNO,0.11638269390684487
+sod,0.16666666666666666,0.8333333333333333,hllc_piecewise_constant,128-cell HLLC-PC,0.04773681360657664
+sod,0.16666666666666666,0.8333333333333333,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.04050595437892627
+sod,0.16666666666666666,0.8333333333333333,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.02249308515392065
+sod,0.16666666666666666,0.8333333333333333,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.02432990413332821
+sod,0.16666666666666666,0.8333333333333333,hllc_muscl_fine,512-cell HLLC,0.016589370559380916
+sod,0.18333333333333332,0.9166666666666665,fno_operator,FNO,0.12966624648969963
+sod,0.18333333333333332,0.9166666666666665,hllc_piecewise_constant,128-cell HLLC-PC,0.0423912288648122
+sod,0.18333333333333332,0.9166666666666665,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.04275779024759253
+sod,0.18333333333333332,0.9166666666666665,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.04373897894114719
+sod,0.18333333333333332,0.9166666666666665,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.04426679944432508
+sod,0.18333333333333332,0.9166666666666665,hllc_muscl_fine,512-cell HLLC,0.02881496302658274
+sod,0.2,1.0,fno_operator,FNO,0.13896917514690474
+sod,0.2,1.0,hllc_piecewise_constant,128-cell HLLC-PC,0.04526595670579941
+sod,0.2,1.0,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.042226245925796706
+sod,0.2,1.0,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.03382705274820867
+sod,0.2,1.0,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.037697267563800575
+sod,0.2,1.0,hllc_muscl_fine,512-cell HLLC,0.026685633575585947
+lax,0.0,0.0,fno_operator,FNO,0.6569241107238531
+lax,0.0,0.0,hllc_piecewise_constant,128-cell HLLC-PC,0.0
+lax,0.0,0.0,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.0
+lax,0.0,0.0,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.0
+lax,0.0,0.0,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.0
+lax,0.0,0.0,hllc_muscl_fine,512-cell HLLC,0.0
+lax,0.011666666666666667,0.08333333333333333,fno_operator,FNO,0.5478112061948717
+lax,0.011666666666666667,0.08333333333333333,hllc_piecewise_constant,128-cell HLLC-PC,0.09890229423589181
+lax,0.011666666666666667,0.08333333333333333,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.0992125259276682
+lax,0.011666666666666667,0.08333333333333333,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.09920895010134516
+lax,0.011666666666666667,0.08333333333333333,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.09932135648233517
+lax,0.011666666666666667,0.08333333333333333,hllc_muscl_fine,512-cell HLLC,0.043291731884263704
+lax,0.023333333333333334,0.16666666666666666,fno_operator,FNO,0.4780561010822681
+lax,0.023333333333333334,0.16666666666666666,hllc_piecewise_constant,128-cell HLLC-PC,0.09999415749309556
+lax,0.023333333333333334,0.16666666666666666,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.0877444020016824
+lax,0.023333333333333334,0.16666666666666666,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.08772892840692964
+lax,0.023333333333333334,0.16666666666666666,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.07522941731799632
+lax,0.023333333333333334,0.16666666666666666,hllc_muscl_fine,512-cell HLLC,0.0417692115626088
+lax,0.035,0.25,fno_operator,FNO,0.4347308216754147
+lax,0.035,0.25,hllc_piecewise_constant,128-cell HLLC-PC,0.09192474725247855
+lax,0.035,0.25,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.09056004388510991
+lax,0.035,0.25,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.09067106978517517
+lax,0.035,0.25,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.0902804574444348
+lax,0.035,0.25,hllc_muscl_fine,512-cell HLLC,0.05888658072542704
+lax,0.04666666666666667,0.3333333333333333,fno_operator,FNO,0.41443830437048573
+lax,0.04666666666666667,0.3333333333333333,hllc_piecewise_constant,128-cell HLLC-PC,0.09186590446123787
+lax,0.04666666666666667,0.3333333333333333,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.08644526887426353
+lax,0.04666666666666667,0.3333333333333333,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.0865811963775633
+lax,0.04666666666666667,0.3333333333333333,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.0868019834293678
+lax,0.04666666666666667,0.3333333333333333,hllc_muscl_fine,512-cell HLLC,0.04900131602251312
+lax,0.058333333333333334,0.41666666666666663,fno_operator,FNO,0.40116135211601206
+lax,0.058333333333333334,0.41666666666666663,hllc_piecewise_constant,128-cell HLLC-PC,0.0919519176134129
+lax,0.058333333333333334,0.41666666666666663,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.0833451178122318
+lax,0.058333333333333334,0.41666666666666663,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.08358193650214539
+lax,0.058333333333333334,0.41666666666666663,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.08001249884535905
+lax,0.058333333333333334,0.41666666666666663,hllc_muscl_fine,512-cell HLLC,0.04315675911020643
+lax,0.07,0.5,fno_operator,FNO,0.3886277952082833
+lax,0.07,0.5,hllc_piecewise_constant,128-cell HLLC-PC,0.08596230814191388
+lax,0.07,0.5,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.07930431037452883
+lax,0.07,0.5,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.07913580391123179
+lax,0.07,0.5,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.07355459058177294
+lax,0.07,0.5,hllc_muscl_fine,512-cell HLLC,0.03939580532577929
+lax,0.08166666666666667,0.5833333333333333,fno_operator,FNO,0.3732462800223619
+lax,0.08166666666666667,0.5833333333333333,hllc_piecewise_constant,128-cell HLLC-PC,0.07222051711105897
+lax,0.08166666666666667,0.5833333333333333,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.07412542236151122
+lax,0.08166666666666667,0.5833333333333333,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.07442344210207273
+lax,0.08166666666666667,0.5833333333333333,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.07499259875801817
+lax,0.08166666666666667,0.5833333333333333,hllc_muscl_fine,512-cell HLLC,0.037838036611926903
+lax,0.09333333333333334,0.6666666666666666,fno_operator,FNO,0.3630811217707096
+lax,0.09333333333333334,0.6666666666666666,hllc_piecewise_constant,128-cell HLLC-PC,0.08830120515233983
+lax,0.09333333333333334,0.6666666666666666,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.0822428811367068
+lax,0.09333333333333334,0.6666666666666666,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.08230980354188955
+lax,0.09333333333333334,0.6666666666666666,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.08210864975149625
+lax,0.09333333333333334,0.6666666666666666,hllc_muscl_fine,512-cell HLLC,0.050859558522587514
+lax,0.10500000000000001,0.75,fno_operator,FNO,0.36805057904927213
+lax,0.10500000000000001,0.75,hllc_piecewise_constant,128-cell HLLC-PC,0.08494449684900497
+lax,0.10500000000000001,0.75,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.0790443712314082
+lax,0.10500000000000001,0.75,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.07921060287073937
+lax,0.10500000000000001,0.75,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.074849081201077
+lax,0.10500000000000001,0.75,hllc_muscl_fine,512-cell HLLC,0.04631275559060511
+lax,0.11666666666666667,0.8333333333333333,fno_operator,FNO,0.34424360352290706
+lax,0.11666666666666667,0.8333333333333333,hllc_piecewise_constant,128-cell HLLC-PC,0.07491608995582057
+lax,0.11666666666666667,0.8333333333333333,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.0746433768569892
+lax,0.11666666666666667,0.8333333333333333,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.07464388407468937
+lax,0.11666666666666667,0.8333333333333333,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.07501079765662928
+lax,0.11666666666666667,0.8333333333333333,hllc_muscl_fine,512-cell HLLC,0.04275182611042312
+lax,0.12833333333333333,0.9166666666666665,fno_operator,FNO,0.292632688929535
+lax,0.12833333333333333,0.9166666666666665,hllc_piecewise_constant,128-cell HLLC-PC,0.07630848173456233
+lax,0.12833333333333333,0.9166666666666665,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.07400705334507712
+lax,0.12833333333333333,0.9166666666666665,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.07402461286551998
+lax,0.12833333333333333,0.9166666666666665,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.07440438847211621
+lax,0.12833333333333333,0.9166666666666665,hllc_muscl_fine,512-cell HLLC,0.04041155716230202
+lax,0.14,1.0,fno_operator,FNO,0.25400885104971593
+lax,0.14,1.0,hllc_piecewise_constant,128-cell HLLC-PC,0.07808272939742898
+lax,0.14,1.0,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.07120857106137082
+lax,0.14,1.0,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.07122564528737482
+lax,0.14,1.0,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.06319524474624773
+lax,0.14,1.0,hllc_muscl_fine,512-cell HLLC,0.03572662816750365
+moving_contact,0.0,0.0,fno_operator,FNO,0.3383365181675092
+moving_contact,0.0,0.0,hllc_piecewise_constant,128-cell HLLC-PC,0.03630567356786223
+moving_contact,0.0,0.0,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.03630567356786223
+moving_contact,0.0,0.0,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.03630567356786223
+moving_contact,0.0,0.0,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.03630567356786223
+moving_contact,0.0,0.0,hllc_muscl_fine,512-cell HLLC,7.384799332436384e-17
+moving_contact,0.024999999999999998,0.08333333333333333,fno_operator,FNO,0.3041808987705983
+moving_contact,0.024999999999999998,0.08333333333333333,hllc_piecewise_constant,128-cell HLLC-PC,0.02521897595235495
+moving_contact,0.024999999999999998,0.08333333333333333,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.027389760744841885
+moving_contact,0.024999999999999998,0.08333333333333333,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.02738977310787261
+moving_contact,0.024999999999999998,0.08333333333333333,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.02744551036231133
+moving_contact,0.024999999999999998,0.08333333333333333,hllc_muscl_fine,512-cell HLLC,0.019342272906884467
+moving_contact,0.049999999999999996,0.16666666666666666,fno_operator,FNO,0.3352771216226116
+moving_contact,0.049999999999999996,0.16666666666666666,hllc_piecewise_constant,128-cell HLLC-PC,0.03131772515884481
+moving_contact,0.049999999999999996,0.16666666666666666,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.03280352043717065
+moving_contact,0.049999999999999996,0.16666666666666666,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.032803544047978
+moving_contact,0.049999999999999996,0.16666666666666666,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.03290288889448513
+moving_contact,0.049999999999999996,0.16666666666666666,hllc_muscl_fine,512-cell HLLC,0.018335310696637023
+moving_contact,0.075,0.25,fno_operator,FNO,0.4776903740573045
+moving_contact,0.075,0.25,hllc_piecewise_constant,128-cell HLLC-PC,0.036815098154271
+moving_contact,0.075,0.25,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.03344146569788263
+moving_contact,0.075,0.25,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.03344141852284545
+moving_contact,0.075,0.25,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.03266525389794383
+moving_contact,0.075,0.25,hllc_muscl_fine,512-cell HLLC,0.021007930622827006
+moving_contact,0.09999999999999999,0.3333333333333333,fno_operator,FNO,0.6094815092833654
+moving_contact,0.09999999999999999,0.3333333333333333,hllc_piecewise_constant,128-cell HLLC-PC,0.038778678978315315
+moving_contact,0.09999999999999999,0.3333333333333333,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.03589499727554006
+moving_contact,0.09999999999999999,0.3333333333333333,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.03589497167563993
+moving_contact,0.09999999999999999,0.3333333333333333,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.034943581210967065
+moving_contact,0.09999999999999999,0.3333333333333333,hllc_muscl_fine,512-cell HLLC,0.02000943254345836
+moving_contact,0.12499999999999999,0.41666666666666663,fno_operator,FNO,0.6867137226428099
+moving_contact,0.12499999999999999,0.41666666666666663,hllc_piecewise_constant,128-cell HLLC-PC,0.03910081156212473
+moving_contact,0.12499999999999999,0.41666666666666663,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.035202443731183974
+moving_contact,0.12499999999999999,0.41666666666666663,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.035202444955510184
+moving_contact,0.12499999999999999,0.41666666666666663,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.034454677096276025
+moving_contact,0.12499999999999999,0.41666666666666663,hllc_muscl_fine,512-cell HLLC,0.02183818633086703
+moving_contact,0.15,0.5,fno_operator,FNO,0.7085392409139363
+moving_contact,0.15,0.5,hllc_piecewise_constant,128-cell HLLC-PC,0.0403565800850233
+moving_contact,0.15,0.5,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.03691572310435095
+moving_contact,0.15,0.5,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.03691572601946012
+moving_contact,0.15,0.5,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.036425365876213506
+moving_contact,0.15,0.5,hllc_muscl_fine,512-cell HLLC,0.02082770032748992
+moving_contact,0.175,0.5833333333333334,fno_operator,FNO,0.7272810637901495
+moving_contact,0.175,0.5833333333333334,hllc_piecewise_constant,128-cell HLLC-PC,0.03812075883856772
+moving_contact,0.175,0.5833333333333334,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.03592079969757206
+moving_contact,0.175,0.5833333333333334,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.035920803607588335
+moving_contact,0.175,0.5833333333333334,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.035718023110495746
+moving_contact,0.175,0.5833333333333334,hllc_muscl_fine,512-cell HLLC,0.022336917094457717
+moving_contact,0.19999999999999998,0.6666666666666666,fno_operator,FNO,0.79552275776624
+moving_contact,0.19999999999999998,0.6666666666666666,hllc_piecewise_constant,128-cell HLLC-PC,0.0392711566045354
+moving_contact,0.19999999999999998,0.6666666666666666,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.03738535216496507
+moving_contact,0.19999999999999998,0.6666666666666666,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.03738535411281023
+moving_contact,0.19999999999999998,0.6666666666666666,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.037298631937686
+moving_contact,0.19999999999999998,0.6666666666666666,hllc_muscl_fine,512-cell HLLC,0.021302262420155194
+moving_contact,0.22499999999999998,0.75,fno_operator,FNO,0.8599187093668248
+moving_contact,0.22499999999999998,0.75,hllc_piecewise_constant,128-cell HLLC-PC,0.03524337874592872
+moving_contact,0.22499999999999998,0.75,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.03619595153775137
+moving_contact,0.22499999999999998,0.75,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.03619599485649751
+moving_contact,0.22499999999999998,0.75,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.036255011965020685
+moving_contact,0.22499999999999998,0.75,hllc_muscl_fine,512-cell HLLC,0.022654276250888894
+moving_contact,0.24999999999999997,0.8333333333333333,fno_operator,FNO,0.9253516958219976
+moving_contact,0.24999999999999997,0.8333333333333333,hllc_piecewise_constant,128-cell HLLC-PC,0.036548219216353414
+moving_contact,0.24999999999999997,0.8333333333333333,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.03742254444186501
+moving_contact,0.24999999999999997,0.8333333333333333,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.03742256316127883
+moving_contact,0.24999999999999997,0.8333333333333333,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.03750912971971626
+moving_contact,0.24999999999999997,0.8333333333333333,hllc_muscl_fine,512-cell HLLC,0.02159616053498702
+moving_contact,0.27499999999999997,0.9166666666666666,fno_operator,FNO,0.9938378221964668
+moving_contact,0.27499999999999997,0.9166666666666666,hllc_piecewise_constant,128-cell HLLC-PC,0.038140999938047274
+moving_contact,0.27499999999999997,0.9166666666666666,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.03894062162205034
+moving_contact,0.27499999999999997,0.9166666666666666,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.03894063580254
+moving_contact,0.27499999999999997,0.9166666666666666,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.03903071899030673
+moving_contact,0.27499999999999997,0.9166666666666666,hllc_muscl_fine,512-cell HLLC,0.02282502282153131
+moving_contact,0.3,1.0,fno_operator,FNO,1.065520207271101
+moving_contact,0.3,1.0,hllc_piecewise_constant,128-cell HLLC-PC,0.039501785767234635
+moving_contact,0.3,1.0,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.037666829409817394
+moving_contact,0.3,1.0,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.037666832085687434
+moving_contact,0.3,1.0,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.037493967833860456
+moving_contact,0.3,1.0,hllc_muscl_fine,512-cell HLLC,0.02178092203147966
+double_rarefaction,0.0,0.0,fno_operator,FNO,0.6125665844882451
+double_rarefaction,0.0,0.0,hllc_piecewise_constant,128-cell HLLC-PC,1.0683126035464243e-16
+double_rarefaction,0.0,0.0,hllc_fixed_mc_subcell,128-cell HLLC-MC,1.0683126035464243e-16
+double_rarefaction,0.0,0.0,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,1.0683126035464243e-16
+double_rarefaction,0.0,0.0,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,1.0683126035464243e-16
+double_rarefaction,0.0,0.0,hllc_muscl_fine,512-cell HLLC,1.0683126035464243e-16
+double_rarefaction,0.012499999999999999,0.08333333333333333,fno_operator,FNO,0.613844938951741
+double_rarefaction,0.012499999999999999,0.08333333333333333,hllc_piecewise_constant,128-cell HLLC-PC,0.037550140434969216
+double_rarefaction,0.012499999999999999,0.08333333333333333,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.03154236957847245
+double_rarefaction,0.012499999999999999,0.08333333333333333,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.03149288361222935
+double_rarefaction,0.012499999999999999,0.08333333333333333,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.031121907516772178
+double_rarefaction,0.012499999999999999,0.08333333333333333,hllc_muscl_fine,512-cell HLLC,0.008405022735519442
+double_rarefaction,0.024999999999999998,0.16666666666666666,fno_operator,FNO,0.6190855354113165
+double_rarefaction,0.024999999999999998,0.16666666666666666,hllc_piecewise_constant,128-cell HLLC-PC,0.027249954099899738
+double_rarefaction,0.024999999999999998,0.16666666666666666,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.02266729936196955
+double_rarefaction,0.024999999999999998,0.16666666666666666,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.022742921822455735
+double_rarefaction,0.024999999999999998,0.16666666666666666,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.022530622045974145
+double_rarefaction,0.024999999999999998,0.16666666666666666,hllc_muscl_fine,512-cell HLLC,0.00633189794303792
+double_rarefaction,0.0375,0.25,fno_operator,FNO,0.6270818283422284
+double_rarefaction,0.0375,0.25,hllc_piecewise_constant,128-cell HLLC-PC,0.02269007740206404
+double_rarefaction,0.0375,0.25,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.01884414579796006
+double_rarefaction,0.0375,0.25,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.01888441394681808
+double_rarefaction,0.0375,0.25,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.018814913552989188
+double_rarefaction,0.0375,0.25,hllc_muscl_fine,512-cell HLLC,0.006066035111589085
+double_rarefaction,0.049999999999999996,0.3333333333333333,fno_operator,FNO,0.6372623716053905
+double_rarefaction,0.049999999999999996,0.3333333333333333,hllc_piecewise_constant,128-cell HLLC-PC,0.02046506477276042
+double_rarefaction,0.049999999999999996,0.3333333333333333,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.017133112953368355
+double_rarefaction,0.049999999999999996,0.3333333333333333,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.0171487076573091
+double_rarefaction,0.049999999999999996,0.3333333333333333,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.017156429491137225
+double_rarefaction,0.049999999999999996,0.3333333333333333,hllc_muscl_fine,512-cell HLLC,0.005850670139434575
+double_rarefaction,0.06249999999999999,0.41666666666666663,fno_operator,FNO,0.6610911284930305
+double_rarefaction,0.06249999999999999,0.41666666666666663,hllc_piecewise_constant,128-cell HLLC-PC,0.019179394513547016
+double_rarefaction,0.06249999999999999,0.41666666666666663,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.016162267913766827
+double_rarefaction,0.06249999999999999,0.41666666666666663,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.0161641129376565
+double_rarefaction,0.06249999999999999,0.41666666666666663,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.01620590119300764
+double_rarefaction,0.06249999999999999,0.41666666666666663,hllc_muscl_fine,512-cell HLLC,0.005828937003734914
+double_rarefaction,0.075,0.5,fno_operator,FNO,0.6913199873757553
+double_rarefaction,0.075,0.5,hllc_piecewise_constant,128-cell HLLC-PC,0.018440563154175162
+double_rarefaction,0.075,0.5,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.01563537309246484
+double_rarefaction,0.075,0.5,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.015633818579714912
+double_rarefaction,0.075,0.5,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.015687700230421986
+double_rarefaction,0.075,0.5,hllc_muscl_fine,512-cell HLLC,0.005808473372750906
+double_rarefaction,0.0875,0.5833333333333334,fno_operator,FNO,0.727845850547705
+double_rarefaction,0.0875,0.5833333333333334,hllc_piecewise_constant,128-cell HLLC-PC,0.018096242924867008
+double_rarefaction,0.0875,0.5833333333333334,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.015420692562334188
+double_rarefaction,0.0875,0.5833333333333334,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.015419048256050076
+double_rarefaction,0.0875,0.5833333333333334,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.015485784313192091
+double_rarefaction,0.0875,0.5833333333333334,hllc_muscl_fine,512-cell HLLC,0.005838796987231661
+double_rarefaction,0.09999999999999999,0.6666666666666666,fno_operator,FNO,0.771536667829802
+double_rarefaction,0.09999999999999999,0.6666666666666666,hllc_piecewise_constant,128-cell HLLC-PC,0.01802601979855207
+double_rarefaction,0.09999999999999999,0.6666666666666666,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.015428169285478445
+double_rarefaction,0.09999999999999999,0.6666666666666666,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.015426377378168505
+double_rarefaction,0.09999999999999999,0.6666666666666666,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.015491494131822166
+double_rarefaction,0.09999999999999999,0.6666666666666666,hllc_muscl_fine,512-cell HLLC,0.005904115018173165
+double_rarefaction,0.11249999999999999,0.75,fno_operator,FNO,0.8261506495420755
+double_rarefaction,0.11249999999999999,0.75,hllc_piecewise_constant,128-cell HLLC-PC,0.018093749025121408
+double_rarefaction,0.11249999999999999,0.75,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.01558742028475053
+double_rarefaction,0.11249999999999999,0.75,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.015588654959649275
+double_rarefaction,0.11249999999999999,0.75,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.015634748568084403
+double_rarefaction,0.11249999999999999,0.75,hllc_muscl_fine,512-cell HLLC,0.00598788158560781
+double_rarefaction,0.12499999999999999,0.8333333333333333,fno_operator,FNO,0.8934289464689327
+double_rarefaction,0.12499999999999999,0.8333333333333333,hllc_piecewise_constant,128-cell HLLC-PC,0.018326896032256786
+double_rarefaction,0.12499999999999999,0.8333333333333333,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.015909003185950583
+double_rarefaction,0.12499999999999999,0.8333333333333333,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.015914465763148068
+double_rarefaction,0.12499999999999999,0.8333333333333333,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.01594561576643824
+double_rarefaction,0.12499999999999999,0.8333333333333333,hllc_muscl_fine,512-cell HLLC,0.006125692829687634
+double_rarefaction,0.13749999999999998,0.9166666666666666,fno_operator,FNO,0.9787863469202842
+double_rarefaction,0.13749999999999998,0.9166666666666666,hllc_piecewise_constant,128-cell HLLC-PC,0.01869070791073011
+double_rarefaction,0.13749999999999998,0.9166666666666666,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.016332327972403828
+double_rarefaction,0.13749999999999998,0.9166666666666666,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.016344827222662017
+double_rarefaction,0.13749999999999998,0.9166666666666666,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.01636206510810979
+double_rarefaction,0.13749999999999998,0.9166666666666666,hllc_muscl_fine,512-cell HLLC,0.006273785609833463
+double_rarefaction,0.15,1.0,fno_operator,FNO,1.0853038935681647
+double_rarefaction,0.15,1.0,hllc_piecewise_constant,128-cell HLLC-PC,0.01926224573218057
+double_rarefaction,0.15,1.0,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.016939309906395052
+double_rarefaction,0.15,1.0,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.016956759032616616
+double_rarefaction,0.15,1.0,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.016963440160769266
+double_rarefaction,0.15,1.0,hllc_muscl_fine,512-cell HLLC,0.006504812960348899
+colliding_streams,0.0,0.0,fno_operator,FNO,0.31165136538364296
+colliding_streams,0.0,0.0,hllc_piecewise_constant,128-cell HLLC-PC,0.0
+colliding_streams,0.0,0.0,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.0
+colliding_streams,0.0,0.0,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.0
+colliding_streams,0.0,0.0,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.0
+colliding_streams,0.0,0.0,hllc_muscl_fine,512-cell HLLC,0.0
+colliding_streams,0.012499999999999999,0.08333333333333333,fno_operator,FNO,0.30336544387682607
+colliding_streams,0.012499999999999999,0.08333333333333333,hllc_piecewise_constant,128-cell HLLC-PC,0.056391165923013194
+colliding_streams,0.012499999999999999,0.08333333333333333,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.046186417718628574
+colliding_streams,0.012499999999999999,0.08333333333333333,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.04618352536755746
+colliding_streams,0.012499999999999999,0.08333333333333333,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.03941667406301032
+colliding_streams,0.012499999999999999,0.08333333333333333,hllc_muscl_fine,512-cell HLLC,0.026819070841540293
+colliding_streams,0.024999999999999998,0.16666666666666666,fno_operator,FNO,0.2985639856816962
+colliding_streams,0.024999999999999998,0.16666666666666666,hllc_piecewise_constant,128-cell HLLC-PC,0.050402485042416706
+colliding_streams,0.024999999999999998,0.16666666666666666,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.04289017873050165
+colliding_streams,0.024999999999999998,0.16666666666666666,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.04288545304294345
+colliding_streams,0.024999999999999998,0.16666666666666666,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.03919736051756983
+colliding_streams,0.024999999999999998,0.16666666666666666,hllc_muscl_fine,512-cell HLLC,0.019000876244065986
+colliding_streams,0.0375,0.25,fno_operator,FNO,0.29774198082219144
+colliding_streams,0.0375,0.25,hllc_piecewise_constant,128-cell HLLC-PC,0.050013058193814505
+colliding_streams,0.0375,0.25,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.04323661309111586
+colliding_streams,0.0375,0.25,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.043245375785288365
+colliding_streams,0.0375,0.25,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.04154454776560421
+colliding_streams,0.0375,0.25,hllc_muscl_fine,512-cell HLLC,0.021962155032328737
+colliding_streams,0.049999999999999996,0.3333333333333333,fno_operator,FNO,0.30147637133162103
+colliding_streams,0.049999999999999996,0.3333333333333333,hllc_piecewise_constant,128-cell HLLC-PC,0.05416629342292087
+colliding_streams,0.049999999999999996,0.3333333333333333,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.043922552939723455
+colliding_streams,0.049999999999999996,0.3333333333333333,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.04380873450266392
+colliding_streams,0.049999999999999996,0.3333333333333333,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.03899497217243356
+colliding_streams,0.049999999999999996,0.3333333333333333,hllc_muscl_fine,512-cell HLLC,0.022817609901669634
+colliding_streams,0.06249999999999999,0.41666666666666663,fno_operator,FNO,0.3102249643402544
+colliding_streams,0.06249999999999999,0.41666666666666663,hllc_piecewise_constant,128-cell HLLC-PC,0.03649478356687018
+colliding_streams,0.06249999999999999,0.41666666666666663,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.03963364376520749
+colliding_streams,0.06249999999999999,0.41666666666666663,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.03964876383956977
+colliding_streams,0.06249999999999999,0.41666666666666663,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.040997074226930594
+colliding_streams,0.06249999999999999,0.41666666666666663,hllc_muscl_fine,512-cell HLLC,0.018438264673378033
+colliding_streams,0.075,0.5,fno_operator,FNO,0.32127945921375367
+colliding_streams,0.075,0.5,hllc_piecewise_constant,128-cell HLLC-PC,0.05588709349901746
+colliding_streams,0.075,0.5,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.046965977173144026
+colliding_streams,0.075,0.5,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.04696449570325475
+colliding_streams,0.075,0.5,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.04077728691939475
+colliding_streams,0.075,0.5,hllc_muscl_fine,512-cell HLLC,0.025114461769135878
+colliding_streams,0.0875,0.5833333333333334,fno_operator,FNO,0.33410986705989365
+colliding_streams,0.0875,0.5833333333333334,hllc_piecewise_constant,128-cell HLLC-PC,0.05052700562138065
+colliding_streams,0.0875,0.5833333333333334,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.04323357908256119
+colliding_streams,0.0875,0.5833333333333334,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.04321878985655851
+colliding_streams,0.0875,0.5833333333333334,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.039417356147121364
+colliding_streams,0.0875,0.5833333333333334,hllc_muscl_fine,512-cell HLLC,0.0198779025440889
+colliding_streams,0.09999999999999999,0.6666666666666666,fno_operator,FNO,0.3528942694529281
+colliding_streams,0.09999999999999999,0.6666666666666666,hllc_piecewise_constant,128-cell HLLC-PC,0.05049117105426637
+colliding_streams,0.09999999999999999,0.6666666666666666,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.04480239398206068
+colliding_streams,0.09999999999999999,0.6666666666666666,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.04481289213948903
+colliding_streams,0.09999999999999999,0.6666666666666666,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.04463046430143976
+colliding_streams,0.09999999999999999,0.6666666666666666,hllc_muscl_fine,512-cell HLLC,0.019898917876807382
+colliding_streams,0.11249999999999999,0.75,fno_operator,FNO,0.3724110535975311
+colliding_streams,0.11249999999999999,0.75,hllc_piecewise_constant,128-cell HLLC-PC,0.05457152694334612
+colliding_streams,0.11249999999999999,0.75,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.047918208960489934
+colliding_streams,0.11249999999999999,0.75,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.04791831847812095
+colliding_streams,0.11249999999999999,0.75,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.04621755180221734
+colliding_streams,0.11249999999999999,0.75,hllc_muscl_fine,512-cell HLLC,0.029115841862536417
+colliding_streams,0.12499999999999999,0.8333333333333333,fno_operator,FNO,0.38960662617986597
+colliding_streams,0.12499999999999999,0.8333333333333333,hllc_piecewise_constant,128-cell HLLC-PC,0.03786676731379822
+colliding_streams,0.12499999999999999,0.8333333333333333,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.040719488881195295
+colliding_streams,0.12499999999999999,0.8333333333333333,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.040734652749181297
+colliding_streams,0.12499999999999999,0.8333333333333333,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.04204079931215955
+colliding_streams,0.12499999999999999,0.8333333333333333,hllc_muscl_fine,512-cell HLLC,0.01845168450669566
+colliding_streams,0.13749999999999998,0.9166666666666666,fno_operator,FNO,0.40833822452088586
+colliding_streams,0.13749999999999998,0.9166666666666666,hllc_piecewise_constant,128-cell HLLC-PC,0.05645481467715645
+colliding_streams,0.13749999999999998,0.9166666666666666,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.047747958977012256
+colliding_streams,0.13749999999999998,0.9166666666666666,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.047746420403245664
+colliding_streams,0.13749999999999998,0.9166666666666666,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.04142862164639714
+colliding_streams,0.13749999999999998,0.9166666666666666,hllc_muscl_fine,512-cell HLLC,0.02286772906342553
+colliding_streams,0.15,1.0,fno_operator,FNO,0.43634780938308926
+colliding_streams,0.15,1.0,hllc_piecewise_constant,128-cell HLLC-PC,0.05141663494675049
+colliding_streams,0.15,1.0,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.044149416224208884
+colliding_streams,0.15,1.0,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.04414196566648106
+colliding_streams,0.15,1.0,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.040174275091775805
+colliding_streams,0.15,1.0,hllc_muscl_fine,512-cell HLLC,0.02197464749131609
+shu_osher,0.0,0.0,fno_operator,FNO,0.7342732805309223
+shu_osher,0.0,0.0,hllc_piecewise_constant,128-cell HLLC-PC,0.1182753158715908
+shu_osher,0.0,0.0,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.1182753158715908
+shu_osher,0.0,0.0,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.1182753158715908
+shu_osher,0.0,0.0,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.1182753158715908
+shu_osher,0.0,0.0,hllc_muscl_fine,512-cell HLLC,3.7201246620363924e-06
+shu_osher,0.015,0.08333333333333333,fno_operator,FNO,0.7216922597571436
+shu_osher,0.015,0.08333333333333333,hllc_piecewise_constant,128-cell HLLC-PC,0.11064643132090654
+shu_osher,0.015,0.08333333333333333,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.10071462222561024
+shu_osher,0.015,0.08333333333333333,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.10072223374934955
+shu_osher,0.015,0.08333333333333333,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.1000892933038071
+shu_osher,0.015,0.08333333333333333,hllc_muscl_fine,512-cell HLLC,0.019085268287674532
+shu_osher,0.03,0.16666666666666666,fno_operator,FNO,0.7303471224198321
+shu_osher,0.03,0.16666666666666666,hllc_piecewise_constant,128-cell HLLC-PC,0.1060625767327108
+shu_osher,0.03,0.16666666666666666,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.09880398472336548
+shu_osher,0.03,0.16666666666666666,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.09880168057229419
+shu_osher,0.03,0.16666666666666666,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.09459325243563116
+shu_osher,0.03,0.16666666666666666,hllc_muscl_fine,512-cell HLLC,0.02076941005814362
+shu_osher,0.045,0.25,fno_operator,FNO,0.7452631851752743
+shu_osher,0.045,0.25,hllc_piecewise_constant,128-cell HLLC-PC,0.08820203373700654
+shu_osher,0.045,0.25,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.07984608797447586
+shu_osher,0.045,0.25,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.07984414478674672
+shu_osher,0.045,0.25,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.07727675535915082
+shu_osher,0.045,0.25,hllc_muscl_fine,512-cell HLLC,0.015903685629030315
+shu_osher,0.06,0.3333333333333333,fno_operator,FNO,0.75605220984201
+shu_osher,0.06,0.3333333333333333,hllc_piecewise_constant,128-cell HLLC-PC,0.08193245554717886
+shu_osher,0.06,0.3333333333333333,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.08072636763394818
+shu_osher,0.06,0.3333333333333333,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.08072625461862645
+shu_osher,0.06,0.3333333333333333,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.08080983335504278
+shu_osher,0.06,0.3333333333333333,hllc_muscl_fine,512-cell HLLC,0.012837634064898528
+shu_osher,0.075,0.4166666666666667,fno_operator,FNO,0.7547474630817974
+shu_osher,0.075,0.4166666666666667,hllc_piecewise_constant,128-cell HLLC-PC,0.07150217058030714
+shu_osher,0.075,0.4166666666666667,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.07225264793384972
+shu_osher,0.075,0.4166666666666667,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.0722578472885577
+shu_osher,0.075,0.4166666666666667,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.07233062531684639
+shu_osher,0.075,0.4166666666666667,hllc_muscl_fine,512-cell HLLC,0.02351421890800821
+shu_osher,0.09,0.5,fno_operator,FNO,0.7542884230473369
+shu_osher,0.09,0.5,hllc_piecewise_constant,128-cell HLLC-PC,0.07951662048341526
+shu_osher,0.09,0.5,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.07364808135843821
+shu_osher,0.09,0.5,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.0736542949682862
+shu_osher,0.09,0.5,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.07327806169661907
+shu_osher,0.09,0.5,hllc_muscl_fine,512-cell HLLC,0.01920069683361562
+shu_osher,0.105,0.5833333333333334,fno_operator,FNO,0.7543684116934963
+shu_osher,0.105,0.5833333333333334,hllc_piecewise_constant,128-cell HLLC-PC,0.07663228609923012
+shu_osher,0.105,0.5833333333333334,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.07154573577730831
+shu_osher,0.105,0.5833333333333334,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.07154631698053938
+shu_osher,0.105,0.5833333333333334,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.07115865341082542
+shu_osher,0.105,0.5833333333333334,hllc_muscl_fine,512-cell HLLC,0.02235362014227979
+shu_osher,0.12,0.6666666666666666,fno_operator,FNO,0.7560192113790835
+shu_osher,0.12,0.6666666666666666,hllc_piecewise_constant,128-cell HLLC-PC,0.06926382305307557
+shu_osher,0.12,0.6666666666666666,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.06319420170561903
+shu_osher,0.12,0.6666666666666666,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.06319069763287193
+shu_osher,0.12,0.6666666666666666,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.06094957934143453
+shu_osher,0.12,0.6666666666666666,hllc_muscl_fine,512-cell HLLC,0.01563334633396013
+shu_osher,0.135,0.7500000000000001,fno_operator,FNO,0.7576316075119126
+shu_osher,0.135,0.7500000000000001,hllc_piecewise_constant,128-cell HLLC-PC,0.0682931631621605
+shu_osher,0.135,0.7500000000000001,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.0682359808466672
+shu_osher,0.135,0.7500000000000001,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.0682396658858542
+shu_osher,0.135,0.7500000000000001,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.06832642241596763
+shu_osher,0.135,0.7500000000000001,hllc_muscl_fine,512-cell HLLC,0.02209230387837038
+shu_osher,0.15,0.8333333333333334,fno_operator,FNO,0.7554618550503567
+shu_osher,0.15,0.8333333333333334,hllc_piecewise_constant,128-cell HLLC-PC,0.05895057284180077
+shu_osher,0.15,0.8333333333333334,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.05785904343833451
+shu_osher,0.15,0.8333333333333334,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.057841687312398374
+shu_osher,0.15,0.8333333333333334,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.057541825717889905
+shu_osher,0.15,0.8333333333333334,hllc_muscl_fine,512-cell HLLC,0.01821834614003966
+shu_osher,0.16499999999999998,0.9166666666666666,fno_operator,FNO,0.7519285047663425
+shu_osher,0.16499999999999998,0.9166666666666666,hllc_piecewise_constant,128-cell HLLC-PC,0.06697377437352364
+shu_osher,0.16499999999999998,0.9166666666666666,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.0629325053114519
+shu_osher,0.16499999999999998,0.9166666666666666,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.06293748801309892
+shu_osher,0.16499999999999998,0.9166666666666666,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.06291813122704244
+shu_osher,0.16499999999999998,0.9166666666666666,hllc_muscl_fine,512-cell HLLC,0.017004096272458465
+shu_osher,0.18,1.0,fno_operator,FNO,0.748287046622818
+shu_osher,0.18,1.0,hllc_piecewise_constant,128-cell HLLC-PC,0.060335308886594066
+shu_osher,0.18,1.0,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.05762723055470879
+shu_osher,0.18,1.0,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.057628222333388705
+shu_osher,0.18,1.0,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.05765286347685763
+shu_osher,0.18,1.0,hllc_muscl_fine,512-cell HLLC,0.020920561959352248
+woodward_colella,0.0,0.0,fno_operator,FNO,5043089837425920.0
+woodward_colella,0.0,0.0,hllc_piecewise_constant,128-cell HLLC-PC,0.08084432782411144
+woodward_colella,0.0,0.0,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.08084432782411144
+woodward_colella,0.0,0.0,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.08084432782411144
+woodward_colella,0.0,0.0,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.08084432782411144
+woodward_colella,0.0,0.0,hllc_muscl_fine,512-cell HLLC,0.0
+woodward_colella,0.0031666666666666666,0.08333333333333333,fno_operator,FNO,0.9278764175135522
+woodward_colella,0.0031666666666666666,0.08333333333333333,hllc_piecewise_constant,128-cell HLLC-PC,0.24707963265646707
+woodward_colella,0.0031666666666666666,0.08333333333333333,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.24387099224552733
+woodward_colella,0.0031666666666666666,0.08333333333333333,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.2438810549135442
+woodward_colella,0.0031666666666666666,0.08333333333333333,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.2443127055355608
+woodward_colella,0.0031666666666666666,0.08333333333333333,hllc_muscl_fine,512-cell HLLC,0.10670510618532043
+woodward_colella,0.006333333333333333,0.16666666666666666,fno_operator,FNO,0.9453447088953847
+woodward_colella,0.006333333333333333,0.16666666666666666,hllc_piecewise_constant,128-cell HLLC-PC,0.26143853448050597
+woodward_colella,0.006333333333333333,0.16666666666666666,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.2585648141715067
+woodward_colella,0.006333333333333333,0.16666666666666666,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.25856531187845927
+woodward_colella,0.006333333333333333,0.16666666666666666,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.2565513017275909
+woodward_colella,0.006333333333333333,0.16666666666666666,hllc_muscl_fine,512-cell HLLC,0.09394937528912418
+woodward_colella,0.0095,0.25,fno_operator,FNO,0.9534974627411159
+woodward_colella,0.0095,0.25,hllc_piecewise_constant,128-cell HLLC-PC,0.288022814617724
+woodward_colella,0.0095,0.25,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.2793141714899782
+woodward_colella,0.0095,0.25,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.2792824386790113
+woodward_colella,0.0095,0.25,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.2792057267060977
+woodward_colella,0.0095,0.25,hllc_muscl_fine,512-cell HLLC,0.09003441260579137
+woodward_colella,0.012666666666666666,0.3333333333333333,fno_operator,FNO,0.9454926426693128
+woodward_colella,0.012666666666666666,0.3333333333333333,hllc_piecewise_constant,128-cell HLLC-PC,0.26252156945932914
+woodward_colella,0.012666666666666666,0.3333333333333333,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.2623706337284619
+woodward_colella,0.012666666666666666,0.3333333333333333,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.2623729931565896
+woodward_colella,0.012666666666666666,0.3333333333333333,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.26394875478733093
+woodward_colella,0.012666666666666666,0.3333333333333333,hllc_muscl_fine,512-cell HLLC,0.08682610777699383
+woodward_colella,0.01583333333333333,0.41666666666666663,fno_operator,FNO,0.9314179925736242
+woodward_colella,0.01583333333333333,0.41666666666666663,hllc_piecewise_constant,128-cell HLLC-PC,0.24942591677197465
+woodward_colella,0.01583333333333333,0.41666666666666663,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.24720364016250546
+woodward_colella,0.01583333333333333,0.41666666666666663,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.2472373193322522
+woodward_colella,0.01583333333333333,0.41666666666666663,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.24937986872506834
+woodward_colella,0.01583333333333333,0.41666666666666663,hllc_muscl_fine,512-cell HLLC,0.07152270960168759
+woodward_colella,0.019,0.5,fno_operator,FNO,0.9356989003065859
+woodward_colella,0.019,0.5,hllc_piecewise_constant,128-cell HLLC-PC,0.2440927027753332
+woodward_colella,0.019,0.5,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.24060010075589772
+woodward_colella,0.019,0.5,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.2406417927515285
+woodward_colella,0.019,0.5,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.2406583193080945
+woodward_colella,0.019,0.5,hllc_muscl_fine,512-cell HLLC,0.07204521785091988
+woodward_colella,0.022166666666666668,0.5833333333333334,fno_operator,FNO,0.9420869907676617
+woodward_colella,0.022166666666666668,0.5833333333333334,hllc_piecewise_constant,128-cell HLLC-PC,0.2393277551322159
+woodward_colella,0.022166666666666668,0.5833333333333334,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.2382687887173757
+woodward_colella,0.022166666666666668,0.5833333333333334,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.23828957886651636
+woodward_colella,0.022166666666666668,0.5833333333333334,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.23873617890026744
+woodward_colella,0.022166666666666668,0.5833333333333334,hllc_muscl_fine,512-cell HLLC,0.07405966421648601
+woodward_colella,0.025333333333333333,0.6666666666666666,fno_operator,FNO,0.9557367845610012
+woodward_colella,0.025333333333333333,0.6666666666666666,hllc_piecewise_constant,128-cell HLLC-PC,0.24479627506294477
+woodward_colella,0.025333333333333333,0.6666666666666666,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.24327871364880635
+woodward_colella,0.025333333333333333,0.6666666666666666,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.24328824961398213
+woodward_colella,0.025333333333333333,0.6666666666666666,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.2435717833658109
+woodward_colella,0.025333333333333333,0.6666666666666666,hllc_muscl_fine,512-cell HLLC,0.075125412561826
+woodward_colella,0.028499999999999998,0.75,fno_operator,FNO,0.9798812589041972
+woodward_colella,0.028499999999999998,0.75,hllc_piecewise_constant,128-cell HLLC-PC,0.37270432532351777
+woodward_colella,0.028499999999999998,0.75,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.3722542901451419
+woodward_colella,0.028499999999999998,0.75,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.3722714464033407
+woodward_colella,0.028499999999999998,0.75,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.3727851151502365
+woodward_colella,0.028499999999999998,0.75,hllc_muscl_fine,512-cell HLLC,0.19306157354022996
+woodward_colella,0.03166666666666666,0.8333333333333333,fno_operator,FNO,0.9797173222724436
+woodward_colella,0.03166666666666666,0.8333333333333333,hllc_piecewise_constant,128-cell HLLC-PC,0.24087559898868602
+woodward_colella,0.03166666666666666,0.8333333333333333,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.2296545135105852
+woodward_colella,0.03166666666666666,0.8333333333333333,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.22965958210323612
+woodward_colella,0.03166666666666666,0.8333333333333333,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.22976455569456736
+woodward_colella,0.03166666666666666,0.8333333333333333,hllc_muscl_fine,512-cell HLLC,0.10027969999775964
+woodward_colella,0.034833333333333334,0.9166666666666667,fno_operator,FNO,0.9827290979920696
+woodward_colella,0.034833333333333334,0.9166666666666667,hllc_piecewise_constant,128-cell HLLC-PC,0.18866449974523714
+woodward_colella,0.034833333333333334,0.9166666666666667,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.1852171333137552
+woodward_colella,0.034833333333333334,0.9166666666666667,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.1852245167357161
+woodward_colella,0.034833333333333334,0.9166666666666667,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.18459843761271358
+woodward_colella,0.034833333333333334,0.9166666666666667,hllc_muscl_fine,512-cell HLLC,0.0808179065589864
+woodward_colella,0.038,1.0,fno_operator,FNO,0.9731790690166398
+woodward_colella,0.038,1.0,hllc_piecewise_constant,128-cell HLLC-PC,0.234333240541534
+woodward_colella,0.038,1.0,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.23024059691431942
+woodward_colella,0.038,1.0,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.23023689800057
+woodward_colella,0.038,1.0,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.2288657591749303
+woodward_colella,0.038,1.0,hllc_muscl_fine,512-cell HLLC,0.07761357741784664
+smooth_entropy,0.0,0.0,fno_operator,FNO,0.293702095943837
+smooth_entropy,0.0,0.0,hllc_piecewise_constant,128-cell HLLC-PC,0.0011092095801289788
+smooth_entropy,0.0,0.0,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.00019637616917914452
+smooth_entropy,0.0,0.0,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.00019676016337269713
+smooth_entropy,0.0,0.0,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.00019637616917914452
+smooth_entropy,0.0,0.0,hllc_muscl_fine,512-cell HLLC,5.860524778115498e-17
+smooth_entropy,0.020833333333333332,0.08333333333333333,fno_operator,FNO,0.263755766993259
+smooth_entropy,0.020833333333333332,0.08333333333333333,hllc_piecewise_constant,128-cell HLLC-PC,0.0011093145838267995
+smooth_entropy,0.020833333333333332,0.08333333333333333,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.00019541694166053258
+smooth_entropy,0.020833333333333332,0.08333333333333333,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.00019581202641404032
+smooth_entropy,0.020833333333333332,0.08333333333333333,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.00019541694166053258
+smooth_entropy,0.020833333333333332,0.08333333333333333,hllc_muscl_fine,512-cell HLLC,1.1856109799585673e-06
+smooth_entropy,0.041666666666666664,0.16666666666666666,fno_operator,FNO,0.23348286173184357
+smooth_entropy,0.041666666666666664,0.16666666666666666,hllc_piecewise_constant,128-cell HLLC-PC,0.001109462261832293
+smooth_entropy,0.041666666666666664,0.16666666666666666,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.00019128501507502412
+smooth_entropy,0.041666666666666664,0.16666666666666666,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.0001916941906523606
+smooth_entropy,0.041666666666666664,0.16666666666666666,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.00019128501507502412
+smooth_entropy,0.041666666666666664,0.16666666666666666,hllc_muscl_fine,512-cell HLLC,1.953093095830346e-06
+smooth_entropy,0.0625,0.25,fno_operator,FNO,0.25649153238030903
+smooth_entropy,0.0625,0.25,hllc_piecewise_constant,128-cell HLLC-PC,0.0011096636885799514
+smooth_entropy,0.0625,0.25,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.00018459006548844186
+smooth_entropy,0.0625,0.25,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.00018502187370025201
+smooth_entropy,0.0625,0.25,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.00018459006548844186
+smooth_entropy,0.0625,0.25,hllc_muscl_fine,512-cell HLLC,2.6444802114092166e-06
+smooth_entropy,0.08333333333333333,0.3333333333333333,fno_operator,FNO,0.29893274116315555
+smooth_entropy,0.08333333333333333,0.3333333333333333,hllc_piecewise_constant,128-cell HLLC-PC,0.0011098684621654732
+smooth_entropy,0.08333333333333333,0.3333333333333333,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.00017476709506007428
+smooth_entropy,0.08333333333333333,0.3333333333333333,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.00017522509498280403
+smooth_entropy,0.08333333333333333,0.3333333333333333,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.00017476709506007428
+smooth_entropy,0.08333333333333333,0.3333333333333333,hllc_muscl_fine,512-cell HLLC,3.265400445997624e-06
+smooth_entropy,0.10416666666666666,0.41666666666666663,fno_operator,FNO,0.35466143924968796
+smooth_entropy,0.10416666666666666,0.41666666666666663,hllc_piecewise_constant,128-cell HLLC-PC,0.0011101438019682835
+smooth_entropy,0.10416666666666666,0.41666666666666663,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.00016305620993840677
+smooth_entropy,0.10416666666666666,0.41666666666666663,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.00016355188764585556
+smooth_entropy,0.10416666666666666,0.41666666666666663,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.00016305620993840677
+smooth_entropy,0.10416666666666666,0.41666666666666663,hllc_muscl_fine,512-cell HLLC,3.887970413937949e-06
+smooth_entropy,0.125,0.5,fno_operator,FNO,0.41033329681121644
+smooth_entropy,0.125,0.5,hllc_piecewise_constant,128-cell HLLC-PC,0.0011103862316964358
+smooth_entropy,0.125,0.5,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.00014898146099588149
+smooth_entropy,0.125,0.5,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.000149527478998954
+smooth_entropy,0.125,0.5,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.00014898146099588149
+smooth_entropy,0.125,0.5,hllc_muscl_fine,512-cell HLLC,4.463330680102009e-06
+smooth_entropy,0.14583333333333331,0.5833333333333333,fno_operator,FNO,0.45396329094242405
+smooth_entropy,0.14583333333333331,0.5833333333333333,hllc_piecewise_constant,128-cell HLLC-PC,0.0011107204105271597
+smooth_entropy,0.14583333333333331,0.5833333333333333,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.00013401298537678866
+smooth_entropy,0.14583333333333331,0.5833333333333333,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.00013462378090390304
+smooth_entropy,0.14583333333333331,0.5833333333333333,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.00013401298537678866
+smooth_entropy,0.14583333333333331,0.5833333333333333,hllc_muscl_fine,512-cell HLLC,5.042711460446133e-06
+smooth_entropy,0.16666666666666666,0.6666666666666666,fno_operator,FNO,0.4824630870456504
+smooth_entropy,0.16666666666666666,0.6666666666666666,hllc_piecewise_constant,128-cell HLLC-PC,0.0011110191154745928
+smooth_entropy,0.16666666666666666,0.6666666666666666,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.00011867327578912729
+smooth_entropy,0.16666666666666666,0.6666666666666666,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.00011937146664290359
+smooth_entropy,0.16666666666666666,0.6666666666666666,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.00011867327578912729
+smooth_entropy,0.16666666666666666,0.6666666666666666,hllc_muscl_fine,512-cell HLLC,5.596626765031977e-06
+smooth_entropy,0.1875,0.75,fno_operator,FNO,0.48977573646639594
+smooth_entropy,0.1875,0.75,hllc_piecewise_constant,128-cell HLLC-PC,0.0011113617307368872
+smooth_entropy,0.1875,0.75,hllc_fixed_mc_subcell,128-cell HLLC-MC,0.00010402647826071588
+smooth_entropy,0.1875,0.75,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,0.00010482716884195633
+smooth_entropy,0.1875,0.75,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,0.00010402647826071588
+smooth_entropy,0.1875,0.75,hllc_muscl_fine,512-cell HLLC,6.1400666269454655e-06
+smooth_entropy,0.20833333333333331,0.8333333333333333,fno_operator,FNO,0.4841888602805686
+smooth_entropy,0.20833333333333331,0.8333333333333333,hllc_piecewise_constant,128-cell HLLC-PC,0.001111750598979592
+smooth_entropy,0.20833333333333331,0.8333333333333333,hllc_fixed_mc_subcell,128-cell HLLC-MC,9.340606838566221e-05
+smooth_entropy,0.20833333333333331,0.8333333333333333,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,9.430751808598122e-05
+smooth_entropy,0.20833333333333331,0.8333333333333333,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,9.340606838566221e-05
+smooth_entropy,0.20833333333333331,0.8333333333333333,hllc_muscl_fine,512-cell HLLC,6.684541018429359e-06
+smooth_entropy,0.22916666666666666,0.9166666666666666,fno_operator,FNO,0.4739767997016203
+smooth_entropy,0.22916666666666666,0.9166666666666666,hllc_piecewise_constant,128-cell HLLC-PC,0.001112094838600457
+smooth_entropy,0.22916666666666666,0.9166666666666666,hllc_fixed_mc_subcell,128-cell HLLC-MC,8.717151961656798e-05
+smooth_entropy,0.22916666666666666,0.9166666666666666,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,8.815496904213988e-05
+smooth_entropy,0.22916666666666666,0.9166666666666666,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,8.717151961656798e-05
+smooth_entropy,0.22916666666666666,0.9166666666666666,hllc_muscl_fine,512-cell HLLC,7.199788580653037e-06
+smooth_entropy,0.25,1.0,fno_operator,FNO,0.46408575560690873
+smooth_entropy,0.25,1.0,hllc_piecewise_constant,128-cell HLLC-PC,0.0011125430656351613
+smooth_entropy,0.25,1.0,hllc_fixed_mc_subcell,128-cell HLLC-MC,8.890162677362856e-05
+smooth_entropy,0.25,1.0,physics_gated_dkan_fv_sod_neighbourhood,Narrow DKAN-FV,8.985964328162814e-05
+smooth_entropy,0.25,1.0,sensor_gated_dkan_fv_engineering_tv_trust_0.02,CSE-DKAN-FV,8.890162677362856e-05
+smooth_entropy,0.25,1.0,hllc_muscl_fine,512-cell HLLC,7.734132870254386e-06

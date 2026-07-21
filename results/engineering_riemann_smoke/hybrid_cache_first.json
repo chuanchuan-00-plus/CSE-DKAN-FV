@@ -1,0 +1,102 @@
+{
+  "model_class": "ConservativeEulerJumpBlendDKAN",
+  "architecture": {
+    "hidden_width": 16,
+    "gamma": 1.4,
+    "positivity_floor": 1e-08,
+    "basis_type": "shock"
+  },
+  "training": {
+    "output": "results\\engineering_riemann_smoke\\hybrid_cache_first.pt",
+    "iterations": 2,
+    "coarse_cells": [
+      16
+    ],
+    "refinement": 4,
+    "cases": 4,
+    "batch_size": 8,
+    "seed": 992,
+    "dataset_seed": 20260716,
+    "record_cache": "results\\engineering_riemann_smoke\\tiny_records.pt",
+    "case_family": "engineering",
+    "basis_type": "shock",
+    "times": [
+      0.05
+    ],
+    "dtype": "float64"
+  },
+  "data_configuration": {
+    "case_family": "engineering",
+    "dataset_seed": 20260716,
+    "cases": 4,
+    "coarse_cells": [
+      16
+    ],
+    "refinement": 4,
+    "times": [
+      0.05
+    ],
+    "dtype": "float64"
+  },
+  "cases": [
+    {
+      "left_density": 0.6043869922459104,
+      "left_velocity": 0.22444212098197558,
+      "left_pressure": 1.0322274806614748,
+      "right_density": 0.43295002481738176,
+      "right_velocity": -0.036412167055260514,
+      "right_pressure": 0.26078629679049753,
+      "validation": false
+    },
+    {
+      "left_density": 1.8372866850444853,
+      "left_velocity": 0.22907849964246985,
+      "left_pressure": 0.35129673770477504,
+      "right_density": 0.20554599379610078,
+      "right_velocity": -0.003502224321565106,
+      "right_pressure": 0.24198848035145717,
+      "validation": false
+    },
+    {
+      "left_density": 0.6899515452822895,
+      "left_velocity": 0.2436625210394432,
+      "left_pressure": 1.0009594034026095,
+      "right_density": 0.053865235992760635,
+      "right_velocity": 0.3016007102550713,
+      "right_pressure": 0.03948154454559591,
+      "validation": true
+    },
+    {
+      "left_density": 1.7104042603460456,
+      "left_velocity": -0.28258624808461114,
+      "left_pressure": 0.46313592490264693,
+      "right_density": 0.5409596807170679,
+      "right_velocity": -0.05175908765533699,
+      "right_pressure": 0.16986896266432863,
+      "validation": true
+    }
+  ],
+  "history": [
+    {
+      "iteration": 1,
+      "training_oracle_mse": 0.019953290910519894,
+      "validation_oracle_mse": 0.020195161818492256,
+      "validation_profile_mse": 0.012443135035272387
+    },
+    {
+      "iteration": 2,
+      "training_oracle_mse": 0.6426590498543825,
+      "validation_oracle_mse": 0.020178985828901656,
+      "validation_profile_mse": 0.012439962320482955
+    }
+  ],
+  "fixed_profile_validation_mse": 0.012445132233448872,
+  "best_profile_validation_mse": 0.012439962320482955,
+  "best_iteration": 2,
+  "final_profile_validation_mse": 0.012439962320482955,
+  "generation_seconds": 0.05522769968956709,
+  "oracle_seconds": 0.03808300010859966,
+  "training_seconds": 0.06265919981524348,
+  "device": "cpu",
+  "dtype": "float64"
+}

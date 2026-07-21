@@ -1,0 +1,1062 @@
+{
+  "protocol": "final_hybrid_ablations_v1",
+  "status": "completed_descriptive",
+  "burgers": {
+    "full": {
+      "median_geometric_error": 0.011782547905016687,
+      "median_gain_vs_fixed": 1.867196411096963,
+      "minimum_pair_gain_vs_fixed": 1.0,
+      "maximum_pair_error_ratio_vs_full": 1.0,
+      "seed_rows": [
+        {
+          "seed": 45001,
+          "geometric_error": 0.011515646950503484,
+          "geometric_gain_vs_fixed": 1.9103697324245807,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45002,
+          "geometric_error": 0.01299792943805869,
+          "geometric_gain_vs_fixed": 1.692511371781607,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45003,
+          "geometric_error": 0.012372645966989856,
+          "geometric_gain_vs_fixed": 1.7780467849983603,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45004,
+          "geometric_error": 0.012339560768207808,
+          "geometric_gain_vs_fixed": 1.7828141371294866,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45005,
+          "geometric_error": 0.011960154669717211,
+          "geometric_gain_vs_fixed": 1.8393694723054448,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45006,
+          "geometric_error": 0.011695972945384263,
+          "geometric_gain_vs_fixed": 1.8809160628411932,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_tv_excess": 0.03133816402065544,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45007,
+          "geometric_error": 0.011089530633959933,
+          "geometric_gain_vs_fixed": 1.983775879220745,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_tv_excess": 0.02907318963775775,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45008,
+          "geometric_error": 0.011869122864649112,
+          "geometric_gain_vs_fixed": 1.8534767593527328,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45009,
+          "geometric_error": 0.011557145326742235,
+          "geometric_gain_vs_fixed": 1.9035101455914993,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_tv_excess": 0.020949995683315795,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45010,
+          "geometric_error": 0.011139149665171818,
+          "geometric_gain_vs_fixed": 1.974939204947825,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        }
+      ]
+    },
+    "no_discontinuity_basis": {
+      "median_geometric_error": 0.021999143383529245,
+      "median_gain_vs_fixed": 1.0,
+      "minimum_pair_gain_vs_fixed": 1.0,
+      "maximum_pair_error_ratio_vs_full": 4.44098213870579,
+      "seed_rows": [
+        {
+          "seed": 45001,
+          "geometric_error": 0.021999143383529245,
+          "geometric_gain_vs_fixed": 1.0,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 3.8995134926852844,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45002,
+          "geometric_error": 0.021999143383529245,
+          "geometric_gain_vs_fixed": 1.0,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 2.8556960628169983,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45003,
+          "geometric_error": 0.021999143383529245,
+          "geometric_gain_vs_fixed": 1.0,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 3.2391815102048525,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45004,
+          "geometric_error": 0.021999143383529245,
+          "geometric_gain_vs_fixed": 1.0,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 3.631231810144545,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45005,
+          "geometric_error": 0.021999143383529245,
+          "geometric_gain_vs_fixed": 1.0,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 3.921515239506969,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45006,
+          "geometric_error": 0.021999143383529245,
+          "geometric_gain_vs_fixed": 1.0,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 4.44098213870579,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45007,
+          "geometric_error": 0.021999143383529245,
+          "geometric_gain_vs_fixed": 1.0,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 4.261267339327159,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45008,
+          "geometric_error": 0.021999143383529245,
+          "geometric_gain_vs_fixed": 1.0,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 3.945645608590042,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45009,
+          "geometric_error": 0.021999143383529245,
+          "geometric_gain_vs_fixed": 1.0,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 3.8723136505104816,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45010,
+          "geometric_error": 0.021999143383529245,
+          "geometric_gain_vs_fixed": 1.0,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 3.9436452123436427,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        }
+      ]
+    },
+    "no_spatial_jump_condition": {
+      "median_geometric_error": 0.014376785730622971,
+      "median_gain_vs_fixed": 1.5301893520708163,
+      "minimum_pair_gain_vs_fixed": 0.03560026017549184,
+      "maximum_pair_error_ratio_vs_full": 28.089682352614563,
+      "seed_rows": [
+        {
+          "seed": 45001,
+          "geometric_error": 0.013310798213419524,
+          "geometric_gain_vs_fixed": 1.6527290873773752,
+          "minimum_pair_gain": 0.155890584405787,
+          "maximum_pair_error_ratio_vs_full": 6.414755604462778,
+          "maximum_tv_excess": 0.03267659006944714,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45002,
+          "geometric_error": 0.019957369923698814,
+          "geometric_gain_vs_fixed": 1.1023067401985602,
+          "minimum_pair_gain": 0.03560026017549184,
+          "maximum_pair_error_ratio_vs_full": 28.089682352614563,
+          "maximum_tv_excess": 0.047420151938706315,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45003,
+          "geometric_error": 0.014352834309641963,
+          "geometric_gain_vs_fixed": 1.5327386151702893,
+          "minimum_pair_gain": 0.10856876479033348,
+          "maximum_pair_error_ratio_vs_full": 9.21075229999334,
+          "maximum_tv_excess": 0.04741441289072754,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45004,
+          "geometric_error": 0.015189077707385692,
+          "geometric_gain_vs_fixed": 1.448352810311329,
+          "minimum_pair_gain": 0.15495070587929108,
+          "maximum_pair_error_ratio_vs_full": 6.453665340376151,
+          "maximum_tv_excess": 0.04685151699455636,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45005,
+          "geometric_error": 0.014898262609045103,
+          "geometric_gain_vs_fixed": 1.4766247555720369,
+          "minimum_pair_gain": 0.09552101549103847,
+          "maximum_pair_error_ratio_vs_full": 10.46890042844883,
+          "maximum_tv_excess": 0.031971803587580123,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45006,
+          "geometric_error": 0.01440073715160398,
+          "geometric_gain_vs_fixed": 1.5276400889713433,
+          "minimum_pair_gain": 0.12378568616844692,
+          "maximum_pair_error_ratio_vs_full": 8.078478465104642,
+          "maximum_tv_excess": 0.04796978360044909,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45007,
+          "geometric_error": 0.014703994465077568,
+          "geometric_gain_vs_fixed": 1.4961338183156891,
+          "minimum_pair_gain": 0.07720819850157605,
+          "maximum_pair_error_ratio_vs_full": 12.95199239727873,
+          "maximum_tv_excess": 0.04816472339811111,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45008,
+          "geometric_error": 0.013543675799201885,
+          "geometric_gain_vs_fixed": 1.6243111330843905,
+          "minimum_pair_gain": 0.19135521031495192,
+          "maximum_pair_error_ratio_vs_full": 5.225883310697932,
+          "maximum_tv_excess": 0.04694898504712818,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45009,
+          "geometric_error": 0.013450997311346717,
+          "geometric_gain_vs_fixed": 1.635502771602791,
+          "minimum_pair_gain": 0.09085443045178465,
+          "maximum_pair_error_ratio_vs_full": 11.00661789444256,
+          "maximum_tv_excess": 0.041231343379670944,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45010,
+          "geometric_error": 0.012374490040731174,
+          "geometric_gain_vs_fixed": 1.7777818165530967,
+          "minimum_pair_gain": 0.12298797207426555,
+          "maximum_pair_error_ratio_vs_full": 8.130876403069367,
+          "maximum_tv_excess": 0.04458523966549073,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        }
+      ]
+    },
+    "no_viscous_transition_gate": {
+      "median_geometric_error": 0.011811843112718143,
+      "median_gain_vs_fixed": 1.8625092958547675,
+      "minimum_pair_gain_vs_fixed": 0.6933756663213754,
+      "maximum_pair_error_ratio_vs_full": 1.4422196344232623,
+      "seed_rows": [
+        {
+          "seed": 45001,
+          "geometric_error": 0.011553599900470106,
+          "geometric_gain_vs_fixed": 1.904094271313146,
+          "minimum_pair_gain": 0.901398181475127,
+          "maximum_pair_error_ratio_vs_full": 1.1093876386166126,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45002,
+          "geometric_error": 0.013032364054174315,
+          "geometric_gain_vs_fixed": 1.6880393528051298,
+          "minimum_pair_gain": 0.8604496379339737,
+          "maximum_pair_error_ratio_vs_full": 1.1621830679144696,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45003,
+          "geometric_error": 0.01245767033303148,
+          "geometric_gain_vs_fixed": 1.7659115063591446,
+          "minimum_pair_gain": 0.8007666687719774,
+          "maximum_pair_error_ratio_vs_full": 1.2488032269544367,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45004,
+          "geometric_error": 0.012371520951081745,
+          "geometric_gain_vs_fixed": 1.7782084733571648,
+          "minimum_pair_gain": 0.9083048449130737,
+          "maximum_pair_error_ratio_vs_full": 1.100951960787682,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45005,
+          "geometric_error": 0.011977511600452708,
+          "geometric_gain_vs_fixed": 1.8367039930646167,
+          "minimum_pair_gain": 0.9264635839015721,
+          "maximum_pair_error_ratio_vs_full": 1.0793732396785067,
+          "maximum_tv_excess": 0.02552715791211146,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45006,
+          "geometric_error": 0.011754184476206355,
+          "geometric_gain_vs_fixed": 1.8716009969097782,
+          "minimum_pair_gain": 0.8433701048159817,
+          "maximum_pair_error_ratio_vs_full": 1.1857190506156179,
+          "maximum_tv_excess": 0.03133816402065544,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45007,
+          "geometric_error": 0.011223746138369607,
+          "geometric_gain_vs_fixed": 1.9600535429363233,
+          "minimum_pair_gain": 0.6933756663213754,
+          "maximum_pair_error_ratio_vs_full": 1.4422196344232623,
+          "maximum_tv_excess": 0.02907318963775775,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45008,
+          "geometric_error": 0.011869501749229931,
+          "geometric_gain_vs_fixed": 1.8534175947997567,
+          "minimum_pair_gain": 0.982909342355671,
+          "maximum_pair_error_ratio_vs_full": 1.0173878270435084,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45009,
+          "geometric_error": 0.011588257419004763,
+          "geometric_gain_vs_fixed": 1.8983996116146502,
+          "minimum_pair_gain": 0.908670519571408,
+          "maximum_pair_error_ratio_vs_full": 1.1005089066515215,
+          "maximum_tv_excess": 0.020949995683315795,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45010,
+          "geometric_error": 0.011189995142694406,
+          "geometric_gain_vs_fixed": 1.9659654095463843,
+          "minimum_pair_gain": 0.8554378623854362,
+          "maximum_pair_error_ratio_vs_full": 1.1689919793957264,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        }
+      ]
+    },
+    "no_tv_projection": {
+      "median_geometric_error": 0.011782547905016687,
+      "median_gain_vs_fixed": 1.867196411096963,
+      "minimum_pair_gain_vs_fixed": 1.0,
+      "maximum_pair_error_ratio_vs_full": 1.0490255464766052,
+      "seed_rows": [
+        {
+          "seed": 45001,
+          "geometric_error": 0.011515646950503484,
+          "geometric_gain_vs_fixed": 1.9103697324245807,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45002,
+          "geometric_error": 0.01299792943805869,
+          "geometric_gain_vs_fixed": 1.692511371781607,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45003,
+          "geometric_error": 0.012372645966989856,
+          "geometric_gain_vs_fixed": 1.7780467849983603,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45004,
+          "geometric_error": 0.012339560768207808,
+          "geometric_gain_vs_fixed": 1.7828141371294866,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45005,
+          "geometric_error": 0.011960154669717211,
+          "geometric_gain_vs_fixed": 1.8393694723054448,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45006,
+          "geometric_error": 0.011695972945384263,
+          "geometric_gain_vs_fixed": 1.8809160628411932,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_tv_excess": 0.03133816402065544,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45007,
+          "geometric_error": 0.01109838022299141,
+          "geometric_gain_vs_fixed": 1.9821940626935646,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.0490255464766052,
+          "maximum_tv_excess": 0.042537672139015874,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45008,
+          "geometric_error": 0.011869122864649112,
+          "geometric_gain_vs_fixed": 1.8534767593527328,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45009,
+          "geometric_error": 0.011557145326742235,
+          "geometric_gain_vs_fixed": 1.9035101455914993,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_tv_excess": 0.020949995683315795,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        },
+        {
+          "seed": 45010,
+          "geometric_error": 0.011139149665171818,
+          "geometric_gain_vs_fixed": 1.974939204947825,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_tv_excess": 0.02034605309904205,
+          "maximum_overshoot_undershoot": 0.0,
+          "maximum_cell_average_change": 2.220446049250313e-16
+        }
+      ]
+    }
+  },
+  "euler": {
+    "full": {
+      "median_geometric_error": 0.018140469016375463,
+      "median_gain_vs_fixed": 1.0892601977717309,
+      "minimum_pair_gain_vs_fixed": 0.9647086628082856,
+      "maximum_pair_error_ratio_vs_full": 1.0,
+      "seed_rows": [
+        {
+          "seed": 26001,
+          "geometric_error": 0.018120668745513168,
+          "geometric_gain_vs_fixed": 1.0904491222111112,
+          "minimum_pair_gain": 0.9882197826177209,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_rh_ratio": 1.0988000659988542,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26002,
+          "geometric_error": 0.018200964948551474,
+          "geometric_gain_vs_fixed": 1.0856384473723049,
+          "minimum_pair_gain": 0.9723291406777326,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_rh_ratio": 1.1570201199726173,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26003,
+          "geometric_error": 0.018215805013126155,
+          "geometric_gain_vs_fixed": 1.0847539986942378,
+          "minimum_pair_gain": 0.9946819087419955,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_rh_ratio": 1.068311182252219,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26004,
+          "geometric_error": 0.01809606724599286,
+          "geometric_gain_vs_fixed": 1.0919315815318205,
+          "minimum_pair_gain": 0.9897199290366085,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_rh_ratio": 1.0942672676609222,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26005,
+          "geometric_error": 0.01807780105141578,
+          "geometric_gain_vs_fixed": 1.0930348924199302,
+          "minimum_pair_gain": 0.982126693720581,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_rh_ratio": 1.0273991572606258,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26006,
+          "geometric_error": 0.018187642324500854,
+          "geometric_gain_vs_fixed": 1.08643368804348,
+          "minimum_pair_gain": 0.9647086628082856,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_rh_ratio": 1.1551367676044915,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26007,
+          "geometric_error": 0.018118512824434146,
+          "geometric_gain_vs_fixed": 1.0905788747063052,
+          "minimum_pair_gain": 0.9714508005411495,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_rh_ratio": 1.1437999064601976,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26008,
+          "geometric_error": 0.01810628923551844,
+          "geometric_gain_vs_fixed": 1.091315126495458,
+          "minimum_pair_gain": 0.9930061780525973,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_rh_ratio": 1.1088926324660848,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26009,
+          "geometric_error": 0.018171807936325973,
+          "geometric_gain_vs_fixed": 1.087380374955593,
+          "minimum_pair_gain": 0.9786020266778188,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_rh_ratio": 1.0298757402220058,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26010,
+          "geometric_error": 0.018160269287237754,
+          "geometric_gain_vs_fixed": 1.0880712733323503,
+          "minimum_pair_gain": 0.974051817064002,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_rh_ratio": 1.0653129542653184,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        }
+      ]
+    },
+    "no_discontinuity_basis": {
+      "median_geometric_error": 0.019759667327423153,
+      "median_gain_vs_fixed": 1.0,
+      "minimum_pair_gain_vs_fixed": 1.0,
+      "maximum_pair_error_ratio_vs_full": 1.5583897841623215,
+      "seed_rows": [
+        {
+          "seed": 26001,
+          "geometric_error": 0.019759667327423153,
+          "geometric_gain_vs_fixed": 1.0,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.4974925702296447,
+          "maximum_rh_ratio": 1.0,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26002,
+          "geometric_error": 0.019759667327423153,
+          "geometric_gain_vs_fixed": 1.0,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.5099161553199218,
+          "maximum_rh_ratio": 1.0,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26003,
+          "geometric_error": 0.019759667327423153,
+          "geometric_gain_vs_fixed": 1.0,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.4806906506101751,
+          "maximum_rh_ratio": 1.0,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26004,
+          "geometric_error": 0.019759667327423153,
+          "geometric_gain_vs_fixed": 1.0,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.532774498813668,
+          "maximum_rh_ratio": 1.0,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26005,
+          "geometric_error": 0.019759667327423153,
+          "geometric_gain_vs_fixed": 1.0,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.5388957389719842,
+          "maximum_rh_ratio": 1.0,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26006,
+          "geometric_error": 0.019759667327423153,
+          "geometric_gain_vs_fixed": 1.0,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.4911623156146736,
+          "maximum_rh_ratio": 1.0,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26007,
+          "geometric_error": 0.019759667327423153,
+          "geometric_gain_vs_fixed": 1.0,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.515287378363426,
+          "maximum_rh_ratio": 1.0,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26008,
+          "geometric_error": 0.019759667327423153,
+          "geometric_gain_vs_fixed": 1.0,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.5583897841623215,
+          "maximum_rh_ratio": 1.0,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26009,
+          "geometric_error": 0.019759667327423153,
+          "geometric_gain_vs_fixed": 1.0,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.5135439494548488,
+          "maximum_rh_ratio": 1.0,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26010,
+          "geometric_error": 0.019759667327423153,
+          "geometric_gain_vs_fixed": 1.0,
+          "minimum_pair_gain": 1.0,
+          "maximum_pair_error_ratio_vs_full": 1.5235623814055193,
+          "maximum_rh_ratio": 1.0,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        }
+      ]
+    },
+    "no_trust_region": {
+      "median_geometric_error": 0.01807994039500506,
+      "median_gain_vs_fixed": 1.0929056522089864,
+      "minimum_pair_gain_vs_fixed": 0.948215939318615,
+      "maximum_pair_error_ratio_vs_full": 1.0291893119757403,
+      "seed_rows": [
+        {
+          "seed": 26001,
+          "geometric_error": 0.01806267687767447,
+          "geometric_gain_vs_fixed": 1.0939501083500056,
+          "minimum_pair_gain": 0.9823224994045464,
+          "maximum_pair_error_ratio_vs_full": 1.015207594257169,
+          "maximum_rh_ratio": 1.1317729647437,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26002,
+          "geometric_error": 0.01809854300734309,
+          "geometric_gain_vs_fixed": 1.0917822124911427,
+          "minimum_pair_gain": 0.9604168670322822,
+          "maximum_pair_error_ratio_vs_full": 1.0210548339453756,
+          "maximum_rh_ratio": 1.209427002674511,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26003,
+          "geometric_error": 0.018150427504808397,
+          "geometric_gain_vs_fixed": 1.0886612627822925,
+          "minimum_pair_gain": 0.9914650049669169,
+          "maximum_pair_error_ratio_vs_full": 1.0225647616179858,
+          "maximum_rh_ratio": 1.201628974148407,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26004,
+          "geometric_error": 0.017982352348427152,
+          "geometric_gain_vs_fixed": 1.0988366229600353,
+          "minimum_pair_gain": 0.9848840752349874,
+          "maximum_pair_error_ratio_vs_full": 1.0195826317200565,
+          "maximum_rh_ratio": 1.1257259719961463,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26005,
+          "geometric_error": 0.018004259726345777,
+          "geometric_gain_vs_fixed": 1.0974995710880953,
+          "minimum_pair_gain": 0.9730216650080413,
+          "maximum_pair_error_ratio_vs_full": 1.0197530073257859,
+          "maximum_rh_ratio": 1.0365881828822066,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26006,
+          "geometric_error": 0.01810789274226845,
+          "geometric_gain_vs_fixed": 1.0912184873560153,
+          "minimum_pair_gain": 0.948215939318615,
+          "maximum_pair_error_ratio_vs_full": 1.023868170894809,
+          "maximum_rh_ratio": 1.20693180495114,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26007,
+          "geometric_error": 0.018074603255760276,
+          "geometric_gain_vs_fixed": 1.0932282743813948,
+          "minimum_pair_gain": 0.9568648390364008,
+          "maximum_pair_error_ratio_vs_full": 1.0291893119757403,
+          "maximum_rh_ratio": 1.1918093546482695,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26008,
+          "geometric_error": 0.01799742718534309,
+          "geometric_gain_vs_fixed": 1.0979162256878139,
+          "minimum_pair_gain": 0.9893890888954576,
+          "maximum_pair_error_ratio_vs_full": 1.0165815476666171,
+          "maximum_rh_ratio": 1.1452366961979485,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26009,
+          "geometric_error": 0.018085277534249843,
+          "geometric_gain_vs_fixed": 1.092583030036578,
+          "minimum_pair_gain": 0.9673455750455157,
+          "maximum_pair_error_ratio_vs_full": 1.014659266078265,
+          "maximum_rh_ratio": 1.0398368979698045,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26010,
+          "geometric_error": 0.018086955889588013,
+          "geometric_gain_vs_fixed": 1.0924816452279877,
+          "minimum_pair_gain": 0.9613872730205187,
+          "maximum_pair_error_ratio_vs_full": 1.0148418414368068,
+          "maximum_rh_ratio": 1.087103182693678,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        }
+      ]
+    },
+    "no_resolution_fallback": {
+      "median_geometric_error": 0.01686610597468955,
+      "median_gain_vs_fixed": 1.1715612592040328,
+      "minimum_pair_gain_vs_fixed": 0.9636858996105405,
+      "maximum_pair_error_ratio_vs_full": 1.0376825067214694,
+      "seed_rows": [
+        {
+          "seed": 26001,
+          "geometric_error": 0.016825042817053756,
+          "geometric_gain_vs_fixed": 1.174420032226895,
+          "minimum_pair_gain": 0.9846243452752425,
+          "maximum_pair_error_ratio_vs_full": 1.015615757215976,
+          "maximum_rh_ratio": 1.2368300939038535,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26002,
+          "geometric_error": 0.01698087395713371,
+          "geometric_gain_vs_fixed": 1.1636425414442277,
+          "minimum_pair_gain": 0.9723291406777326,
+          "maximum_pair_error_ratio_vs_full": 1.0204018410834725,
+          "maximum_rh_ratio": 1.1570201199726173,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26003,
+          "geometric_error": 0.016956163392570025,
+          "geometric_gain_vs_fixed": 1.1653383415779996,
+          "minimum_pair_gain": 0.9946819087419955,
+          "maximum_pair_error_ratio_vs_full": 1.0,
+          "maximum_rh_ratio": 1.6157960425342235,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26004,
+          "geometric_error": 0.016877505223981203,
+          "geometric_gain_vs_fixed": 1.1707694392739223,
+          "minimum_pair_gain": 0.9842264616808443,
+          "maximum_pair_error_ratio_vs_full": 1.0160263302535253,
+          "maximum_rh_ratio": 1.0942672676609222,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26005,
+          "geometric_error": 0.01676623404214061,
+          "geometric_gain_vs_fixed": 1.1785393951771632,
+          "minimum_pair_gain": 0.9813624779437471,
+          "maximum_pair_error_ratio_vs_full": 1.0189914761111554,
+          "maximum_rh_ratio": 1.0273991572606258,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26006,
+          "geometric_error": 0.016946988444272084,
+          "geometric_gain_vs_fixed": 1.1659692453559047,
+          "minimum_pair_gain": 0.9636858996105405,
+          "maximum_pair_error_ratio_vs_full": 1.0376825067214694,
+          "maximum_rh_ratio": 1.4400141552992296,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26007,
+          "geometric_error": 0.016826964884215048,
+          "geometric_gain_vs_fixed": 1.1742858836033587,
+          "minimum_pair_gain": 0.9648152523708681,
+          "maximum_pair_error_ratio_vs_full": 1.0364678600827169,
+          "maximum_rh_ratio": 1.1437999064601976,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26008,
+          "geometric_error": 0.016806903414060027,
+          "geometric_gain_vs_fixed": 1.1756875636527409,
+          "minimum_pair_gain": 0.9853457425799531,
+          "maximum_pair_error_ratio_vs_full": 1.014872198444454,
+          "maximum_rh_ratio": 1.1088926324660848,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26009,
+          "geometric_error": 0.016920183793822784,
+          "geometric_gain_vs_fixed": 1.1678163528363688,
+          "minimum_pair_gain": 0.9783158169335122,
+          "maximum_pair_error_ratio_vs_full": 1.022164808838986,
+          "maximum_rh_ratio": 1.0298757402220058,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        },
+        {
+          "seed": 26010,
+          "geometric_error": 0.016854706725397902,
+          "geometric_gain_vs_fixed": 1.1723530791341432,
+          "minimum_pair_gain": 0.974051817064002,
+          "maximum_pair_error_ratio_vs_full": 1.0076674968724466,
+          "maximum_rh_ratio": 1.0653129542653184,
+          "minimum_density": 0.09666799999999999,
+          "minimum_pressure": 0.07094499999999998,
+          "maximum_entropy_violation": 0.0,
+          "maximum_cell_average_change": 4.440892098500626e-16
+        }
+      ]
+    }
+  },
+  "claim_note": "Post-confirmation descriptive ablation on the v3 cases; not an independent blind confirmation and not part of the strong-20% gate.",
+  "entropy_note": "The successful subcell networks were not trained with a separable entropy-loss coefficient. Entropy admissibility is supplied by the Godunov/HLLC backbone and checked after reconstruction. The earlier direct Euler CSE-PINN no-entropy run remains a one-seed development ablation and must be reported separately, not merged with this table."
+}

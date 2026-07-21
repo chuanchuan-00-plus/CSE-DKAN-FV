@@ -1,0 +1,105 @@
+{
+  "architecture": {
+    "hidden_width": 16,
+    "correction_scale": 0.5
+  },
+  "training": {
+    "output": "results\\subcell_smoke\\model.pt",
+    "iterations": 10,
+    "coarse_cells": 32,
+    "refinement": 4,
+    "cases_per_viscosity": 2,
+    "seed": 9
+  },
+  "cases": [
+    {
+      "viscosity": 0.0,
+      "mean": 0.2721495223820508,
+      "amplitude_1": 0.7794537672700443,
+      "amplitude_2": 0.041259260020624744,
+      "phase_1": 0.4163011243802681,
+      "phase_2": 0.32411194440534796,
+      "validation": false
+    },
+    {
+      "viscosity": 0.0,
+      "mean": 0.2992280722943045,
+      "amplitude_1": 1.2383149193463079,
+      "amplitude_2": 0.16729505161950498,
+      "phase_1": -0.7101183982986041,
+      "phase_2": -0.09412799980573694,
+      "validation": true
+    },
+    {
+      "viscosity": 0.0003,
+      "mean": 0.04096659618637283,
+      "amplitude_1": 0.6021233578960861,
+      "amplitude_2": -0.19774957972824284,
+      "phase_1": 0.4959321554568854,
+      "phase_2": 0.7249533664292633,
+      "validation": false
+    },
+    {
+      "viscosity": 0.0003,
+      "mean": 0.2207659116036077,
+      "amplitude_1": 0.8024827919826185,
+      "amplitude_2": 0.08213348183578151,
+      "phase_1": -0.3012283902026299,
+      "phase_2": 0.361122724313623,
+      "validation": true
+    },
+    {
+      "viscosity": 0.003,
+      "mean": -0.08215166815102781,
+      "amplitude_1": 1.1760727322625053,
+      "amplitude_2": 0.1950962987578307,
+      "phase_1": 0.7293578239203578,
+      "phase_2": 0.5742938504950137,
+      "validation": false
+    },
+    {
+      "viscosity": 0.003,
+      "mean": 0.29768603107035074,
+      "amplitude_1": 1.116565531282538,
+      "amplitude_2": 0.02179875090540348,
+      "phase_1": 0.6348573121053307,
+      "phase_2": -0.6154038302185312,
+      "validation": true
+    },
+    {
+      "viscosity": 0.01,
+      "mean": -0.02792107291599552,
+      "amplitude_1": 1.0347511548074104,
+      "amplitude_2": -0.008908041232525754,
+      "phase_1": 0.43928682074584247,
+      "phase_2": -0.4573704097814302,
+      "validation": false
+    },
+    {
+      "viscosity": 0.01,
+      "mean": -0.21264790155000196,
+      "amplitude_1": 0.6512147257919346,
+      "amplitude_2": 0.18511263396686511,
+      "phase_1": -0.5508381941558543,
+      "phase_2": -0.41085250895524295,
+      "validation": true
+    }
+  ],
+  "history": [
+    {
+      "iteration": 1.0,
+      "training_weighted_mse": 0.0019481370691210032,
+      "validation_mse": 0.004123573657125235
+    },
+    {
+      "iteration": 10.0,
+      "training_weighted_mse": 0.000650517176836729,
+      "validation_mse": 0.002940576057881117
+    }
+  ],
+  "fixed_validation_mse": 0.002839196939021349,
+  "final_validation_mse": 0.002940576057881117,
+  "generation_seconds": 0.5138917001895607,
+  "training_seconds": 0.2911523003131151,
+  "device": "cuda"
+}

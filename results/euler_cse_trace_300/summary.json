@@ -1,0 +1,25 @@
+[
+  {
+    "variant": "cse_dkan",
+    "seed": 0,
+    "density_l1": 0.026002488127266937,
+    "density_l2": 0.02930076068566863,
+    "velocity_l2": 0.07160899281900854,
+    "pressure_l2": 0.0368295436574562,
+    "shock_location_error": 0.0009311464060357544,
+    "contact_location_error": 0.0009905240097899393,
+    "shock_width_10_90": 0.011005392809753212,
+    "contact_width_10_90": 0.05838837975807021,
+    "max_mass_balance_error": 0.003588557243347168,
+    "max_momentum_balance_error": 0.0023303180932998657,
+    "max_energy_balance_error": 0.00781261920928955,
+    "shock_entropy_violation": 0.0,
+    "minimum_density": 0.1229083240032196,
+    "minimum_pressure": 0.09838160127401352,
+    "inference_seconds": 0.0033024000003933907,
+    "training_seconds": 41.84568279981613,
+    "peak_memory_bytes": 79144448.0,
+    "trainable_parameters": 8833.0,
+    "optimized_parameters": 8837.0
+  }
+]

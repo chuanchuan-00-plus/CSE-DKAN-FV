@@ -1,0 +1,33 @@
+[
+  {
+    "variant": "dkan_pinn",
+    "seed": 31004,
+    "normalized_l1": 0.05612410591091276,
+    "normalized_l2": 0.18321271176618883,
+    "normalized_linf": 1.0006291862818764,
+    "mass_error": 0.01572460315097801,
+    "tv_excess": 0.0,
+    "overshoot_undershoot": 0.0,
+    "shock_location_error": 0.0078125,
+    "shock_width_10_90": 0.07340460360570784,
+    "shock_width_failure": 0.0,
+    "reference_shock_width_10_90": 0.0015520507704243625,
+    "shock_width_absolute_error": 0.07185255283528348,
+    "gradient_equivalent_width": 0.06043968681535873,
+    "reference_gradient_equivalent_width": 0.003861501680551326,
+    "cv_balance_rmse": 0.4320442888246996,
+    "shock_cv_balance_rmse": 0.14174444944768239,
+    "entropy_violation_mean": 0.010678961935490658,
+    "entropy_violation_max": 0.19425695874520188,
+    "entropy_violation_fraction": 0.40625,
+    "shock_entropy_violation_mean": 0.0,
+    "max_mass_drift": 0.007756487739359663,
+    "inference_seconds": 0.003325799945741892,
+    "prediction_min": -0.7318899264349203,
+    "prediction_max": 1.0909171322957603,
+    "training_seconds": 37.90743179991841,
+    "peak_memory_bytes": 67020288.0,
+    "optimized_parameters": 8562.0,
+    "trainable_parameters_after_geometry_freeze": 8562.0
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "protocol": "engineering_riemann_smoke",
+  "status": "non_claim_smoke_test",
+  "benchmark": {
+    "evaluation_points": 64,
+    "coarse_cells": 16,
+    "fine_hllc_cells": 64,
+    "hybrid_blend_multiplier": 0.75
+  },
+  "cases": [
+    {
+      "id": "smoke_sod",
+      "group": "smoke",
+      "left": [1.0, 0.0, 1.0],
+      "right": [0.125, 0.0, 0.1],
+      "time": 0.2
+    }
+  ]
+}

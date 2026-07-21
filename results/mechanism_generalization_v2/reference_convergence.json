@@ -1,0 +1,30 @@
+{
+  "rows": [
+    {
+      "case_id": "shu_osher",
+      "reference_cells": 2048,
+      "check_cells": 4096,
+      "density_normalized_l2": 0.004533986037840609,
+      "velocity_normalized_l2": 0.002288953298020346,
+      "pressure_normalized_l2": 0.003732229996508243,
+      "primitive_rms_l2": 0.003638950276232957,
+      "maximum_normalized_pointwise_disagreement": 0.07432342017985516,
+      "maximum_range_normalized_linf_disagreement": 0.06410604230371854,
+      "reference_seconds": 56.621798699954525,
+      "check_seconds": 152.07615210005315
+    },
+    {
+      "case_id": "woodward_colella",
+      "reference_cells": 2048,
+      "check_cells": 4096,
+      "density_normalized_l2": 0.03453101480176912,
+      "velocity_normalized_l2": 0.021579334556903276,
+      "pressure_normalized_l2": 0.010253153799910293,
+      "primitive_rms_l2": 0.024243114665153713,
+      "maximum_normalized_pointwise_disagreement": 86.7044672869966,
+      "maximum_range_normalized_linf_disagreement": 0.20399494598808482,
+      "reference_seconds": 74.85692879999988,
+      "check_seconds": 235.1152524999925
+    }
+  ]
+}

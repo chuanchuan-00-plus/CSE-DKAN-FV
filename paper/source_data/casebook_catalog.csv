@@ -1,0 +1,9 @@
+case_id,case_group,left_density,left_velocity,left_pressure,right_density,right_velocity,right_pressure,final_time,fixed_over_engineering_gain,fno_over_engineering_gain,description
+id01,in_distribution,1.061685,-0.112639,1.2383,0.583841,-0.196038,0.309714,0.21416,1.1904071581214748,4.47395518976241,"Representative in-range pressure-driven tube with moderate density, velocity, and pressure contrasts."
+id08,in_distribution,0.637761,0.323802,1.785825,0.506568,0.189239,0.302248,0.253677,0.9577281912708874,4.000530746773875,High-left-pressure case with a weak density contrast; retained because fixed MC is slightly more accurate.
+id11,in_distribution,1.522792,-0.333936,0.625103,0.556025,-0.028205,0.028323,0.28059,0.9691401927647285,4.430827001301458,Long-time low-right-pressure case near the lower pressure edge of the training range.
+id18,in_distribution,0.886704,-0.181424,1.73023,0.392463,-0.251675,0.283836,0.163704,1.6304367467509981,5.160236035999903,Strong pressure jump with co-directed negative velocities; the largest same-grid gain among the selected in-range cases.
+stress01,stress,1.0,0.0,5.0,0.1,0.0,0.01,0.08,1.077122573367555,4.71899572828866,Blast-like extrapolation with a 500:1 pressure ratio and a 10:1 density ratio.
+stress04,stress,1.0,0.6,1.0,1.0,-0.6,1.0,0.15,1.0977705868122882,10.989169271614674,Symmetric colliding streams that generate a compression-dominated central interaction.
+stress05,stress,0.2,0.0,0.1,1.0,0.0,1.0,0.18,0.9228968413916875,28.512391148891158,Reversed density and pressure step; retained as an out-of-distribution same-grid failure case.
+stress10,stress,1.0,0.0,1.0,0.125,0.0,0.1,0.25,0.9402580486999162,4.2297722243527,Classical Sod shock tube evaluated later than the engineering training times; retained as a familiar failure control.

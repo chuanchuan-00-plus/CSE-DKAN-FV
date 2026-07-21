@@ -1,0 +1,16 @@
+{
+  "protocol": "mechanism_generalization_v2",
+  "extends": "mechanism_generalization_v1.json",
+  "status": "frozen_after_v1_failure_diagnosis_before_v2_evaluation",
+  "frozen_at": "2026-07-20T23:42:00+08:00",
+  "development_disclosure": "The v1 suite was retained unchanged. Its smooth-entropy regression showed that a global density-TV budget does not suppress unnecessary learned reconstruction in smooth regions. V2 therefore multiplies the frozen learned blend by one deterministic local discontinuity sensor. Sensor thresholds were fixed before any v2 evaluation; no neural checkpoint, case, reference, grid, or metric changed.",
+  "sensor_definition": {
+    "pressure_jump_ramp": [0.025, 0.15],
+    "compressive_velocity_ramp": [0.02, 0.15],
+    "density_only_contact_ramp": [0.15, 0.35],
+    "combination": "maximum of the three ramps multiplied by the learned DKAN blend"
+  },
+  "benchmark_overrides": {
+    "use_discontinuity_sensor": true
+  }
+}

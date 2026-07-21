@@ -1,0 +1,150 @@
+{
+  "config": {
+    "variant": "dkan_pinn",
+    "seed": 31001,
+    "steps": 800,
+    "batch_interior": 256,
+    "batch_initial": 128,
+    "batch_boundary": 64,
+    "batch_control_volumes": 32,
+    "quadrature_order": 4,
+    "learning_rate": 0.001,
+    "min_learning_rate": 5e-05,
+    "weight_pde": 1.0,
+    "weight_initial": 50.0,
+    "weight_boundary": 10.0,
+    "weight_cv": 50.0,
+    "weight_entropy": 10.0,
+    "weight_global": 200.0,
+    "weight_rh": 10.0,
+    "weight_contact": 10.0,
+    "weight_shock_entropy": 5.0,
+    "weight_separation": 10.0,
+    "weight_trace": 20.0,
+    "freeze_wave_geometry": true,
+    "dtype": "float64",
+    "device": "cuda",
+    "log_every": 80,
+    "evaluation_points": 1600,
+    "artificial_viscosity": 0.005,
+    "gradient_weight_momentum": 0.9,
+    "gradient_weight_minimum": 0.1,
+    "gradient_weight_maximum": 10.0
+  },
+  "architecture_id": "PositivePrimitiveWrapper",
+  "history": [
+    {
+      "step": 1,
+      "total": 10.41494849876291,
+      "learning_rate": 0.001,
+      "pde": 0.014849123452147265,
+      "initial": 0.1414494084004521,
+      "boundary": 0.33276289552881605
+    },
+    {
+      "step": 80,
+      "total": 1.3053593979161797,
+      "learning_rate": 0.0009772684391055103,
+      "pde": 0.3652532670304969,
+      "initial": 0.018261267554324084,
+      "boundary": 0.0027042753169478646
+    },
+    {
+      "step": 160,
+      "total": 0.7814742797535863,
+      "learning_rate": 0.0009101593939203418,
+      "pde": 0.15496799877582138,
+      "initial": 0.012353186881774274,
+      "boundary": 0.0008846936889051206
+    },
+    {
+      "step": 240,
+      "total": 0.49336682015299693,
+      "learning_rate": 0.0008052546113555259,
+      "pde": 0.13750433960267097,
+      "initial": 0.007038496337935879,
+      "boundary": 0.00039376636535319684
+    },
+    {
+      "step": 320,
+      "total": 0.4473546596513735,
+      "learning_rate": 0.0006728484102678131,
+      "pde": 0.09562514438141267,
+      "initial": 0.006920642428307486,
+      "boundary": 0.0005697393854586501
+    },
+    {
+      "step": 400,
+      "total": 0.38814051625123586,
+      "learning_rate": 0.000525933827002003,
+      "pde": 0.07468172360641107,
+      "initial": 0.006227160935551592,
+      "boundary": 0.00021007458672452062
+    },
+    {
+      "step": 480,
+      "total": 0.28843703682899763,
+      "learning_rate": 0.0003789276071808269,
+      "pde": 0.09038030706754666,
+      "initial": 0.003919825160965911,
+      "boundary": 0.00020654717131554754
+    },
+    {
+      "step": 560,
+      "total": 0.3189489589281656,
+      "learning_rate": 0.0002462554887331513,
+      "pde": 0.06904681180804459,
+      "initial": 0.004977635681716684,
+      "boundary": 0.00010203630342868418
+    },
+    {
+      "step": 640,
+      "total": 0.2438351702174004,
+      "learning_rate": 0.0001409366025061051,
+      "pde": 0.04906883807175683,
+      "initial": 0.003877584022863295,
+      "boundary": 8.871310024788182e-05
+    },
+    {
+      "step": 720,
+      "total": 0.29037643710110067,
+      "learning_rate": 7.330590339832863e-05,
+      "pde": 0.06868963341496731,
+      "initial": 0.0044181902865935395,
+      "boundary": 7.772893564563828e-05
+    },
+    {
+      "step": 800,
+      "total": 0.26823835725108386,
+      "learning_rate": 5e-05,
+      "pde": 0.03861485423845183,
+      "initial": 0.004581237160559566,
+      "boundary": 5.616449846537365e-05
+    }
+  ],
+  "metrics": {
+    "density_l1": 0.04658198432291984,
+    "density_l2": 0.05402683666894846,
+    "velocity_l2": 0.220315030527476,
+    "pressure_l2": 0.04515600209705562,
+    "shock_location_error": 0.06949364640603561,
+    "contact_location_error": 0.06419697599021013,
+    "shock_width_10_90": 0.08435580857722047,
+    "contact_width_10_90": 1.0,
+    "max_mass_balance_error": 0.006449070491585829,
+    "max_momentum_balance_error": 0.0073368422768151365,
+    "max_energy_balance_error": 0.011268391149792611,
+    "shock_entropy_violation": 0.0638866505354907,
+    "minimum_density": 0.11021917304441414,
+    "minimum_pressure": 0.10478237660562033,
+    "inference_seconds": 0.0021808999590575695,
+    "training_seconds": 53.606204700190574,
+    "peak_memory_bytes": 129115136.0,
+    "trainable_parameters": 8475.0,
+    "optimized_parameters": 8475.0
+  },
+  "environment": {
+    "torch": "2.11.0+cu128",
+    "device": "cuda"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "training": {
+    "output": "results\\dkan_weno_pretrain_v1\\model.pt",
+    "iterations": 90,
+    "coarse_cells": 64,
+    "refinement": 8,
+    "cases_per_viscosity": 3,
+    "final_time": 0.3,
+    "seed": 2718
+  },
+  "training_cases": [
+    {
+      "viscosity": 0.0,
+      "mean": -0.09087296244194684,
+      "amplitude_1": 0.5560885671122202,
+      "amplitude_2": 0.1460122235803139,
+      "phase_1": 0.1301872259684551,
+      "phase_2": -0.5385766465260213
+    },
+    {
+      "viscosity": 0.0,
+      "mean": -0.04989016929657769,
+      "amplitude_1": 0.7552845494595707,
+      "amplitude_2": -0.12627939332628824,
+      "phase_1": -0.44925104863720355,
+      "phase_2": -0.21856483628993184
+    },
+    {
+      "viscosity": 0.0,
+      "mean": 0.28426158564278703,
+      "amplitude_1": 0.9910888959394832,
+      "amplitude_2": -0.15020463092997646,
+      "phase_1": 0.45522164263121057,
+      "phase_2": 0.40152613899188094
+    },
+    {
+      "viscosity": 0.0003,
+      "mean": -0.13717129911570838,
+      "amplitude_1": 0.6816656631943898,
+      "amplitude_2": -0.05572259380118946,
+      "phase_1": -0.6216761350199191,
+      "phase_2": -0.5082211266796106
+    },
+    {
+      "viscosity": 0.0003,
+      "mean": -0.23943246710020602,
+      "amplitude_1": 1.0484046173021992,
+      "amplitude_2": 0.14703193981375828,
+      "phase_1": 0.05991438175452368,
+      "phase_2": 0.5626658995356792
+    },
+    {
+      "viscosity": 0.0003,
+      "mean": 0.26055650956076637,
+      "amplitude_1": 0.8714535597862609,
+      "amplitude_2": -0.06708282811950689,
+      "phase_1": -0.7096707099743793,
+      "phase_2": -0.42362772400626303
+    },
+    {
+      "viscosity": 0.003,
+      "mean": -0.16516411240093315,
+      "amplitude_1": 0.7465688802653596,
+      "amplitude_2": -0.04921085438568218,
+      "phase_1": -0.16486735728881874,
+      "phase_2": -0.6343735608354866
+    },
+    {
+      "viscosity": 0.003,
+      "mean": -0.1631803186174694,
+      "amplitude_1": 1.221202567876947,
+      "amplitude_2": 0.0839016698125229,
+      "phase_1": 0.06405003035997536,
+      "phase_2": -0.3466777387968196
+    },
+    {
+      "viscosity": 0.003,
+      "mean": -0.16556268338078028,
+      "amplitude_1": 0.8964364869587128,
+      "amplitude_2": 0.18523804612077444,
+      "phase_1": -0.6916193531062823,
+      "phase_2": -0.16996609091745385
+    }
+  ],
+  "history": [
+    {
+      "iteration": 1.0,
+      "viscosity": 0.0,
+      "relative_mse": 0.0001917797198984772,
+      "bound_penalty": 0.0
+    },
+    {
+      "iteration": 10.0,
+      "viscosity": 0.0,
+      "relative_mse": 0.00018327368889003992,
+      "bound_penalty": 0.0
+    },
+    {
+      "iteration": 20.0,
+      "viscosity": 0.0003,
+      "relative_mse": 6.015154212946072e-06,
+      "bound_penalty": 0.0
+    },
+    {
+      "iteration": 30.0,
+      "viscosity": 0.003,
+      "relative_mse": 9.67721498454921e-05,
+      "bound_penalty": 2.1663617566503035e-09
+    },
+    {
+      "iteration": 40.0,
+      "viscosity": 0.0,
+      "relative_mse": 0.00016178864461835474,
+      "bound_penalty": 0.0
+    },
+    {
+      "iteration": 50.0,
+      "viscosity": 0.0003,
+      "relative_mse": 5.155500275577651e-06,
+      "bound_penalty": 0.0
+    },
+    {
+      "iteration": 60.0,
+      "viscosity": 0.003,
+      "relative_mse": 9.227747796103358e-05,
+      "bound_penalty": 2.1575234931958676e-09
+    },
+    {
+      "iteration": 70.0,
+      "viscosity": 0.0,
+      "relative_mse": 0.00015830283518880606,
+      "bound_penalty": 0.0
+    },
+    {
+      "iteration": 80.0,
+      "viscosity": 0.0003,
+      "relative_mse": 5.0301614464842714e-06,
+      "bound_penalty": 0.0
+    },
+    {
+      "iteration": 90.0,
+      "viscosity": 0.003,
+      "relative_mse": 9.143687202595174e-05,
+      "bound_penalty": 2.287531497557893e-09
+    }
+  ],
+  "generation_seconds": 1.0022848001681268,
+  "training_seconds": 314.79063780000433,
+  "device": "cuda"
+}

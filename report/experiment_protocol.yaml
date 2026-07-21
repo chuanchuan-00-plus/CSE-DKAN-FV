@@ -1,0 +1,190 @@
+project:
+  name: CSE-DKAN-PINN
+  full_name: Conservative Shock-Explicit and Entropy-stable DKAN-PINN
+  status: proposed_unvalidated
+  source_paper: arXiv:2507.08338v2
+  protocol_date: 2026-07-15
+
+success_claim:
+  comparator: strongest_neural_baseline_per_task
+  weno_role: reference_solution_and_classical_cost_baseline
+  composite_gain_formula: exp(sum_i(weight_i * log((baseline_i + epsilon_i)/(new_i + epsilon_i))))
+  engineering_gate:
+    median_composite_gain_min: 1.20
+    bootstrap_95ci_lower_min: 1.00
+    max_primary_metric_degradation_any_task: 0.10
+  strong_20_percent_claim:
+    bootstrap_95ci_lower_min: 1.20
+
+composite_weights:
+  state_error: 0.30
+  shock_contact_resolution: 0.20
+  conservation_error: 0.15
+  entropy_violation: 0.10
+  robustness_failure_rate: 0.10
+  training_gpu_seconds: 0.10
+  inference_time: 0.05
+
+tasks:
+  development:
+    - inviscid_burgers_sine
+    - viscous_burgers_sine_nu_1e-3
+    - euler_sod
+  final_1d:
+    - name: inviscid_burgers_sine
+      parameter_scan:
+        amplitude: [0.5, 1.0, 1.5]
+    - name: viscous_burgers_sine
+      parameter_scan:
+        viscosity: [1.0e-2, 3.0e-3, 1.0e-3, 3.0e-4, 1.0e-4]
+    - name: euler_sod
+      parameter_scan:
+        pressure_ratio: [2, 10, 100]
+    - name: euler_lax
+    - name: shu_osher
+      parameter_scan:
+        entropy_wave_amplitude: [0.1, 0.2, 0.3]
+    - name: euler_normal_shock_riemann
+      parameter_scan:
+        upstream_mach: [1.1, 1.5, 2.0, 3.0, 5.0]
+    - name: euler_double_blast
+  optional_2d_order:
+    - four_quadrant_riemann
+    - double_mach_reflection
+    - forward_facing_step
+    - naca0012_transonic_supersonic
+
+baselines:
+  core:
+    - MLP_PINN_strong_form
+    - KAN_PIKAN_strong_form
+    - original_DPINN_KAF_DKAN_local_AV
+    - GW_PINN_seq2seq
+    - adaptive_local_AV_PINN
+    - PINNs_WE_gradient_RH_global_conservation
+    - CI_PINN_coupled_integral
+    - WE_PINN_control_volume_entropy
+    - WENO5Z_SSPRK3
+  extended:
+    - wPINN_minmax_kruzkov
+    - WHC_PINN
+    - approximate_riemann_solver_PINN
+
+fairness_budgets:
+  hardware: same_GPU_model_and_exclusive_process
+  numeric_precision: float64_for_final_1d_unless_memory_prohibits
+  views:
+    - matched_trainable_parameters_tolerance_5_percent
+    - matched_gpu_seconds
+    - best_validation_under_common_max_budget
+  tuning:
+    validation_tasks_separate_from_final_test: true
+    equal_hyperparameter_trial_budget: true
+    seed_policy:
+      development_seeds: 5
+      final_1d_seeds: 10
+      final_2d_seeds: 3
+    report_all_failures: true
+
+reference_solvers:
+  inviscid_scalar:
+    scheme: WENO5Z_plus_SSPRK3
+    spatial_grid_candidates: [4096, 8192]
+    require_grid_convergence: true
+  viscous_burgers:
+    scheme: Cole_Hopf_when_compatible_else_high_resolution_WENO_plus_centered_diffusion
+    require_grid_convergence: true
+  euler_1d:
+    exact_riemann_for_sod_lax: true
+    scheme: WENO5Z_HLLC_SSPRK3_with_positivity_guard
+    spatial_grid_candidates: [4096, 8192]
+  euler_2d:
+    scheme: high_resolution_finite_volume_WENO_or_WENO5Z
+    require_grid_convergence: true
+
+metrics:
+  state:
+    - normalized_L1
+    - normalized_L2
+    - normalized_Linf
+    - wasserstein1_1d
+  shock_contact:
+    - location_error
+    - width_10_90
+    - gradient_equivalent_width
+    - total_variation_excess
+    - overshoot_undershoot
+  conservation:
+    - max_time_mass_balance_error
+    - max_time_momentum_balance_error
+    - max_time_total_energy_balance_error
+  entropy:
+    - control_volume_entropy_violation_mean_positive_part
+    - control_volume_entropy_violation_max_positive_part
+    - violation_fraction
+    - physical_entropy_jump_at_compressive_shock
+  robustness:
+    - nan_inf_failure
+    - nonpositive_density_pressure_failure
+    - error_threshold_failure
+    - conservation_threshold_failure
+  cost:
+    - training_gpu_seconds
+    - peak_gpu_memory
+    - inference_time_fixed_grid
+    - time_to_accuracy
+
+shock_width_rules:
+  viscous_burgers: compare_absolute_width_error_to_reference_not_narrower_is_better
+  inviscid: require_plateau_location_and_TV_quality_gates_before_width_comparison
+  euler: report_shock_and_contact_separately
+
+training_curriculum:
+  - stage: smooth_pretrain
+    step_fraction: 0.20
+    features: [small_gate_steepness, weak_local_AV, IC_BC, smooth_strong_residual, coarse_control_volumes]
+  - stage: conservation_formation
+    step_fraction: 0.35
+    features: [multiscale_control_volumes, activate_RH, activate_entropy, residual_resampling]
+  - stage: discontinuity_sharpening
+    step_fraction: 0.35
+    features: [increase_gate_steepness, anneal_AV, two_sided_manifold_sampling, prune_inactive_jump_bases]
+  - stage: physical_debias
+    step_fraction: 0.10
+    features: [AV_to_zero, low_learning_rate_joint_finetune, independent_CV_early_stopping]
+
+ablations:
+  - remove_explicit_discontinuity_basis
+  - remove_control_volume_weak_loss
+  - remove_Rankine_Hugoniot_loss
+  - remove_entropy_loss
+  - remove_global_conservation_loss
+  - fixed_nonannealed_artificial_viscosity
+  - replace_residual_entropy_sensor_with_problem_specific_sensor
+  - single_scale_control_volumes
+  - no_jump_basis_sparsity
+  - remove_adaptive_Fourier_embedding
+
+decision_gates:
+  gate0_reproduction:
+    condition: original_DPINN_key_Burgers_errors_within_15_percent_relative_and_Sod_Lax_profiles_match
+  gate1_conservative_MVP:
+    condition: conservation_error_reduced_50_percent_state_error_not_worse_10_percent_cost_not_over_1_5x_original_DPINN
+  gate2_shock_explicit:
+    condition: width_and_location_improve_RH_and_entropy_violations_drop_seed_success_at_least_90_percent
+  gate3_twenty_percent:
+    condition: engineering_gate_passed_on_all_final_1d_tasks_before_2d
+
+protocol_amendments:
+  - date: 2026-07-15
+    reason: pointwise_CV_penalties_failed_local_conservation_gate_in_single_seed_development
+    prospective_only: true
+    model_branch: CSE_FV_DKAN
+    immutable_requirements:
+      - one_shared_numerical_flux_per_interface
+      - telescoping_cell_average_update
+      - entropy_stable_Godunov_flux_for_Burgers
+      - HLLC_plus_entropy_fix_and_positivity_audit_for_Euler
+      - DKAN_reconstruction_must_not_break_flux_sharing
+    entry_gate_to_multiseed:
+      independent_CV_and_entropy_each_not_worse_than_0_9_times_strongest_neural_baseline: true

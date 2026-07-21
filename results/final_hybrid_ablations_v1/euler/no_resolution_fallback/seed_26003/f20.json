@@ -1,0 +1,342 @@
+{
+  "checkpoint": "D:\\Codex\\dkan_pinn_research\\results\\final_float64_v1\\euler_models\\seed_26003\\model.pt",
+  "pretraining_generation_seconds": 156.91880919970572,
+  "pretraining_seconds": 19.359503200277686,
+  "pretraining_oracle_seconds": 0.7525924001820385,
+  "dtype": "float64",
+  "rows": [
+    {
+      "method": "piecewise_constant",
+      "case_id": "f20",
+      "left_state": [
+        0.930751,
+        -0.060491,
+        0.899025
+      ],
+      "right_state": [
+        0.186707,
+        -0.007462,
+        0.152816
+      ],
+      "cells": 100,
+      "subcells": 8,
+      "density_normalized_l2": 0.01970069126669504,
+      "velocity_normalized_l2": 0.0775522078314301,
+      "pressure_normalized_l2": 0.019071763445991534,
+      "primitive_geometric_mean_l2": 0.03077198373815173,
+      "density_shock_location_error": 0.0014087294075951773,
+      "density_shock_width_10_90": 0.020464827761653925,
+      "density_shock_width_failure": 0.0,
+      "density_gradient_equivalent_width": 0.005293172309819424,
+      "minimum_density": 0.186707,
+      "minimum_pressure": 0.152816,
+      "shock_entropy_violation": 0.0,
+      "shock_rh_residual_l2": 0.0009836894476148326,
+      "maximum_cell_average_change": 0.0,
+      "learned_blend_multiplier": 0.0,
+      "global_conservative_change": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fv_solve_seconds": 1.0109784002415836,
+      "reconstruction_seconds": 2.7299858629703522e-05
+    },
+    {
+      "method": "fixed_conservative_mc_subcell",
+      "case_id": "f20",
+      "left_state": [
+        0.930751,
+        -0.060491,
+        0.899025
+      ],
+      "right_state": [
+        0.186707,
+        -0.007462,
+        0.152816
+      ],
+      "cells": 100,
+      "subcells": 8,
+      "density_normalized_l2": 0.018088716611317945,
+      "velocity_normalized_l2": 0.07457962722857887,
+      "pressure_normalized_l2": 0.01735361861930513,
+      "primitive_geometric_mean_l2": 0.02860702336178543,
+      "density_shock_location_error": 0.0014087294075951773,
+      "density_shock_width_10_90": 0.018746583731219846,
+      "density_shock_width_failure": 0.0,
+      "density_gradient_equivalent_width": 0.012004881010823209,
+      "minimum_density": 0.186707,
+      "minimum_pressure": 0.152816,
+      "shock_entropy_violation": 0.0,
+      "shock_rh_residual_l2": 0.0004319744313774503,
+      "maximum_cell_average_change": 4.440892098500626e-16,
+      "learned_blend_multiplier": 0.0,
+      "global_conservative_change": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fv_solve_seconds": 1.0109784002415836,
+      "reconstruction_seconds": 0.011978799942880869
+    },
+    {
+      "method": "resolution_gated_euler_jump_dkan_subcell",
+      "case_id": "f20",
+      "left_state": [
+        0.930751,
+        -0.060491,
+        0.899025
+      ],
+      "right_state": [
+        0.186707,
+        -0.007462,
+        0.152816
+      ],
+      "cells": 100,
+      "subcells": 8,
+      "density_normalized_l2": 0.015739387468579266,
+      "velocity_normalized_l2": 0.07384719710107183,
+      "pressure_normalized_l2": 0.017193695039443572,
+      "primitive_geometric_mean_l2": 0.027137115776249374,
+      "density_shock_location_error": 0.0014087294075951773,
+      "density_shock_width_10_90": 0.01841495678499616,
+      "density_shock_width_failure": 0.0,
+      "density_gradient_equivalent_width": 0.016595435331077716,
+      "minimum_density": 0.186707,
+      "minimum_pressure": 0.152816,
+      "shock_entropy_violation": 0.0,
+      "shock_rh_residual_l2": 0.00042594444881496445,
+      "maximum_cell_average_change": 4.440892098500626e-16,
+      "learned_blend_multiplier": 0.75,
+      "global_conservative_change": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fv_solve_seconds": 1.0109784002415836,
+      "reconstruction_seconds": 0.017168600112199783
+    },
+    {
+      "method": "piecewise_constant",
+      "case_id": "f20",
+      "left_state": [
+        0.930751,
+        -0.060491,
+        0.899025
+      ],
+      "right_state": [
+        0.186707,
+        -0.007462,
+        0.152816
+      ],
+      "cells": 200,
+      "subcells": 8,
+      "density_normalized_l2": 0.013469412896637015,
+      "velocity_normalized_l2": 0.05182802993031918,
+      "pressure_normalized_l2": 0.012258964325528553,
+      "primitive_geometric_mean_l2": 0.020454508551598964,
+      "density_shock_location_error": 0.00047122940759514176,
+      "density_shock_width_10_90": 0.010242409815813591,
+      "density_shock_width_failure": 0.0,
+      "density_gradient_equivalent_width": 0.0026413285074058054,
+      "minimum_density": 0.186707,
+      "minimum_pressure": 0.152816,
+      "shock_entropy_violation": 0.0,
+      "shock_rh_residual_l2": 1.995010580319183e-05,
+      "maximum_cell_average_change": 0.0,
+      "learned_blend_multiplier": 0.0,
+      "global_conservative_change": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fv_solve_seconds": 1.9216632000170648,
+      "reconstruction_seconds": 2.059992402791977e-05
+    },
+    {
+      "method": "fixed_conservative_mc_subcell",
+      "case_id": "f20",
+      "left_state": [
+        0.930751,
+        -0.060491,
+        0.899025
+      ],
+      "right_state": [
+        0.186707,
+        -0.007462,
+        0.152816
+      ],
+      "cells": 200,
+      "subcells": 8,
+      "density_normalized_l2": 0.012955108400806686,
+      "velocity_normalized_l2": 0.04987075466593588,
+      "pressure_normalized_l2": 0.011344324313970356,
+      "primitive_geometric_mean_l2": 0.019424739727628367,
+      "density_shock_location_error": 0.0010962294075951284,
+      "density_shock_width_10_90": 0.009639094902903045,
+      "density_shock_width_failure": 0.0,
+      "density_gradient_equivalent_width": 0.006011374389032611,
+      "minimum_density": 0.186707,
+      "minimum_pressure": 0.152816,
+      "shock_entropy_violation": 0.0,
+      "shock_rh_residual_l2": 2.368336402109438e-05,
+      "maximum_cell_average_change": 2.220446049250313e-16,
+      "learned_blend_multiplier": 0.0,
+      "global_conservative_change": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fv_solve_seconds": 1.9216632000170648,
+      "reconstruction_seconds": 0.011392499785870314
+    },
+    {
+      "method": "resolution_gated_euler_jump_dkan_subcell",
+      "case_id": "f20",
+      "left_state": [
+        0.930751,
+        -0.060491,
+        0.899025
+      ],
+      "right_state": [
+        0.186707,
+        -0.007462,
+        0.152816
+      ],
+      "cells": 200,
+      "subcells": 8,
+      "density_normalized_l2": 0.012976708660868254,
+      "velocity_normalized_l2": 0.048122491587413586,
+      "pressure_normalized_l2": 0.011018644989099395,
+      "primitive_geometric_mean_l2": 0.019020135949342182,
+      "density_shock_location_error": 0.0007787705924048316,
+      "density_shock_width_10_90": 0.008115446204549959,
+      "density_shock_width_failure": 0.0,
+      "density_gradient_equivalent_width": 0.0026090756906063436,
+      "minimum_density": 0.186707,
+      "minimum_pressure": 0.152816,
+      "shock_entropy_violation": 0.0,
+      "shock_rh_residual_l2": 2.5301202617085006e-05,
+      "maximum_cell_average_change": 4.440892098500626e-16,
+      "learned_blend_multiplier": 0.75,
+      "global_conservative_change": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fv_solve_seconds": 1.9216632000170648,
+      "reconstruction_seconds": 0.017096799798309803
+    },
+    {
+      "method": "piecewise_constant",
+      "case_id": "f20",
+      "left_state": [
+        0.930751,
+        -0.060491,
+        0.899025
+      ],
+      "right_state": [
+        0.186707,
+        -0.007462,
+        0.152816
+      ],
+      "cells": 400,
+      "subcells": 8,
+      "density_normalized_l2": 0.010506620028325768,
+      "velocity_normalized_l2": 0.04268207304120423,
+      "pressure_normalized_l2": 0.009516944548011157,
+      "primitive_geometric_mean_l2": 0.01622066630289177,
+      "density_shock_location_error": 0.0006274794075951107,
+      "density_shock_width_10_90": 0.0051077678176697505,
+      "density_shock_width_failure": 0.0,
+      "density_gradient_equivalent_width": 0.0013255019091946802,
+      "minimum_density": 0.186707,
+      "minimum_pressure": 0.152816,
+      "shock_entropy_violation": 0.0,
+      "shock_rh_residual_l2": 1.7963189936090924e-05,
+      "maximum_cell_average_change": 0.0,
+      "learned_blend_multiplier": 0.0,
+      "global_conservative_change": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fv_solve_seconds": 3.8658424001187086,
+      "reconstruction_seconds": 2.329982817173004e-05
+    },
+    {
+      "method": "fixed_conservative_mc_subcell",
+      "case_id": "f20",
+      "left_state": [
+        0.930751,
+        -0.060491,
+        0.899025
+      ],
+      "right_state": [
+        0.186707,
+        -0.007462,
+        0.152816
+      ],
+      "cells": 400,
+      "subcells": 8,
+      "density_normalized_l2": 0.009829049372352858,
+      "velocity_normalized_l2": 0.038518336221245855,
+      "pressure_normalized_l2": 0.008232616301898095,
+      "primitive_geometric_mean_l2": 0.014607379206702858,
+      "density_shock_location_error": 0.0006274794075951107,
+      "density_shock_width_10_90": 0.004685086404974781,
+      "density_shock_width_failure": 0.0,
+      "density_gradient_equivalent_width": 0.0029850467845052406,
+      "minimum_density": 0.186707,
+      "minimum_pressure": 0.152816,
+      "shock_entropy_violation": 0.0,
+      "shock_rh_residual_l2": 1.76657457219208e-05,
+      "maximum_cell_average_change": 2.220446049250313e-16,
+      "learned_blend_multiplier": 0.0,
+      "global_conservative_change": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fv_solve_seconds": 3.8658424001187086,
+      "reconstruction_seconds": 0.01108720013871789
+    },
+    {
+      "method": "resolution_gated_euler_jump_dkan_subcell",
+      "case_id": "f20",
+      "left_state": [
+        0.930751,
+        -0.060491,
+        0.899025
+      ],
+      "right_state": [
+        0.186707,
+        -0.007462,
+        0.152816
+      ],
+      "cells": 400,
+      "subcells": 8,
+      "density_normalized_l2": 0.00916033380011659,
+      "velocity_normalized_l2": 0.024264508108995442,
+      "pressure_normalized_l2": 0.004968531060469513,
+      "primitive_geometric_mean_l2": 0.010336422834204414,
+      "density_shock_location_error": 2.4794075951239947e-06,
+      "density_shock_width_10_90": 0.0047408438614073845,
+      "density_shock_width_failure": 0.0,
+      "density_gradient_equivalent_width": 0.0008525883158388758,
+      "minimum_density": 0.186707,
+      "minimum_pressure": 0.152816,
+      "shock_entropy_violation": 0.0,
+      "shock_rh_residual_l2": 1.7621132096498033e-05,
+      "maximum_cell_average_change": 4.440892098500626e-16,
+      "learned_blend_multiplier": 0.75,
+      "global_conservative_change": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fv_solve_seconds": 3.8658424001187086,
+      "reconstruction_seconds": 0.017557600047439337
+    }
+  ]
+}
