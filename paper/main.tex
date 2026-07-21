@@ -610,6 +610,7 @@ All outputs preserved parent means within $4.44\times10^{-16}$; density and pres
 
 \vspace{5pt}
 \begin{center}
+\captionsetup{hypcap=false}
 \captionof{table}{Consolidated canonical and frozen validation. \textbf{a}, Canonical five-seed medians. Conservation is maximum Burgers mass drift and Euler energy-balance error, except for finite-volume rows, which report subcell mean preservation. \textbf{b}, Frozen v3 confirmation; intervals are bootstrapped over ten seed-level aggregates.}
 \label{tab:validation}
 \scriptsize
@@ -642,6 +643,7 @@ Matched cross-equation & 10 & 10 aggregates & 1.4259 & [1.3952, 1.4523] & strong
 
 \vspace{4pt}
 \includegraphics[width=0.78\textwidth]{fig11_multiseed_ablation.pdf}
+\captionsetup{hypcap=false}
 \captionof{figure}{Seed stability and component analysis. \textbf{a}, Matched seed-level gains; the horizontal line marks the 1.20 target. \textbf{b,c}, Median ablation gain over fixed reconstruction; black ticks show the worst pair. Ablations are descriptive rather than an independent blind test.}
 \label{fig:multiseed}
 \end{center}
@@ -650,6 +652,7 @@ Matched cross-equation & 10 & 10 aggregates & 1.4259 & [1.3952, 1.4523] & strong
 
 \begin{center}
 \includegraphics[width=0.70\textwidth]{fig10_engineering_benchmark.pdf}
+\captionsetup{hypcap=false}
 \captionof{figure}{Engineering benchmark. \textbf{a}, Same-backbone gains. \textbf{b}, Online time versus error. \textbf{c}, Shock width. \textbf{d}, Domain-integral and density-TV indicators. FNO is fastest; 512-cell HLLC is most accurate.}
 \label{fig:engineering}
 \end{center}
@@ -669,6 +672,7 @@ Cost comparisons represent different workflows. FNO performs one amortized forwa
 \end{minipage}\hfill
 \begin{minipage}[t]{0.39\textwidth}
 \centering
+\captionsetup{hypcap=false}
 \captionof{table}{In-distribution engineering comparison. TV excess and domain error are relative to the exact solution; the TV-trusted row is post-registration.}
 \label{tab:engineering}
 \scriptsize
@@ -715,10 +719,12 @@ Gas pipelines and quasi-one-dimensional ducts are the most direct Euler extensio
 \begin{minipage}[t]{0.53\textwidth}
 \centering
 \includegraphics[width=\linewidth]{fig12_tv_trust_diagnostic.pdf}
+\captionsetup{hypcap=false}
 \captionof{figure}{Post-registration density-TV trust study. \textbf{a}, Geometric-mean state error. \textbf{b}, Median density-TV excess. \textbf{c}, Paired gain over fixed MC. \textbf{d}, Accepted global DKAN multiplier. A 2\% budget provides most of the accuracy gain while rejecting nearly half of the unprojected correction.}
 \label{fig:tvtrust}
 
 \vspace{5pt}
+\captionsetup{hypcap=false}
 \captionof{table}{Descriptive ablation summary on the frozen v3 cases. Worst-pair gain below one indicates a case where the variant is less accurate than fixed MC.}
 \label{tab:ablation}
 \scriptsize
@@ -741,6 +747,7 @@ Euler & No resolution fallback & 1.1716 & 0.9637 & max RH ratio 1.616\\
 \end{tabular}}
 
 \vspace{9pt}
+\captionsetup{hypcap=false}
 \captionof{table}{Candidate engineering directions. Evidence level refers to proximity to the present equations, not to completed application validation.}
 \label{tab:applications}
 \scriptsize
